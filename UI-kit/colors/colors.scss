@@ -1,4 +1,52 @@
+@mixin rectangle($bgColor){
+  border-radius: 6px;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+  background: $bgColor;
+}
+body{
+  margin: 0;
+}
 .logo__img{
   width: 48px;
-  margin-top: 10%;
+  padding: 1.55%;
+}
+.wrapper{
+  display: flex;
+}
+.typeColors{
+  width: 18.7%;
+  margin-top: 1.9%;
+  margin-left: 6.1%;
+}
+.typeColors__rectangle--Dark100{
+@include rectangle(#1F2041);
+}
+.typeColors__rectangle--Dark75{
+  @include rectangle( rgba(31, 32, 65, 0.75));
+}
+.typeColors__rectangle--Dark50{
+  @include rectangle( rgba(31, 32, 65, 0.5));
+}
+.typeColors__rectangle--Dark25{
+  @include rectangle( rgba(31, 32, 65, 0.25));
+}
+.typeColors__rectangle--Dark5{
+  @include rectangle( rgba(31, 32, 65, 0.05));
+}
+.typeColors__rectangle--Purple{
+  @include rectangle( #BC9CFF);
+}
+.typeColors__rectangle--Green{
+  @include rectangle( #6FCF97);
+}
+.typeColors__item{
+  display: flex;
+  margin-left: 10.4%;
+}
+.typeFonts__item{
+  display: flex;}
+.typeFonts{
+  margin-left: 21%;
 }
