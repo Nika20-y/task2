@@ -1,3 +1,4 @@
+@import "../../style/mixins/mixin";
 @mixin rectangle($bgColor){
   border-radius: 6px;
   width: 70px;
@@ -19,6 +20,12 @@ body{
   width: 18.7%;
   margin-top: 1.9%;
   margin-left: 6.1%;
+}
+.typeColors__descriptions{
+  margin-left: 12.5%;
+  @include fontHeadline(19px,8px);
+  color: #1F2041;
+
 }
 .typeColors__rectangle--Dark100{
 @include rectangle(#1F2041);

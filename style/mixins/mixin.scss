@@ -1,17 +1,16 @@
 @font-face {
-  font-family: 'Montserrat-Regular';
+  font-family: "Montserrat-Regular";
   src: url(../fonts/Montserrat-Regular.ttf), url(../fonts/Montserrat-Regular.otf),
   url(../fonts/Montserrat-Regular.eot), url(../fonts/Montserrat-Regular.woff)  ;
 }
 @font-face {
-  font-family: 'Quicksand-Regular';
-  src: url(../fonts/Quicksand-Regular.ttf), url(../fonts/Quicksand-Regular.woff),
-  url(../fonts/Quicksand-Regular.eot) ;
+  font-family: Quicksand;
+  src: url(../fonts/Quicksand.ttf) ;
 }
 @mixin fontHeadline($fontSize,$lineHeight){
-    font-family: "Quicksand-Regular", sans-serif;
+    font-family: Quicksand, sans-serif;
     font-style: normal;
-    font-weight: bold;
+  font-weight: bold;
     font-size: $fontSize;
     line-height: $lineHeight;
   }

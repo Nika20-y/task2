@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url(../fonts/Montserrat-Regular.ttf), url(../fonts/Montserrat-Regular.otf), url(../fonts/Montserrat-Regular.eot), url(../fonts/Montserrat-Regular.woff);
+}
+@font-face {
+  font-family: Quicksand;
+  src: url(../fonts/Quicksand.ttf);
+}
 body {
   margin: 0;
 }
@@ -15,6 +23,16 @@ body {
   width: 18.7%;
   margin-top: 1.9%;
   margin-left: 6.1%;
+}
+
+.typeColors__descriptions {
+  margin-left: 12.5%;
+  font-family: Quicksand, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 8px;
+  color: #1F2041;
 }
 
 .typeColors__rectangle--Dark100 {
