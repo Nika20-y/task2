@@ -1,0 +1,39 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        title Colors & Type
+    body
+        .logo
+            img(src="././images/logoUIkit.png")
+        .wrapper
+            .typeColors
+                mixin typeColors__item(color,nameColor,RGB)
+                    .typeColors__item
+                        rect(class = "typeColors__rectangle--"+ color)
+                    .typeColors__descriptions
+                            p=nameColor
+                            p=RGB
+                +typeColors__item("Dark100","Dark Shade 100%","#1F2041")
+                +typeColors__item("Dark75","Dark Shade 75%","#1F2041")
+                +typeColors__item("Dark50","Dark Shade 50%","#1F2041")
+                +typeColors__item("Dark25","Dark Shade 25%","#1F2041")
+                +typeColors__item("Dark5","Dark Shade 5%","#1F2041")
+                +typeColors__item("Purple","Purple","#BC9CFF")
+                +typeColors__item("Green","Green","#6FCF97")
+            .typeFonts
+                .typeFonts__item
+                    h1.typeFonts__headline1 H1
+                    h1.typeFonts__description1 This one is the sub-section or widget title
+                .typeFonts__item
+                    h2.typeFonts__headline2 H2
+                    h2.typeFonts__description2 Next one is the item title inside widgets
+                .typeFonts__item
+                    h3.typeFonts__headline3 H3
+                    h3.typeFonts__description3 This is a label or CTA text
+                .typeFonts__item
+                    p.typeFonts__headline-text Body
+                    p.typeFonts__description-text This is the body text which is used for most of the design,like paragraphs, lists, etc.
+
+
+
