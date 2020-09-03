@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url(../fonts/Montserrat-Regular.ttf), url(../fonts/Montserrat-Regular.otf), url(../fonts/Montserrat-Regular.eot), url(../fonts/Montserrat-Regular.woff);
+}
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: url(../fonts/Quicksand-Regular.ttf), url(../fonts/Quicksand-Regular.woff), url(../fonts/Quicksand-Regular.eot);
+}
+
+/*# sourceMappingURL=mixin.css.map */

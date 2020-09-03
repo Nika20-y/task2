@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url(../fonts/Montserrat-Regular.ttf), url(../fonts/Montserrat-Regular.otf),
+  url(../fonts/Montserrat-Regular.eot), url(../fonts/Montserrat-Regular.woff)  ;
+}
+@font-face {
+  font-family: 'Quicksand-Regular';
+  src: url(../fonts/Quicksand-Regular.ttf), url(../fonts/Quicksand-Regular.woff),
+  url(../fonts/Quicksand-Regular.eot) ;
+}
+@mixin fontHeadline($fontSize,$lineHeight){
+    font-family: "Quicksand-Regular", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+  }
+@mixin fontContent($fontSize,$lineHeight){
+  font-family: "Montserrat-Regular", sans-serif;
+  font-style: normal;
+  color: #1F2041;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
