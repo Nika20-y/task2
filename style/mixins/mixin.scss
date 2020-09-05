@@ -5,12 +5,11 @@
 }
 @font-face {
   font-family: Quicksand;
-  src: url(../fonts/Quicksand.ttf) ;
+  src: url(../fonts/Quicksand-Bold.ttf) ;
 }
 @mixin fontHeadline($fontSize,$lineHeight){
     font-family: Quicksand, sans-serif;
     font-style: normal;
-  font-weight: bold;
     font-size: $fontSize;
     line-height: $lineHeight;
   }

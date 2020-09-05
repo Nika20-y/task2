@@ -4,7 +4,7 @@
 }
 @font-face {
   font-family: Quicksand;
-  src: url(../fonts/Quicksand.ttf);
+  src: url(../fonts/Quicksand-Bold.ttf);
 }
 body {
   margin: 0;
@@ -16,23 +16,16 @@ body {
 }
 
 .wrapper {
-  display: flex;
+  padding-top: 1.9%;
+  display: grid;
+  grid-template-columns: 39.6% 45.4%;
+  position: relative;
 }
 
 .typeColors {
-  width: 18.7%;
-  margin-top: 1.9%;
-  margin-left: 6.1%;
-}
-
-.typeColors__descriptions {
-  margin-left: 12.5%;
-  font-family: Quicksand, sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 19px;
-  line-height: 8px;
-  color: #1F2041;
+  display: grid;
+  grid-template-rows: 14% 14% 14% 14% 14% 14% 14%;
+  grid-row-gap: 0.3%;
 }
 
 .typeColors__rectangle--Dark100 {
@@ -92,8 +85,30 @@ body {
 }
 
 .typeColors__item {
-  display: flex;
-  margin-left: 10.4%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 32.5% 67.5%;
+  grid-gap: 5.5%;
+}
+
+.typeColors__rectangle {
+  justify-self: end;
+}
+
+.typeColors__description {
+  font-family: Quicksand, sans-serif;
+  font-style: normal;
+  font-size: 100%;
+  line-height: 7px;
+  color: #1F2041;
+}
+.typeColors__description h3 {
+  font-weight: 900;
+}
+.typeColors__description p {
+  font-weight: 500;
+  font-size: 110%;
+  padding-top: 0.5%;
 }
 
 .typeFonts__item {
@@ -102,6 +117,24 @@ body {
 
 .typeFonts {
   margin-left: 21%;
+}
+
+h1 {
+  font-family: Quicksand, sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+h2 {
+  font-family: Quicksand, sans-serif;
+  font-style: normal;
+  font-size: 19px;
+  line-height: 24px;
+}
+
+.typeFonts__headline {
+  color: rgba(31, 32, 65, 0.25);
 }
 
 /*# sourceMappingURL=colors.css.map */
