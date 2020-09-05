@@ -50,7 +50,7 @@ display: grid;
   display:grid;
   justify-content: center;
   grid-template-columns: 32.5% 67.5%;
-  grid-gap: 5.5%;
+  grid-gap: 5.3%;
 }
 .typeColors__rectangle{
   justify-self: end;
@@ -61,16 +61,30 @@ display: grid;
     font-weight: 900;
   }
   p{
-    font-weight: 500;
+    font-weight: normal;
     font-size: 110%;
     padding-top: .5%;
+
   }
   color: #1F2041;
 }
 .typeFonts__item{
-  display: flex;}
+  display: grid;
+  grid-template-columns: 4% 64%;
+  grid-gap: 1rem;
+  h3{
+    @include fontContent(12px, 15px);
+    text-transform: uppercase;
+  }
+  p{
+    @include fontContent(14px, 24px);
+    color: rgba(31, 32, 65, 0.75);
+  }
+}
 .typeFonts{
-  margin-left: 21%;
+  display: grid;
+  grid-template-rows: 17.5% 15.7% 10% 10%;
+  justify-content: center;
 }
 h1{
   @include fontHeadline(24px, 30px)
@@ -79,5 +93,21 @@ h2{
   @include fontHeadline(19px, 24px)
 }
 .typeFonts__headline{
-  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, .25);
+  margin: 0;
+}
+.typeFonts__description{
+  margin: 0;
+}
+.headlineFonts1{
+  @include fontContent(24px, 29px)
+}
+.headlineFonts2{
+  @include fontContent(19px,23px)
+}
+.headlineFonts3{
+  @include fontContent(12px, 15px)
+}
+.headlineFonts4{
+  @include fontContent(14px, 24px)
 }
