@@ -1,7 +1,6 @@
 @font-face {
-  font-family: "Montserrat-Regular";
-  src: url(../fonts/Montserrat-Regular.ttf), url(../fonts/Montserrat-Regular.otf),
-  url(../fonts/Montserrat-Regular.eot), url(../fonts/Montserrat-Regular.woff)  ;
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.ttf), url(../fonts/Montserrat-Regular.woff)  ;
 }
 @font-face {
   font-family: Quicksand;
@@ -14,7 +13,7 @@
     line-height: $lineHeight;
   }
 @mixin fontContent($fontSize,$lineHeight){
-  font-family: "Montserrat-Regular", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   color: #1F2041;
   font-size: $fontSize;

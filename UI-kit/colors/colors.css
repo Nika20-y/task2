@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Montserrat-Regular";
-  src: url(../fonts/Montserrat-Regular.ttf), url(../fonts/Montserrat-Regular.otf), url(../fonts/Montserrat-Regular.eot), url(../fonts/Montserrat-Regular.woff);
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.ttf), url(../fonts/Montserrat-Regular.woff);
 }
 @font-face {
   font-family: Quicksand;
@@ -18,7 +18,7 @@ body {
 .wrapper {
   padding-top: 1.9%;
   display: grid;
-  grid-template-columns: 39.6% 45.4%;
+  grid-template-columns: 35% 45.4%;
   position: relative;
 }
 
@@ -87,8 +87,8 @@ body {
 .typeColors__item {
   display: grid;
   justify-content: center;
-  grid-template-columns: 32.5% 67.5%;
-  grid-gap: 5.3%;
+  grid-template-columns: 35.5% 62%;
+  grid-gap: 6.2%;
 }
 
 .typeColors__rectangle {
@@ -104,6 +104,7 @@ body {
 }
 .typeColors__description h3 {
   font-weight: 900;
+  margin-top: 4.5%;
 }
 .typeColors__description p {
   font-weight: normal;
@@ -113,11 +114,10 @@ body {
 
 .typeFonts__item {
   display: grid;
-  grid-template-columns: 4% 64%;
-  grid-gap: 1rem;
+  grid-template-columns: 20% 70%;
 }
 .typeFonts__item h3 {
-  font-family: "Montserrat-Regular", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   color: #1F2041;
   font-size: 12px;
@@ -125,7 +125,7 @@ body {
   text-transform: uppercase;
 }
 .typeFonts__item p {
-  font-family: "Montserrat-Regular", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   color: #1F2041;
   font-size: 14px;
@@ -156,6 +156,8 @@ h2 {
 .typeFonts__headline {
   color: rgba(31, 32, 65, 0.25);
   margin: 0;
+  justify-self: center;
+  padding-left: 5%;
 }
 
 .typeFonts__description {
@@ -163,7 +165,7 @@ h2 {
 }
 
 .headlineFonts1 {
-  font-family: "Montserrat-Regular", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   color: #1F2041;
   font-size: 24px;
@@ -171,7 +173,7 @@ h2 {
 }
 
 .headlineFonts2 {
-  font-family: "Montserrat-Regular", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   color: #1F2041;
   font-size: 19px;
@@ -179,7 +181,7 @@ h2 {
 }
 
 .headlineFonts3 {
-  font-family: "Montserrat-Regular", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   color: #1F2041;
   font-size: 12px;
@@ -187,7 +189,7 @@ h2 {
 }
 
 .headlineFonts4 {
-  font-family: "Montserrat-Regular", sans-serif;
+  font-family: Montserrat, sans-serif;
   font-style: normal;
   color: #1F2041;
   font-size: 14px;
