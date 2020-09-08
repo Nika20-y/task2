@@ -49,7 +49,7 @@ display: grid;
 .typeColors__item{
   display:grid;
   justify-content: center;
-  grid-template-columns: 35.5% 62%;
+  grid-template-columns: 36% 62%;
   grid-gap: 6.2%;
 }
 .typeColors__rectangle{
@@ -71,8 +71,9 @@ display: grid;
 }
 .typeFonts__item{
   display: grid;
-  grid-template-columns: 20% 70%;
-
+  grid-template-columns: 4% 60%;
+grid-gap: 4.8%;
+  justify-content: center;
   h3{
     @include fontContent(12px, 15px);
     text-transform: uppercase;
@@ -96,11 +97,12 @@ h2{
 .typeFonts__headline{
   color: rgba(31, 32, 65, .25);
   margin: 0;
-  justify-self: center;
-  padding-left: 5%;
+justify-self: end;
+
 }
 .typeFonts__description{
   margin: 0;
+  justify-content: start;
 }
 .headlineFonts1{
   @include fontContent(24px, 29px)
