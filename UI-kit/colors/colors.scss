@@ -50,7 +50,7 @@ display: grid;
 .typeColors__item{
   display:grid;
   justify-content: center;
-  grid-template-columns: 49% 50%;
+  grid-template-columns: 50% 50%;
   grid-gap: 6.2%;
 }
 .typeColors__rectangle{
@@ -66,14 +66,13 @@ display: grid;
     font-weight: normal;
     font-size: 110%;
     padding-top: .5%;
-
   }
   color: #1F2041;
 }
 .typeFonts__item{
   display: grid;
-  grid-template-columns: 4% 60%;
-grid-gap: 4.8%;
+  grid-template-columns: 5.5% 60%;
+grid-gap: 4.5%;
   justify-content: end;
   h3{
     @include fontContent(12px, 15px);
@@ -115,4 +114,18 @@ justify-self: end;
 }
 .headlineFonts4{
   @include fontContent(14px, 24px)
+}
+@media screen and (max-width: 1000px) {
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+  .typeFonts{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1rem;
+
+  }
 }
