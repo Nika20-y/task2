@@ -8,6 +8,7 @@
 }
 body {
   margin: 0;
+  background: #E5E5E5;
 }
 
 .logo__img {
@@ -16,9 +17,9 @@ body {
 }
 
 .wrapper {
-  padding-top: 1.9%;
+  padding-top: 1.8%;
   display: grid;
-  grid-template-columns: 35% 45.4%;
+  grid-template-columns: 35% 53.5%;
   position: relative;
 }
 
@@ -87,7 +88,7 @@ body {
 .typeColors__item {
   display: grid;
   justify-content: center;
-  grid-template-columns: 36% 62%;
+  grid-template-columns: 49% 50%;
   grid-gap: 6.2%;
 }
 
@@ -104,7 +105,7 @@ body {
 }
 .typeColors__description h3 {
   font-weight: 900;
-  margin-top: 4.5%;
+  margin-top: 5.5%;
 }
 .typeColors__description p {
   font-weight: normal;
@@ -116,12 +117,11 @@ body {
   display: grid;
   grid-template-columns: 4% 60%;
   grid-gap: 4.8%;
-  justify-content: center;
+  justify-content: end;
 }
 .typeFonts__item h3 {
   font-family: Montserrat, sans-serif;
   font-style: normal;
-  color: #1F2041;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
@@ -129,7 +129,6 @@ body {
 .typeFonts__item p {
   font-family: Montserrat, sans-serif;
   font-style: normal;
-  color: #1F2041;
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
@@ -138,7 +137,7 @@ body {
 .typeFonts {
   display: grid;
   grid-template-rows: 17.5% 15.7% 10% 10%;
-  justify-content: center;
+  justify-content: end;
 }
 
 h1 {
@@ -157,7 +156,6 @@ h2 {
 
 .typeFonts__headline {
   color: rgba(31, 32, 65, 0.25);
-  margin: 0;
   justify-self: end;
 }
 
@@ -169,7 +167,6 @@ h2 {
 .headlineFonts1 {
   font-family: Montserrat, sans-serif;
   font-style: normal;
-  color: #1F2041;
   font-size: 24px;
   line-height: 29px;
 }
@@ -177,7 +174,6 @@ h2 {
 .headlineFonts2 {
   font-family: Montserrat, sans-serif;
   font-style: normal;
-  color: #1F2041;
   font-size: 19px;
   line-height: 23px;
 }
@@ -185,7 +181,6 @@ h2 {
 .headlineFonts3 {
   font-family: Montserrat, sans-serif;
   font-style: normal;
-  color: #1F2041;
   font-size: 12px;
   line-height: 15px;
 }
@@ -193,7 +188,6 @@ h2 {
 .headlineFonts4 {
   font-family: Montserrat, sans-serif;
   font-style: normal;
-  color: #1F2041;
   font-size: 14px;
   line-height: 24px;
 }
