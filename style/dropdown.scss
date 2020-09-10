@@ -1,0 +1,15 @@
+@import "mixins/mixin";
+.dropdown{
+  position: relative;
+  min-width: 26rem;
+  border: 1px solid rgba(31, 32, 65,.25);
+  border-radius: 4px;
+  color: rgba(31, 32, 65,.25);
+  @include fontContent(14px, 18px);
+}
+.dropdown__list{
+  position: absolute;
+  li{
+    list-style: none;
+  }
+}
