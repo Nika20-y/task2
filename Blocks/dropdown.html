@@ -1,48 +1,92 @@
-<meta charset="UTF-8"/><style>@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat-Regular.ttf);
-}
-@font-face {
-  font-family: Quicksand;
-  src: url(../fonts/Quicksand-Bold.ttf);
-}
-.dropdown {
-  position: relative;
-  min-width: 26rem;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 4px;
-  color: rgba(31, 32, 65, 0.25);
-  font-family: Montserrat, sans-serif;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 18px;
-}
-
-.dropdown__list {
-  position: absolute;
-}
-.dropdown__list li {
-  list-style: none;
-}
-
-/*# sourceMappingURL=dropdown.css.map */
-
-
-
-    document.getElementsByClassName('dropdown').onclick = function() {
-        open('dropdown__list', this);
-        return false;
-    };
-
-function open( ) {
-    let div = document.getElementsByClassName('dropdown__list');
-    if(div.style.display === 'none') {
-        div.style.display = 'block';
-
+<head>
+    <meta charset="UTF-8"/>
+    <style>@font-face {
+        font-family: Montserrat;
+        src: url(../fonts/Montserrat-Regular.ttf);
     }
-else {
-        div.style.display = 'none';
 
+    @font-face {
+        font-family: Quicksand;
+        src: url(../fonts/Quicksand-Bold.ttf);
     }
-}
-</style><a class="dropdown"><div class="dropdown__name">Сколько гостей</div><div class="dropdown__icon"></div></a><ul class="dropdown__list"><li class="dropdown__li"><div class="dropdown__meaning">Взрослые</div><div class="dropdown__input"></div></li><li class="dropdown__li"><div class="dropdown__meaning">Дети</div><div class="dropdown__input"></div></li><li class="dropdown__li"><div class="dropdown__meaning">Младенцы</div><div class="dropdown__input"></div></li><li class="dropdown__li"><div class="dropdown__meaning">Взрослые</div><div class="dropdown__input"></div></li></ul>
+
+    .dropdown {
+        position: relative;
+        min-width: 26rem;
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        border-radius: 4px;
+        color: rgba(31, 32, 65, 0.25);
+        font-family: Montserrat, sans-serif;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .dropdown__list {
+        position: absolute;
+        display: none;
+        border: 1px solid rgba(31, 32, 65, 0.5);
+        box-sizing: border-box;
+        box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
+    }
+
+    .dropdown__list li {
+        list-style: none;
+    }
+
+    .dropdown__meaning {
+        font-family: Montserrat, sans-serif;
+        font-style: normal;
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #1F2041;
+    }
+
+    .dropdown__clear {
+        display: none;
+    }
+
+    /*# sourceMappingURL=dropdown.css.map */
+    </style>
+</head>
+<div class="dropdown">
+    <div class="dropdown__name">Сколько гостей</div>
+    <div class="dropdown__icon"></div>
+</div>
+<ul class="dropdown__list">
+    <li class="dropdown__li">
+        <div class="dropdown__meaning">Взрослые</div>
+        <div class="dropdown__input">
+            <button class="dropdown__minus">-</button>
+            <input class="dropdown__visitors" type="number" value="0" min="0" max="10"/>
+            <button class="dropdown__plus">+</button>
+        </div>
+    </li>
+    <li class="dropdown__li">
+        <div class="dropdown__meaning">Дети</div>
+        <div class="dropdown__input">
+            <button class="dropdown__minus">-</button>
+            <input class="dropdown__visitors" type="number" value="0" min="0" max="10"/>
+            <button class="dropdown__plus">+</button>
+        </div>
+    </li>
+    <li class="dropdown__li">
+        <div class="dropdown__meaning">Младенцы</div>
+        <div class="dropdown__input">
+            <button class="dropdown__minus">-</button>
+            <input class="dropdown__visitors" type="number" value="0" min="0" max="10"/>
+            <button class="dropdown__plus">+</button>
+        </div>
+    </li>
+    <li class="dropdown__li">
+        <div class="dropdown__clear">
+            <button class="btn-clear">очистить</button>
+        </div>
+        <div class="dropdown__submit">
+            <button class="btn-submit">применить</button>
+        </div>
+    </li>
+</ul>
+<script src="dropdown.js"></script>

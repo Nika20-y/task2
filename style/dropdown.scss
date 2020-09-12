@@ -6,10 +6,25 @@
   border-radius: 4px;
   color: rgba(31, 32, 65,.25);
   @include fontContent(14px, 18px);
+
 }
 .dropdown__list{
   position: absolute;
+  display: none;
   li{
     list-style: none;
   }
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
 }
+.dropdown__meaning{
+  @include fontContent(12px, 15px);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+.dropdown__clear{
+  display: none;
+}
+
