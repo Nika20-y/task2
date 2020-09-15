@@ -25,9 +25,12 @@ let plus = []
  }
 
 let counter = [0, 0, 0]
-
+let btnClear = document.getElementsByClassName('dropdown__clear')[0];
+let btnSubmit = document.getElementsByClassName('dropdown__submit')[0]
 let title = document.getElementsByClassName("dropdown__name")[0]
 let allGuests;
+let list = document.getElementsByClassName('dropdown__list')[0]
+
 for(let x=0; x<3; x++) {
     plus[x].onclick = function () {
         if (counter[x] < 10) {
@@ -45,10 +48,20 @@ for(let x=0; x<3; x++) {
          allGuests = counter[0]+counter[1]+counter[2];
         setTitle();
     }
-
 }
-
-
+btnClear.onclick= function () {
+    quantity[0].value= 0;
+    quantity[1].value= 0;
+    quantity[2].value= 0;
+    counter[0]= 0;
+    counter[1]= 0;
+    counter[2]= 0;
+    title.innerHTML = 'Сколько гостей';
+    btnClear.style.visibility = "hidden";
+}
+btnSubmit.onclick= function () {
+    list.style.display= 'none';
+}
 function setTitle() {
     if (allGuests > 0) {
         if (allGuests === 1) {
@@ -58,5 +71,12 @@ function setTitle() {
         } else {
             title.innerHTML = allGuests + ' ' + 'гостей';
         }
+        btnClear.style.visibility = "visible";
+    }
+    else{
+        title.innerHTML = 'Сколько гостей';
+        btnClear.style.visibility = "hidden";
     }
 }
+
+

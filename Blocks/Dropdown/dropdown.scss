@@ -1,4 +1,5 @@
-@import "mixins/mixin";
+@import "../../style/mixins/mixin";
+
 .dropdown{
   position: relative;
   min-width: 26rem;
@@ -6,17 +7,54 @@
   border-radius: 4px;
   color: rgba(31, 32, 65,.25);
   @include fontContent(14px, 18px);
+  cursor: pointer;
+}
+.dropdown__wrapper{
+  padding: .9rem;
+  display: flex;
+  justify-content: space-between;
 
 }
+.material-icons{
+  font-size: 24px;
+  color: rgba(31,32,65,.75)
+}
+
 .dropdown__list{
   position: absolute;
   display: none;
+  width: 100%;
+  margin: 0;
+  padding-bottom: .4rem;
+  padding-top: .2rem;
+  padding-left: 0;
   li{
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: .4rem .6rem .3rem 1.3rem;
   }
   border: 1px solid rgba(31, 32, 65, 0.5);
   box-sizing: border-box;
   box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
+}
+.dropdown__minus, .dropdown__plus{
+  text-decoration: none;
+  background: #fff;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid rgba(31,32,65,.25);
+  border-radius: 2rem;
+  @include fontContent(18px, 22px);
+  color: rgba(31, 32, 65, 0.5);
+}
+.dropdown__visitors{
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  @include fontContent(18px, 22px);
+  font-weight: bold;
+
 }
 .dropdown__meaning{
   @include fontContent(12px, 15px);
@@ -24,7 +62,34 @@
   text-transform: uppercase;
   color: #1F2041;
 }
+
 .dropdown__clear{
-  display: none;
+  visibility: hidden;
+  display: block;
 }
+.dropdown__input{
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+appearance: none;
+    margin: 0;
+  }}
+.dropdown__li-buttons{
+  margin-top: 1.2rem;
+  margin-bottom: .6rem;
+  button{
+    border: none;
+    outline: none;
+    background: 0 0;
+    text-transform: uppercase;
+    @include fontContent(12px, 15px);
+    font-weight: bold;
+  }
+}
+.btn-submit{
+  color: #bc9cff;
+}
+.btn-clear{
+  color:  rgba(31, 32, 65, 0.5);;
+}
+
 

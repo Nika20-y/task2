@@ -1,17 +1,26 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import "mixins/mixin";
- *   |         ^^^^^^^^^^^^^^
- *   '
- *   textfield.scss 1:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"mixins/mixin\";\d\a   \2502          ^^^^^^^^^^^^^^\a   \2575 \a   textfield.scss 1:9  root stylesheet";
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Regular.ttf);
 }
+@font-face {
+  font-family: Quicksand;
+  src: url(../fonts/Quicksand-Bold.ttf);
+}
+input.Text-field {
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  color: rgba(31, 32, 65, 0.25);
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.Text-field:focus, input.Text-field:hover {
+  border: 1px solid rgba(31, 32, 65, 0.75);
+  color: rgba(31, 32, 65, 0.5);
+  border-radius: 4px;
+  outline: none !important;
+}
+
+/*# sourceMappingURL=TextField.css.map */

@@ -1,18 +1,1 @@
-<head><meta charset="UTF-8"/><style>/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import "mixins/mixin";
- *   |         ^^^^^^^^^^^^^^
- *   '
- *   dropdown.scss 1:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"mixins/mixin\";\d\a   \2502          ^^^^^^^^^^^^^^\a   \2575 \a   dropdown.scss 1:9  root stylesheet";
-}
-</style></head><div class="dropdown"><div class="dropdown__name">Сколько гостей</div><div class="dropdown__icon"></div></div><ul class="dropdown__list"><li class="dropdown__li"><div class="dropdown__meaning">Взрослые</div><div class="dropdown__input"><button class="dropdown__minus">-</button><input class="dropdown__visitors" type="number" value="0" min="0" max="10"/><button class="dropdown__plus">+</button></div></li><li class="dropdown__li"><div class="dropdown__meaning">Дети</div><div class="dropdown__input"><button class="dropdown__minus">-</button><input class="dropdown__visitors" type="number" value="0" min="0" max="10"/><button class="dropdown__plus">+</button></div></li><li class="dropdown__li"><div class="dropdown__meaning">Младенцы</div><div class="dropdown__input"><button class="dropdown__minus">-</button><input class="dropdown__visitors" type="number" value="0" min="0" max="10"/><button class="dropdown__plus">+</button></div></li><li class="dropdown__li"><div class="dropdown__clear"><button class="btn-clear">очистить</button></div><div class="dropdown__submit"><button class="btn-submit">применить</button></div></li></ul><script src="dropdown.js"></script>
+<meta charset="UTF-8"/><link href="dropdown.css" rel="stylesheet"/><link href="../../style/fonts/iconfont/material-icons.css" rel="stylesheet"/><div class="dropdown"><div class="dropdown__wrapper"><div class="dropdown__name">Сколько гостей</div><div class="dropdown__icon"><i class="material-icons">expand_more</i></div></div></div><ul class="dropdown__list"><li class="dropdown__li"><div class="dropdown__meaning">Взрослые</div><div class="dropdown__input"><button class="dropdown__minus">-</button><input class="dropdown__visitors" type="number" value="0" min="0" max="10"/><button class="dropdown__plus">+</button></div></li><li class="dropdown__li"><div class="dropdown__meaning">Дети</div><div class="dropdown__input"><button class="dropdown__minus">-</button><input class="dropdown__visitors" type="number" value="0" min="0" max="10"/><button class="dropdown__plus">+</button></div></li><li class="dropdown__li"><div class="dropdown__meaning">Младенцы</div><div class="dropdown__input"><button class="dropdown__minus">-</button><input class="dropdown__visitors" type="number" value="0" min="0" max="10"/><button class="dropdown__plus">+</button></div></li><li class="dropdown__li dropdown__li-buttons"><div class="dropdown__clear"><button class="btn-clear">очистить</button></div><div class="dropdown__submit"><button class="btn-submit">применить</button></div></li></ul><script src="dropdown.js"></script>

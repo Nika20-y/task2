@@ -1,11 +1,13 @@
-head
-    meta(charset="UTF-8")
-    style
-        include  dropdown.css
+meta(charset="UTF-8")
+link(href='dropdown.css' rel='stylesheet')
+link(href='../../style/fonts/iconfont/material-icons.css' rel='stylesheet')
+
 
 .dropdown
-    .dropdown__name Сколько гостей
-    .dropdown__icon
+    .dropdown__wrapper
+        .dropdown__name Сколько гостей
+        .dropdown__icon
+            i.material-icons expand_more
 ul.dropdown__list
     li.dropdown__li
         .dropdown__meaning Взрослые
@@ -25,7 +27,7 @@ ul.dropdown__list
             button.dropdown__minus -
             input(type='number' value='0' min='0' max='10').dropdown__visitors
             button.dropdown__plus +
-    li.dropdown__li
+    li.dropdown__li.dropdown__li-buttons
         .dropdown__clear
             button.btn-clear очистить
         .dropdown__submit
