@@ -1,0 +1,14 @@
+.date{
+  display: flex;
+  position: relative;
+}
+.date__icon{
+  display: flex;
+  transform: translate(-140%);
+}
+.ui-datepicker {
+  font-family: Open Sans, Arial, sans-serif;
+  margin-top: 2px;
+  padding: 0 !important;
+  border-color: #c9f0f5 !important;
+}
