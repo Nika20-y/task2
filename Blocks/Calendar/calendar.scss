@@ -1,3 +1,4 @@
+@import "../../style/mixins/mixin";
 .date{
   display: flex;
   position: relative;
@@ -6,9 +7,25 @@
   display: flex;
   transform: translate(-140%);
 }
-.ui-datepicker {
+input.datepicker-here{
+  border: 1px solid rgba(31, 32, 65,.25);
+  border-radius: 4px;
+  color: rgba(31, 32, 65,.25);
+  @include fontContent(14px, 18px);
+}
+.datepicker-here:focus, .datepicker-here:hover{
+  border: 1px solid rgba(31, 32, 65,.75);
+  color: rgba(31, 32, 65,.5);
+  border-radius: 4px;
+  outline: none !important;
+}
+.datepicker--container {
   font-family: Open Sans, Arial, sans-serif;
   margin-top: 2px;
   padding: 0 !important;
-  border-color: #c9f0f5 !important;
+  .datepicker--nav{
+    border: none;
+    font-size: 19px;
+    font-weight: 700;
+  }
 }
