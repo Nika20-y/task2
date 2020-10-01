@@ -110,6 +110,13 @@ input.datepicker-here {
 .datepicker--cells .-selected-:hover {
   background: #BC9CFF;
 }
+.datepicker--cells .-focus-:hover {
+  background: #BC9CFF;
+}
+.datepicker--cells .-in-range- {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  opacity: 0.25;
+}
 
 .datepicker--buttons {
   flex-direction: row-reverse;
@@ -136,6 +143,29 @@ input.datepicker-here {
 
 .datepicker--buttons > :last-child {
   justify-content: flex-start;
+}
+
+.datepicker--cell.-current-.-in-range-:after,
+.datepicker--cell.-range-from-:after,
+.datepicker--cell.-range-to-:before,
+.datepicker--cell.-selected-.-range-from-:after,
+.datepicker--cell.-selected-.-range-to-:before {
+  background: linear-gradient(180deg, rgba(188, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
+  position: absolute;
+  bottom: 0;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.datepicker--cell.-range-from-:after {
+  border-radius: 50% 0 0 50%;
+}
+
+.datepicker--cell.-range-to-:before {
+  border-radius: 0 50% 50% 0;
 }
 
 /*# sourceMappingURL=calendar.css.map */

@@ -4,4 +4,5 @@ $('.datepicker-here').datepicker({
     selectOtherYears: false,
     showOtherYears: false,
     moveToOtherYearsOnSelect: false,
+    autoClose: true,
 })

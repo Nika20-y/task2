@@ -84,7 +84,15 @@ input.datepicker-here{
   .-selected-:hover{
     background: #BC9CFF;
   }
+  .-focus-:hover{
+    background: #BC9CFF;
+  }
+  .-in-range-, {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    opacity: 0.25;
+  }
 }
+
 .datepicker--buttons{
   flex-direction: row-reverse;
   border-top: none;
@@ -105,4 +113,24 @@ input.datepicker-here{
 }
 .datepicker--buttons>:last-child {
   justify-content: flex-start;
+}
+.datepicker--cell.-current-.-in-range-:after,
+.datepicker--cell.-range-from-:after,
+.datepicker--cell.-range-to-:before,
+.datepicker--cell.-selected-.-range-from-:after,
+.datepicker--cell.-selected-.-range-to-:before {
+  background: linear-gradient(180deg,rgba(188,156,255,.25),rgba(139,164,249,.25));
+  position: absolute;
+  bottom: 0;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.datepicker--cell.-range-from-:after{
+  border-radius: 50% 0 0 50%;
+}
+.datepicker--cell.-range-to-:before{
+  border-radius: 0 50% 50% 0;
 }
