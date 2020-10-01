@@ -97,7 +97,7 @@ body {
 }
 
 .typeColors__description {
-  font-family: Quicksand, sans-serif;
+  font-family: Quicksand, "Open Sans", sans-serif;
   font-style: normal;
   font-size: 100%;
   line-height: 7px;
@@ -141,14 +141,14 @@ body {
 }
 
 h1 {
-  font-family: Quicksand, sans-serif;
+  font-family: Quicksand, "Open Sans", sans-serif;
   font-style: normal;
   font-size: 24px;
   line-height: 30px;
 }
 
 h2 {
-  font-family: Quicksand, sans-serif;
+  font-family: Quicksand, "Open Sans", sans-serif;
   font-style: normal;
   font-size: 19px;
   line-height: 24px;

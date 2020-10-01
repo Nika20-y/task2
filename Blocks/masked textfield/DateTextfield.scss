@@ -1,0 +1,13 @@
+@import "../../style/mixins/mixin";
+input.Text-field{
+  border: 1px solid rgba(31, 32, 65,.25);
+  border-radius: 4px;
+  color: rgba(31, 32, 65,.25);
+  @include fontContent(14px, 18px);
+}
+.Text-field:focus , input.Text-field:hover{
+  border: 1px solid rgba(31, 32, 65,.75);
+  color: rgba(31, 32, 65,.5);
+  border-radius: 4px;
+  outline: none !important;
+}

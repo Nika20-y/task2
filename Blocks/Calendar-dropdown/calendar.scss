@@ -1,0 +1,108 @@
+@import "../../style/mixins/mixin";
+.date{
+  display: flex;
+  position: relative;
+}
+.date__icon{
+  display: flex;
+  transform: translate(-140%);
+  color: rgba(31, 32, 65,.5);
+}
+input.datepicker-here{
+  border: 1px solid rgba(31, 32, 65,.25);
+  border-radius: 4px;
+  color: rgba(31, 32, 65,.25);
+  @include fontContent(14px, 18px);
+}
+
+.datepicker-here:focus, .datepicker-here:hover{
+  border: 1px solid rgba(31, 32, 65,.75);
+  color: rgba(31, 32, 65,.5);
+  border-radius: 4px;
+  outline: none !important;
+}
+.datepicker--container {
+  font-family: Open Sans, Arial, sans-serif;
+  margin-top: 2px;
+  padding: 0 !important;
+  .datepicker--nav{
+    border: none;
+    font-size: 19px;
+    font-weight: 700;
+  }
+}
+.datepicker--nav{
+  border-bottom: none;
+  padding: 1.5rem;
+  justify-content: space-between;
+  .datepicker--nav-action{
+    color: #BC9CFF;
+  }
+}
+
+.datepicker--nav-title{
+  @include fontHeadline(19px, 24px);
+  font-weight: bold;
+  color: #1F2041;
+  i{
+    color: #1F2041;
+  }
+}
+.datepicker--content{
+  padding: 1.5rem 1.9rem .8rem 2rem;
+}
+.datepicker--day-name{
+  @include fontContent(12px, 15px);
+  font-weight: bold;
+  color: #BC9CFF;
+}
+.datepicker--cells{
+  @include fontContent(12px, 15px);
+  font-weight: normal;
+  .datepicker--cell-day{
+    color: rgba(31, 32, 65, 0.5);
+  }
+  .datepicker--cell-day:hover{
+    border-radius: 22px;
+  }
+  .-other-month-{
+    color: rgba(31, 32, 65, 0.25);
+
+  }
+  .-current-{
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    border-radius: 22px;
+  }
+  .-selected-{
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+  }
+  .-selected-:hover{
+    background: #BC9CFF;
+  }
+}
+.datepicker--buttons{
+  flex-direction: row-reverse;
+  border-top: none;
+  @include fontContent(12px, 15px);
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: .4rem 1.9rem 1.1rem 1.8rem;
+  justify-content: space-between;
+  .datepicker--button{
+    color: #BC9CFF;
+  }
+  .datepicker--button:hover{
+    background: none;
+  }
+}
+.datepicker--buttons>:first-child {
+  justify-content: flex-end;
+}
+.datepicker--buttons>:last-child {
+  justify-content: flex-start;
+}

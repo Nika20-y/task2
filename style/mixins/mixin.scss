@@ -7,7 +7,7 @@
   src: url(../fonts/Quicksand-Bold.ttf) ;
 }
 @mixin fontHeadline($fontSize,$lineHeight){
-    font-family: Quicksand, sans-serif;
+    font-family: Quicksand, "Open Sans", sans-serif;
     font-style: normal;
     font-size: $fontSize;
     line-height: $lineHeight;
