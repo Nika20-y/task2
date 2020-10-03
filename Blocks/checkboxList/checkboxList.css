@@ -1,0 +1,97 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Quicksand;
+  src: url(../fonts/Quicksand-Bold.ttf);
+}
+.checkboxList {
+  min-width: 24rem;
+}
+
+.checkboxList__wrapper {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.checkboxList__dropdown {
+  display: none;
+}
+
+.checkboxList__buttons {
+  display: grid;
+}
+
+.checkboxList__name {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.checkboxList__adds {
+  display: block;
+  position: relative;
+  padding-top: 0.1rem;
+  padding-left: 2rem;
+  padding-bottom: 0.1rem;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgba(31, 32, 65, 0.5);
+  margin-bottom: 1.1rem;
+}
+
+.checkboxList__custom {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+.checkboxList__checkbox:before {
+  content: "";
+  width: 4px;
+  height: 6px;
+  position: absolute;
+  left: 5px;
+  top: 3px;
+  transition: background 0.3s ease;
+  border: solid #8BA4F9;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  display: none;
+}
+
+.checkboxList__custom:checked ~ .checkboxList__checkbox:before {
+  display: block;
+}
+
+.checkboxList__checkbox {
+  display: block;
+  position: absolute;
+  top: 0.046rem;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.checkboxList__checkbox:hover {
+  border: 1px solid #BC9CFF;
+}
+
+/*# sourceMappingURL=checkboxList.css.map */

@@ -1,0 +1,74 @@
+@import "../../style/mixins/mixin";
+.checkboxList{
+  min-width: 24rem;
+}
+.checkboxList__wrapper{
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.checkboxList__dropdown{
+  display: none;
+}
+.checkboxList__buttons{
+  display: grid;
+}
+.checkboxList__name{
+  @include fontContent(12px, 15px);
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.checkboxList__adds{
+  display: block;
+  position: relative;
+  padding-top: .1rem;
+  padding-left: 2rem;
+  padding-bottom: .1rem;
+  @include fontContent(14px, 18px);
+  font-weight: 400;
+  color: rgba(31,32,65,.5);
+  margin-bottom: 1.1rem;
+}
+
+.checkboxList__custom{
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  width: 0;
+  height: 0;
+}
+.checkboxList__checkbox:before {
+  content: "";
+  width: 4px;
+  height: 6px;
+position: absolute;
+  left: 5px;
+  top: 3px;
+  transition: background 0.3s ease;
+  border: solid #8BA4F9;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+ display: none;
+}
+.checkboxList__custom:checked ~.checkboxList__checkbox:before {
+display: block;
+
+}
+.checkboxList__checkbox{
+  display: block;
+  position: absolute;
+  top: .046rem;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 1px solid rgba(31,32,65,.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.checkboxList__checkbox:hover {
+  border: 1px solid #BC9CFF;
+}
