@@ -6,7 +6,21 @@
   font-family: Quicksand;
   src: url(../fonts/Quicksand-Bold.ttf);
 }
-input.maskedTextfield {
+.subTextfield {
+  display: flex;
+  position: relative;
+}
+
+.subTextfield__icon {
+  display: flex;
+  transform: translate(-140%);
+  color: #bc9cff;
+  font-size: 24px;
+  align-items: center;
+  cursor: pointer;
+}
+
+input.subTextfield__input {
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
   color: rgba(31, 32, 65, 0.25);
@@ -17,11 +31,11 @@ input.maskedTextfield {
   padding: 1.1rem 1.4rem 1.3rem;
 }
 
-.maskedTextfield:focus, input.maskedTextfield:hover {
+.subTextfield__input:focus, input.subTextfield__input:hover {
   border: 1px solid rgba(31, 32, 65, 0.75);
   color: rgba(31, 32, 65, 0.5);
   border-radius: 4px;
   outline: none !important;
 }
 
-/*# sourceMappingURL=DateTextfield.css.map */
+/*# sourceMappingURL=subTextfield.css.map */

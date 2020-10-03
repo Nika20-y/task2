@@ -1,3 +1,3 @@
 $('.datepicker-here').datepicker({
-    dateFormat: "dd M"
+    dateFormat: "dd M",
 })

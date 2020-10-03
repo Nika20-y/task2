@@ -1,12 +1,25 @@
 @import "../../style/mixins/mixin";
-input.Text-field{
+.subTextfield{
+  display: flex;
+  position: relative;
+}
+.subTextfield__icon{
+  display: flex;
+  transform: translate(-140%);
+  color:  #bc9cff;
+ font-size: 24px;
+    align-items: center;
+  cursor: pointer;
+}
+
+input.subTextfield__input{
   border: 1px solid rgba(31, 32, 65,.25);
   border-radius: 4px;
   color: rgba(31, 32, 65,.25);
   @include fontContent(14px, 18px);
   padding: 1.1rem 1.4rem 1.3rem;
 }
-.Text-field:focus , input.Text-field:hover{
+.subTextfield__input:focus , input.subTextfield__input:hover{
   border: 1px solid rgba(31, 32, 65,.75);
   color: rgba(31, 32, 65,.5);
   border-radius: 4px;
