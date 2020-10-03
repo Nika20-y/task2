@@ -1,0 +1,33 @@
+meta(charset="UTF-8")
+link(href='drpdownFacil.css' rel='stylesheet')
+link(href='../../style/fonts/iconfont/material-icons.css' rel='stylesheet')
+
+
+.dropdownFacilities
+    .dropdownFacilities__wrapper
+        .dropdownFacilities__name Удобства
+        .dropdownFacilities__icon
+            i.material-icons expand_more
+ul.dropdownFacilities__list
+    li.dropdownFacilities__li
+        .dropdownFacilities__meaning Спальни
+        .dropdownFacilities__input
+            button.dropdownFacilities__minus -
+            input(type='number' value='0').dropdownFacilities__quantity
+            button.dropdownFacilities__plus +
+    li.dropdownFacilities__li
+        .dropdownFacilities__meaning Кровати
+        .dropdownFacilities__input
+            button.dropdownFacilities__minus -
+            input(type='number' value='0' ).dropdownFacilities__quantity
+            button.dropdownFacilities__plus +
+    li.dropdownFacilities__li
+        .dropdownFacilities__meaning Ванные комнаты
+        .dropdownFacilities__input
+            button.dropdownFacilities__minus -
+            input(type='number' value='0' ).dropdownFacilities__quantity
+            button.dropdownFacilities__plus +
+
+
+
+script( src="drpdownFacil.js")

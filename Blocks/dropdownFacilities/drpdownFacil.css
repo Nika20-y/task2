@@ -6,7 +6,7 @@
   font-family: Quicksand;
   src: url(../fonts/Quicksand-Bold.ttf);
 }
-.dropdown {
+.dropdownFacilities {
   position: relative;
   min-width: 26rem;
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -19,7 +19,7 @@
   cursor: pointer;
 }
 
-.dropdown__wrapper {
+.dropdownFacilities__wrapper {
   padding: 0.9rem;
   display: flex;
   justify-content: space-between;
@@ -30,7 +30,7 @@
   color: rgba(31, 32, 65, 0.75);
 }
 
-.dropdown__list {
+.dropdownFacilities__list {
   display: none;
   width: 100%;
   margin: 0;
@@ -41,14 +41,14 @@
   box-sizing: border-box;
   box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
 }
-.dropdown__list li {
+.dropdownFacilities__list li {
   list-style: none;
   display: flex;
   justify-content: space-between;
   padding: 0.4rem 0.6rem 0.3rem 1.3rem;
 }
 
-.dropdown__minus, .dropdown__plus {
+.dropdownFacilities__minus, .dropdownFacilities__plus {
   text-decoration: none;
   background: #fff;
   width: 3rem;
@@ -63,7 +63,7 @@
   outline: 0 !important;
 }
 
-.dropdown__visitors {
+.dropdownFacilities__quantity {
   text-align: center;
   text-decoration: none;
   border: none;
@@ -73,9 +73,16 @@
   line-height: 22px;
   font-weight: bold;
   outline: 0 !important;
+  width: 3.2rem;
+  margin-bottom: 0.25rem;
 }
 
-.dropdown__meaning {
+.dropdownFacilities__minus::-moz-focus-inner, .dropdownFacilities__plus::-moz-focus-inner,
+.dropdownFacilities__quantity::-moz-focus-inner {
+  outline: 0 !important;
+}
+
+.dropdownFacilities__meaning {
   font-family: Montserrat, sans-serif;
   font-style: normal;
   font-size: 12px;
@@ -85,39 +92,10 @@
   color: #1F2041;
 }
 
-.dropdown__clear {
-  visibility: hidden;
-  display: block;
-}
-
-.dropdown__input input::-webkit-outer-spin-button,
-.dropdown__input input::-webkit-inner-spin-button {
+.dropdownFacilities__input input::-webkit-outer-spin-button,
+.dropdownFacilities__input input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
 }
 
-.dropdown__li-buttons {
-  margin-top: 1.2rem;
-  margin-bottom: 0.6rem;
-}
-.dropdown__li-buttons button {
-  border: none;
-  outline: none;
-  background: 0 0;
-  text-transform: uppercase;
-  font-family: Montserrat, sans-serif;
-  font-style: normal;
-  font-size: 12px;
-  line-height: 15px;
-  font-weight: bold;
-}
-
-.btn-submit {
-  color: #bc9cff;
-}
-
-.btn-clear {
-  color: rgba(31, 32, 65, 0.5);
-}
-
-/*# sourceMappingURL=dropdown.css.map */
+/*# sourceMappingURL=drpdownFacil.css.map */
