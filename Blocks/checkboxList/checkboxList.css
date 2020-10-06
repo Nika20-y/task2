@@ -58,16 +58,18 @@
   height: 0;
 }
 
-.checkboxList__checkbox:before {
+.checkboxList__checkbox::before {
   content: "";
-  width: 4px;
-  height: 6px;
+  width: 3px;
+  height: 5px;
   position: absolute;
-  left: 5px;
-  top: 3px;
+  left: 7px;
+  top: 5px;
   transition: background 0.3s ease;
-  border: solid #8BA4F9;
-  border-width: 0 3px 3px 0;
+  border: solid transparent;
+  border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-image-slice: 1;
+  border-width: 0 2px 2px 0;
   transform: rotate(45deg);
   display: none;
 }
@@ -91,7 +93,7 @@
 }
 
 .checkboxList__checkbox:hover {
-  border: 1px solid #BC9CFF;
+  border-color: #BC9CFF;
 }
 
 /*# sourceMappingURL=checkboxList.css.map */
