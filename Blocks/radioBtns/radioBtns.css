@@ -1,0 +1,84 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Quicksand;
+  src: url(../fonts/Quicksand-Bold.ttf);
+}
+.radioBtns {
+  min-width: 24rem;
+}
+
+.radioBtns__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.radioBtns__name {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.radioBtns__adds {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 2rem;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.radioBtns__custom {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin-right: 1rem;
+}
+
+.radioBtns__radio::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  top: 49%;
+  left: 10.2%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.radioBtns__custom:checked ~ .radioBtns__radio:before {
+  display: block;
+}
+
+.radioBtns__radio {
+  display: block;
+  top: 0.046rem;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.radioBtns__radio:hover {
+  border-color: #BC9CFF;
+}
+
+/*# sourceMappingURL=radioBtns.css.map */
