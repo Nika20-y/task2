@@ -48,6 +48,18 @@
   margin-right: 1rem;
 }
 
+.radioBtns__radio {
+  display: block;
+  top: 0.046rem;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
 .radioBtns__radio::before {
   content: "";
   position: absolute;
@@ -65,16 +77,9 @@
   display: block;
 }
 
-.radioBtns__radio {
-  display: block;
-  top: 0.046rem;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 50%;
-  cursor: pointer;
-  margin-right: 1rem;
+.radioBtns__adds input:checked + .radioBtns__radio {
+  border-color: #BC9CFF;
+  background: #fff;
 }
 
 .radioBtns__radio:hover {

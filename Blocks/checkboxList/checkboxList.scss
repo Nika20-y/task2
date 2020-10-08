@@ -41,8 +41,8 @@
 }
 .checkboxList__checkbox::before {
   content: "";
-  width: 3px;
-  height: 5px;
+  width: 4px;
+  height: 6px;
 position: absolute;
   left: 7px;
   top: 5px;
@@ -56,6 +56,9 @@ position: absolute;
 }
 .checkboxList__custom:checked ~.checkboxList__checkbox:before {
 display: block;
+}
+.checkboxList__adds input:checked +.checkboxList__checkbox{
+  border-color: #BC9CFF;
 }
 .checkboxList__checkbox{
   display: block;
