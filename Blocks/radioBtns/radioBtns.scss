@@ -61,6 +61,7 @@ display: block;
 .radioBtns__adds input:checked+.radioBtns__radio{
   border-color: #BC9CFF;
   background: #fff;
+  color: rgba(31,32,65,.75);
 }
 
 .radioBtns__radio:hover{

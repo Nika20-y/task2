@@ -1,3 +1,68 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Quicksand;
+  src: url(../fonts/Quicksand-Bold.ttf);
+}
+.toggle__adds {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: rgba(31, 32, 65, 0.75);
+}
 
+.toggle__custom {
+  position: absolute;
+  opacity: 0;
+  cursor: inherit;
+  width: 0;
+  height: 0;
+}
+
+.toggle__description {
+  margin-left: 48px;
+}
+
+.toggle__adds .toggle__item:before {
+  left: 0;
+  margin-top: -10px;
+  height: 20px;
+  width: 40px;
+  border-radius: 10px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+}
+
+.toggle__item:after {
+  height: 12px;
+  width: 12px;
+  margin-top: -6px;
+  background: rgba(31, 32, 65, 0.25);
+  border-radius: 10px;
+  left: 5px;
+}
+
+.toggle__adds .toggle__item:before,
+.toggle__item:after {
+  content: "";
+  position: absolute;
+  top: 55%;
+}
+
+.toggle__adds input:checked + .toggle__item:after {
+  background: linear-gradient(180deg, #bc9cff, #8ba4f9);
+  left: 24px;
+}
+
+.toggle__adds input:checked + .toggle__item:before {
+  border: 1px solid #bc9cff;
+}
 
 /*# sourceMappingURL=toggle.css.map */
