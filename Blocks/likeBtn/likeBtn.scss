@@ -1,0 +1,31 @@
+@import "../../style/mixins/mixin";
+.likeBtn{
+  left: 0;
+  height: 20px;
+  width: 40px;
+  border-radius: 10px;
+  border: 1px solid rgba(31,32,65,.25);
+  box-sizing: border-box;
+  color: rgba(31, 32, 65, 0.25);
+  display: flex;
+  align-items: center;
+padding: 4px;
+  background: #ffffff;
+  .material-icons{
+    font-size: 10px;
+    line-height: 9px;
+  }
+  .likeBtn__quantity{
+    @include fontContent(10px, 12px);
+    margin-left: 25%;
+  }
+}
+.selected{
+  z-index: -1;
+  border-radius: 10px;
+  border: 1px solid;
+  color: #BC9CFF;
+  //background-image: linear-gradient(white, white), radial-gradient(circle at top left, #BC9CFF , #8BA4F9 );
+  //background-origin: border-box;
+  //background-clip: content-box, border-box;
+}

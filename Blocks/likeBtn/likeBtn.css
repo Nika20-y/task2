@@ -1,0 +1,41 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Quicksand;
+  src: url(../fonts/Quicksand-Bold.ttf);
+}
+.likeBtn {
+  left: 0;
+  height: 20px;
+  width: 40px;
+  border-radius: 10px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  color: rgba(31, 32, 65, 0.25);
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  background: #ffffff;
+}
+.likeBtn .material-icons {
+  font-size: 10px;
+  line-height: 9px;
+}
+.likeBtn .likeBtn__quantity {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-size: 10px;
+  line-height: 12px;
+  margin-left: 25%;
+}
+
+.selected {
+  z-index: -1;
+  border-radius: 10px;
+  border: 1px solid;
+  color: #BC9CFF;
+}
+
+/*# sourceMappingURL=likeBtn.css.map */
