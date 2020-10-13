@@ -1,0 +1,53 @@
+@import "../../style/mixins/mixin";
+.rangeSlider{
+  position: relative;
+  max-width: 26.6rem;
+}
+.rangeSlider__header{
+  display: flex;
+  justify-content: space-between;
+  color: rgba(31,32,65,.5);
+  @include fontContent(12px,15px);
+  .rangeSlider__label{
+font-weight: bold;
+    text-transform: uppercase;
+    color: #1F2041;
+  }
+}
+.rangeSlider__input {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 0 2.3rem 0;
+  font-weight: 400;
+
+}
+.rangeSlider__item {
+  position: relative;
+  width:26.6rem;
+  height:.6rem;
+  border-radius: 3px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+}
+
+.rangeSlider__button1, .rangeSlider__button2 {
+  position: absolute;
+  top: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  cursor: pointer;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border: 2px solid #FFFFFF;
+  z-index: 2;
+
+}
+.rangeSlider__beetwen
+{
+  position: absolute;
+  height: .6rem;
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border-radius: 3px;
+}
