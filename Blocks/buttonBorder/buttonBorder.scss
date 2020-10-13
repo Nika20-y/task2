@@ -1,0 +1,29 @@
+@import "../../style/mixins/mixin";
+.button__wrapper{
+  height: 4.4rem;
+  position: relative;
+  background-image: linear-gradient(180deg,#bc9cff,#8ba4f9);
+  padding: 2px;
+  border-radius: 2.2rem;
+  border: none;
+  outline: 0 !important;
+  z-index: -1;
+}
+.buttonBorder {
+  border-radius: 2.2rem;
+  background: #fff;
+  padding: 0 2.2rem 0 1.9rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  color: #BC9CFF;
+  @include fontContent(12px, 15px);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.button__wrapper:disabled{
+  background-image: linear-gradient(180deg,rgba(188,156,255,.5),rgba(139,164,249,.5));
+}
+
