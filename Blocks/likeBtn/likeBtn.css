@@ -8,38 +8,42 @@
 }
 .likeBtn {
   left: 0;
-  height: 20px;
-  width: 40px;
-  border-radius: 10px;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  padding: 1px;
+  background: rgba(31, 32, 65, 0.25);
+}
+
+.likeBtn__wrapper {
+  left: 0;
+  height: 2rem;
+  width: 4rem;
+  border-radius: 1rem;
+  z-index: 1;
   box-sizing: border-box;
   color: rgba(31, 32, 65, 0.25);
   display: flex;
   align-items: center;
-  padding: 4px;
+  padding: 0.4rem;
   background: #ffffff;
   cursor: pointer;
 }
-.likeBtn .material-icons {
-  font-size: 10px;
-  line-height: 9px;
+.likeBtn__wrapper .material-icons {
+  font-size: 1rem;
+  line-height: 0.9rem;
 }
-.likeBtn .likeBtn__quantity {
+.likeBtn__wrapper .likeBtn__quantity {
   font-family: Montserrat, sans-serif;
   font-style: normal;
-  font-size: 10px;
-  line-height: 12px;
+  font-size: 1rem;
+  line-height: 1.2rem;
   margin-left: 25%;
 }
 
 .selected {
-  border-radius: 10px;
-  border: 1px solid transparent;
+  border-radius: 1rem;
   color: #BC9CFF;
-  background-size: 1px;
-  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #BC9CFF, #8BA4F9);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
 }
 
 /*# sourceMappingURL=likeBtn.css.map */
