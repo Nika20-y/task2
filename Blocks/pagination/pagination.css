@@ -1,0 +1,59 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Quicksand;
+  src: url(../fonts/Quicksand-Bold.ttf);
+}
+.pagination {
+  margin-top: 1.7rem;
+}
+
+.pagination__items {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 400;
+}
+.pagination__items .pagination__number {
+  flex-grow: 1;
+  flex-basis: 0;
+  text-decoration: none;
+  color: rgba(31, 32, 65, 0.5);
+  position: relative;
+  padding: 6.5px 8px;
+}
+
+.pagination__number-active {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  color: #FFFFFF;
+  padding: 12.5px 17.7px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.pagination__next {
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border-radius: 22px;
+  font-size: 24px;
+  color: #FFFFFF;
+  padding: 8px;
+}
+
+.pagination__text {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  margin-top: 1rem;
+}
+
+/*# sourceMappingURL=pagination.css.map */
