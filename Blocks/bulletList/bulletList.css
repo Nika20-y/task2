@@ -1,0 +1,47 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Quicksand;
+  src: url(../fonts/Quicksand-Bold.ttf);
+}
+.bulletList__title {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+
+.bulletList__rules {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  list-style: none;
+  padding-left: 0;
+}
+
+.bulletList__text {
+  padding-left: 20px;
+}
+
+.bulletList__li {
+  position: relative;
+}
+
+.bulletList__li:before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  background: rgba(31, 32, 65, 0.25);
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=bulletList.css.map */

@@ -1,0 +1,29 @@
+@import "../../style/mixins/mixin";
+.bulletList__title{
+  @include fontContent(12px, 15px);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+.bulletList__rules{
+  @include fontContent(14px, 24px);
+  color: rgba(31, 32, 65, 0.75);
+  list-style: none;
+  padding-left: 0;
+}
+.bulletList__text{
+  padding-left: 20px;
+}
+.bulletList__li{
+  position: relative;
+}
+.bulletList__li:before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  background: rgba(31, 32, 65, .25);
+  border-radius: 50%;
+
+}
