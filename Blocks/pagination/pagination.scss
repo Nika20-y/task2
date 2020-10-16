@@ -6,36 +6,34 @@
 display: flex;
   align-items: center;
   text-align: center;
-  justify-content: space-around;
-  @include fontContent(12px, 15px);
+  justify-content: space-between;
+  @include fontContent(1.2rem, 1.5rem);
   font-weight: 400;
 
   .pagination__number{
-    flex-grow: 1;
-    flex-basis: 0;
     text-decoration: none;
     color: rgba(31, 32, 65, 0.5);
     position: relative;
-    padding: 6.5px 8px;
+    padding: .65rem .8rem;
   }
 }
 .pagination__number-active{
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  border-radius: 22px;
+  border-radius: 2.2rem;
   color: #FFFFFF;
-  padding: 12.5px 17.7px;
+  padding: 1.25rem 1.77rem;
   text-decoration: none;
   font-weight: bold;
 }
 .pagination__next{
   background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
-  border-radius: 22px;
-  font-size: 24px;
+  border-radius: 2.2rem;
+  font-size: 2.4rem;
   color: #FFFFFF;
-  padding: 8px;
+  padding: .8rem;
 }
 .pagination__text{
-  @include fontContent(14px, 24px);
+  @include fontContent(1.4rem, 2.4rem);
   color: rgba(31, 32, 65, 0.75);
   margin-top: 1rem;
 }

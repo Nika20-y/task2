@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../style/mixins/mixin.scss","iconLink.scss"],"names":[],"mappings":"AAAA;EACE;EACA;;AAEF;EACE;EACA;;ACLF;EDcE;EACA;EACA,WCfqB;EDgBrB,aChB2B;EAC3B;EACA;EACA;;;AAEF;EACE","file":"iconLink.css"}
+{"version":3,"sourceRoot":"","sources":["../../style/mixins/mixin.scss","iconLink.scss"],"names":[],"mappings":"AAAA;EACE;EACA;;AAEF;EACE;EACA;;ACLF;EDcE;EACA;EACA,WCfqB;EDgBrB,aChB6B;EAC7B;EACA;EACA;;;AAEF;EACE","file":"iconLink.css"}

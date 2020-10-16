@@ -69,8 +69,8 @@
   border: none;
   font-family: Montserrat, sans-serif;
   font-style: normal;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
   font-weight: bold;
   outline: 0 !important;
 }
@@ -78,8 +78,8 @@
 .dropdown__meaning {
   font-family: Montserrat, sans-serif;
   font-style: normal;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
   color: #1F2041;
@@ -107,8 +107,8 @@
   text-transform: uppercase;
   font-family: Montserrat, sans-serif;
   font-style: normal;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
   font-weight: bold;
 }
 

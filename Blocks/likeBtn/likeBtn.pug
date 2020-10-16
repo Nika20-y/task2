@@ -1,8 +1,9 @@
 meta(charset="UTF-8")
 link(href='likeBtn.css' rel='stylesheet')
 link(href='../../style/fonts/iconfont/material-icons.css' rel='stylesheet')
-button.likeBtn
-    .likeBtn__wrapper
-        i(class='material-icons likeBtn__icon') favorite_border
-        .likeBtn__quantity 2
+mixin likeBtn(quantity)
+    button.likeBtn
+        .likeBtn__wrapper
+            i(class='material-icons likeBtn__icon') favorite_border
+            .likeBtn__quantity= quantity
 script(src='likeBtn.js')

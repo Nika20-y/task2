@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   color: rgba(31,32,65,.5);
-  @include fontContent(12px,15px);
+  @include fontContent(1.2rem,1.5rem);
   .rangeSlider__label{
 font-weight: bold;
     text-transform: uppercase;
@@ -25,9 +25,9 @@ font-weight: bold;
   position: relative;
   width:26.6rem;
   height:.6rem;
-  border-radius: 3px;
+  border-radius: .3rem;
   background: #FFFFFF;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  border: .1rem solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
 }
 
@@ -40,7 +40,7 @@ font-weight: bold;
   transform: translateY(-50%);
   border-radius: 50%;
   background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
-  border: 2px solid #FFFFFF;
+  border: .2rem solid #FFFFFF;
   z-index: 2;
 
 }
@@ -49,5 +49,5 @@ font-weight: bold;
   position: absolute;
   height: .6rem;
   background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
-  border-radius: 3px;
+  border-radius: .3rem;
 }

@@ -14,7 +14,7 @@
   display: grid;
 }
 .checkboxList__name{
-  @include fontContent(12px, 15px);
+  @include fontContent(1.2rem, 1.5rem);
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 1rem;
@@ -25,7 +25,7 @@
   padding-top: .1rem;
   padding-left: 2rem;
   padding-bottom: .1rem;
-  @include fontContent(14px, 18px);
+  @include fontContent(1.4rem, 1.8rem);
   font-weight: 400;
   color: rgba(31,32,65,.5);
   margin-bottom: 1.1rem;
@@ -41,16 +41,16 @@
 }
 .checkboxList__checkbox::before {
   content: "";
-  width: 4px;
-  height: 6px;
+  width: .4rem;
+  height: .6rem;
 position: absolute;
-  left: 7px;
-  top: 5px;
+  left: .7rem;
+  top: .5rem;
   transition: background 0.3s ease;
   border: solid transparent;
   border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   border-image-slice: 1;
-  border-width: 0 2px 2px 0;
+  border-width: 0 .2rem .2rem 0;
   transform: rotate(45deg);
  display: none;
 }
@@ -65,12 +65,12 @@ display: block;
   position: absolute;
   top: .046rem;
   left: 0;
-  height: 20px;
-  width: 20px;
+  height: 2rem;
+  width: 2rem;
   background-color: #fff;
-  border: 1px solid rgba(31,32,65,.25);
+  border: .1rem solid rgba(31,32,65,.25);
   box-sizing: border-box;
-  border-radius: 4px;
+  border-radius: .4rem;
   cursor: pointer;
 }
 .checkboxList__checkbox:hover{

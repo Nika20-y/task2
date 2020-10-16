@@ -52,12 +52,12 @@
   text-align: center;
   text-decoration: none;
   border: none;
-  @include fontContent(18px, 22px);
+  @include fontContent(1.8rem, 2.2rem);
   font-weight: bold;
   outline: 0 !important;
 }
 .dropdown__meaning{
-  @include fontContent(12px, 15px);
+  @include fontContent(1.2rem, 1.5rem);
   font-weight: bold;
   text-transform: uppercase;
   color: #1F2041;
@@ -81,7 +81,7 @@ appearance: none;
     outline: none;
     background: 0 0;
     text-transform: uppercase;
-    @include fontContent(12px, 15px);
+    @include fontContent(1.2rem, 1.5rem);
     font-weight: bold;
   }
 }

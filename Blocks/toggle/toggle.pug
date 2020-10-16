@@ -1,7 +1,8 @@
 meta(charset="UTF-8")
 link(href='toggle.css' rel='stylesheet')
-.toggle
-    label.toggle__adds
-        input(type="checkbox" name="adds" class="toggle__custom")
-        span.toggle__item
-        span.toggle__description Получать спецпредложения
+mixin toggle(text)
+    .toggle
+        label.toggle__adds
+            input(type="checkbox" name="adds" class="toggle__custom")
+            span.toggle__item
+            span.toggle__description= text

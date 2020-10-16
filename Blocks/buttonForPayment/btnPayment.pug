@@ -1,7 +1,8 @@
 meta(charset="UTF-8")
 link(href='btnPayment.css' rel='stylesheet')
 link(href='../../style/fonts/iconfont/material-icons.css' rel='stylesheet')
-button.btnPayment
-    .btnPayment__text перейти к оплате
-    .btnPayment__icon
-        i.material-icons arrow_forward
+mixin btnPayment(title)
+    button.btnPayment
+        .btnPayment__text= title
+        .btnPayment__icon
+            i.material-icons arrow_forward

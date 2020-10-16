@@ -7,20 +7,22 @@
   src: url(../fonts/Quicksand-Bold.ttf);
 }
 input.Text-field {
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 4px;
+  height: 4.4rem;
+  width: 32rem;
+  border: 0.1rem solid rgba(31, 32, 65, 0.25);
+  border-radius: 0.4rem;
   color: rgba(31, 32, 65, 0.25);
   font-family: Montserrat, sans-serif;
   font-style: normal;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
   padding: 1.1rem 1.4rem 1.3rem;
 }
 
 .Text-field:focus, input.Text-field:hover {
-  border: 1px solid rgba(31, 32, 65, 0.75);
+  border: 0.1rem solid rgba(31, 32, 65, 0.75);
   color: rgba(31, 32, 65, 0.5);
-  border-radius: 4px;
+  border-radius: 0.4rem;
   outline: none !important;
 }
 

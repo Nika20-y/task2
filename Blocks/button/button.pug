@@ -1,4 +1,5 @@
 meta(charset="UTF-8")
 link(href='button.css' rel='stylesheet')
-button.button
-    .button__text click me
+mixin button(title)
+    button.button
+        .button__text= title

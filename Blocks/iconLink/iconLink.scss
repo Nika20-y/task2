@@ -1,6 +1,6 @@
 @import "../../style/mixins/mixin";
 .iconLink{
-  @include fontContent(12px, 15px);
+  @include fontContent(1.2rem, 1.5rem);
   text-transform: uppercase;
   color: rgba(31, 32, 65, 0.5);
   font-weight: bold;

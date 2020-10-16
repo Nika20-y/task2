@@ -1,13 +1,10 @@
 meta(charset="UTF-8")
 link(href='radioBtns.css' rel='stylesheet')
-.radioBtns
-    .radioBtns__name radio buttons
-    .radioBtns__buttons
-        label.radioBtns__adds
-            input(type="radio" name="adds" class="radioBtns__custom")
-            span.radioBtns__radio
-            span.radioBtns__description Мужчина
-        label.radioBtns__adds
-            input(type="radio" name="adds" class="radioBtns__custom")
-            span.radioBtns__radio
-            span.radioBtns__description Женщина
+mixin radioBtns(description)
+    .radioBtns
+        .radioBtns__name radio buttons
+        .radioBtns__buttons
+            label.radioBtns__adds
+                input(type="radio" name="adds" class="radioBtns__custom")
+                span.radioBtns__radio
+                span.radioBtns__description= description
