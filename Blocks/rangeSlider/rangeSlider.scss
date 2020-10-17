@@ -1,4 +1,6 @@
 @import "../../style/mixins/mixin";
+@import "../../style/variables";
+
 .rangeSlider{
   position: relative;
   max-width: 26.6rem;
@@ -6,19 +8,19 @@
 .rangeSlider__header{
   display: flex;
   justify-content: space-between;
-  color: rgba(31,32,65,.5);
+  color: $half-dark;
   @include fontContent(1.2rem,1.5rem);
   .rangeSlider__label{
-font-weight: bold;
+font-weight: $bold-weight;
     text-transform: uppercase;
-    color: #1F2041;
+    color: $dark-black;
   }
 }
 .rangeSlider__input {
   display: flex;
   justify-content: flex-end;
   margin: 0 0 2.3rem 0;
-  font-weight: 400;
+  font-weight: $light-weight;
 
 }
 .rangeSlider__item {
@@ -26,8 +28,8 @@ font-weight: bold;
   width:26.6rem;
   height:.6rem;
   border-radius: .3rem;
-  background: #FFFFFF;
-  border: .1rem solid rgba(31, 32, 65, 0.25);
+  background: $white;
+  border: .1rem solid $light-dark;
   box-sizing: border-box;
 }
 
@@ -39,8 +41,8 @@ font-weight: bold;
   cursor: pointer;
   transform: translateY(-50%);
   border-radius: 50%;
-  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
-  border: .2rem solid #FFFFFF;
+  background: $gradient-green;
+  border: .2rem solid $white;
   z-index: 2;
 
 }
@@ -48,6 +50,6 @@ font-weight: bold;
 {
   position: absolute;
   height: .6rem;
-  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  background: $gradient-green;
   border-radius: .3rem;
 }

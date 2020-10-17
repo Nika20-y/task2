@@ -1,12 +1,13 @@
 @import "../../style/mixins/mixin";
+@import "../../style/variables";
 
 .dropdown{
   position: relative;
   min-width: 26rem;
-  border: 1px solid rgba(31, 32, 65,.25);
-  border-radius: 4px;
-  color: rgba(31, 32, 65,.25);
-  @include fontContent(14px, 18px);
+  border: .1rem solid $light-dark;
+  border-radius: .4rem;
+  color: $light-dark;
+  @include fontContent(1.4rem, 1.8rem);
   cursor: pointer;
 }
 .dropdown__wrapper{
@@ -16,8 +17,8 @@
 
 }
 .material-icons{
-  font-size: 24px;
-  color: rgba(31,32,65,.75)
+  font-size: 2.4rem;
+  color: $lighter-dark;
 }
 
 .dropdown__list{
@@ -33,19 +34,19 @@
     justify-content: space-between;
     padding: .4rem .6rem .3rem 1.3rem;
   }
-  border: 1px solid rgba(31, 32, 65, 0.5);
+  border: .1rem solid $half-dark;
   box-sizing: border-box;
-  box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
+  box-shadow: 0 1rem 2rem $half-dark;
 }
 .dropdown__minus, .dropdown__plus{
   text-decoration: none;
-  background: #fff;
+  background: $white;
   width: 3rem;
   height: 3rem;
-  border: 1px solid rgba(31,32,65,.25);
+  border: .1rem solid $light-dark;
   border-radius: 2rem;
-  @include fontContent(18px, 22px);
-  color: rgba(31, 32, 65, 0.5);
+  @include fontContent(1.8rem, 2.2rem);
+  color: $half-dark;
   outline: 0 !important;
 }
 .dropdown__visitors{
@@ -53,14 +54,14 @@
   text-decoration: none;
   border: none;
   @include fontContent(1.8rem, 2.2rem);
-  font-weight: bold;
+  font-weight: $bold-weight;
   outline: 0 !important;
 }
 .dropdown__meaning{
   @include fontContent(1.2rem, 1.5rem);
-  font-weight: bold;
+  font-weight: $bold-weight;
   text-transform: uppercase;
-  color: #1F2041;
+  color: $dark-black;
 }
 
 .dropdown__clear{
@@ -86,10 +87,10 @@ appearance: none;
   }
 }
 .btn-submit{
-  color: #bc9cff;
+  color: $purple;
 }
 .btn-clear{
-  color:  rgba(31, 32, 65, 0.5);;
+  color:  $half-dark;
 }
 
 

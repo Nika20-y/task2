@@ -1,4 +1,6 @@
 @import "../../style/mixins/mixin";
+@import "../../style/variables";
+
 .radioBtns{
   min-width: 24rem;
 }
@@ -11,7 +13,7 @@
 .radioBtns__name{
   @include fontContent(1.2rem, 1.5rem);
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: $bold-weight;
   margin-bottom: 1rem;
 }
 .radioBtns__adds{
@@ -22,8 +24,8 @@
   cursor: pointer;
   margin-right: 2rem;
   @include fontContent(1.4rem, 2.4rem);
-  font-weight: 400;
-  color: rgba(31,32,65,.5);
+  font-weight: $light-weight;
+  color: $half-dark;
 }
 
 .radioBtns__custom{
@@ -38,7 +40,7 @@
   left: 0;
   height: 2rem;
   width: 2rem;
-  border: 1px solid rgba(31,32,65,.25);
+  border: .1rem solid $light-dark;
   border-radius: 50%;
   cursor: pointer;
   margin-right: 1rem;
@@ -49,7 +51,7 @@
   width: 1.2rem;
   height: 1.2rem;
   border-radius: 1rem;
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  background: $gradient-purple;
   top: 49%;
   left: 10.2%;
   transform: translate(-50%,-50%);
@@ -59,11 +61,11 @@ display: none;
 display: block;
 }
 .radioBtns__adds input:checked+.radioBtns__radio{
-  border-color: #BC9CFF;
-  background: #fff;
-  color: rgba(31,32,65,.75);
+  border-color: $purple;
+  background: $white;
+  color: $lighter-dark;
 }
 
 .radioBtns__radio:hover{
-  border-color: #BC9CFF;
+  border-color: $purple;
 }

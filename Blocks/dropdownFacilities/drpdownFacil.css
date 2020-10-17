@@ -9,9 +9,9 @@
 .dropdownFacilities {
   position: relative;
   min-width: 26rem;
-  border: 0.1rem solid rgba(31, 32, 65, 0.25);
+  border: 0.1rem solid rgba(31, 32, 65, 0.75);
   border-radius: 0.4rem;
-  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.75);
   font-family: Montserrat, sans-serif;
   font-style: normal;
   font-size: 1.4rem;
@@ -27,7 +27,7 @@
 
 .material-icons {
   font-size: 2.4rem;
-  color: rgba(31, 32, 65, 0.75);
+  color: rgba(31, 32, 65, 0.25);
 }
 
 .dropdownFacilities__list {
@@ -39,7 +39,7 @@
   padding-left: 0;
   border: 0.1rem solid rgba(31, 32, 65, 0.5);
   box-sizing: border-box;
-  box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
+  box-shadow: 0 1rem 2rem rgba(31, 32, 65, 0.5);
 }
 .dropdownFacilities__list li {
   list-style: none;
@@ -50,10 +50,10 @@
 
 .dropdownFacilities__minus, .dropdownFacilities__plus {
   text-decoration: none;
-  background: #fff;
+  background: #ffffff;
   width: 3rem;
   height: 3rem;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  border: 0.1rem solid rgba(31, 32, 65, 0.75);
   border-radius: 2rem;
   font-family: Montserrat, sans-serif;
   font-style: normal;
@@ -71,7 +71,7 @@
   font-style: normal;
   font-size: 1.8rem;
   line-height: 2.2rem;
-  font-weight: bold;
+  font-weight: 700;
   outline: 0 !important;
   width: 3.2rem;
   margin-bottom: 0.25rem;
@@ -87,9 +87,9 @@
   font-style: normal;
   font-size: 1.2rem;
   line-height: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
-  color: #1F2041;
+  color: #1f2041;
 }
 
 .dropdownFacilities__input input::-webkit-outer-spin-button,

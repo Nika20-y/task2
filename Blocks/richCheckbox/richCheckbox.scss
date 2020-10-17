@@ -1,4 +1,6 @@
 @import "../../style/mixins/mixin";
+@import "../../style/variables";
+
 .checkboxList{
   min-width: 24rem;
 }
@@ -13,7 +15,7 @@
 .checkboxList__name{
   @include fontContent(1.2rem, 1.5rem);
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: $bold-weight;
   margin-bottom: 1rem;
 }
 .checkboxList__adds{
@@ -24,7 +26,7 @@
   padding-bottom: .1rem;
   @include fontContent(1.4rem, 1.8rem);
   font-weight: bold;
-  color: rgba(31, 32, 65, 0.75);
+  color: $lighter-dark;
   margin-bottom: 1.1rem;
 }
 
@@ -45,7 +47,7 @@
   top: .4rem;
   transition: background 0.3s ease;
   border: solid transparent;
-  border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-image: $gradient-purple;
   border-image-slice: 1;
   border-width: 0 .2rem .2rem 0;
   transform: rotate(45deg);
@@ -55,7 +57,7 @@
   display: block;
 }
 .checkboxList__adds input:checked +.checkboxList__checkbox{
-  border-color: #BC9CFF;
+  border-color: $purple;
 }
 .checkboxList__checkbox{
   display: block;
@@ -64,18 +66,18 @@
   left: 0;
   height: 2rem;
   width: 2rem;
-  background-color: #fff;
-  border: .1rem solid rgba(31,32,65,.25);
+  background-color: $white;
+  border: .1rem solid $light-dark;
   box-sizing: border-box;
   border-radius: .4rem;
   cursor: pointer;
 }
 .checkboxList__checkbox:hover{
-  border-color: #BC9CFF;
+  border-color: $purple;
 }
 .checkboxList__text{
   @include fontContent(1.2rem, 1.4rem);
-  color: rgba(31,32,65,.5);
-  font-weight: 400;
+  color: $half-dark;
+  font-weight: $light-weight;
   margin: 0;
 }

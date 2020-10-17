@@ -1,14 +1,15 @@
 @import "../../style/mixins/mixin";
+@import "../../style/variables";
 .button{
   display: flex;
   align-items: center;
   text-align: center;
   padding: .1rem 2.2rem 0 1.9rem;
   height: 4.4rem;
-  color: #fff;
-  background: linear-gradient(180deg,#bc9cff,#8ba4f9);
+  color: $white;
+  background: $gradient-purple;
   @include fontContent(1.2rem, 1.5rem);
-  font-weight: 700;
+  font-weight: $bold-weight;
   border-radius: 2.2rem;
   text-transform: uppercase;
   cursor: pointer;

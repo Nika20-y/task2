@@ -1,11 +1,13 @@
 @import "../../style/mixins/mixin";
+@import "../../style/variables";
+
 .likeBtn{
   left: 0;
   border: none;
   outline: none;
   border-radius: 1rem;
   padding: .1rem;
- background: rgba(31,32,65,.25);
+ background: $light-dark;
 }
 
 .likeBtn__wrapper{
@@ -15,7 +17,7 @@
   border-radius: 1rem;
   z-index: 1;
   box-sizing: border-box;
-  color: rgba(31, 32, 65, 0.25);
+  color: $light-dark;
   display: flex;
   align-items: center;
 padding: .4rem;
@@ -32,5 +34,5 @@ padding: .4rem;
 }
 .selected{
   border-radius: 1rem;
-  color: #BC9CFF;
+  color: $purple;
 }

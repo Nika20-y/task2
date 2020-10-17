@@ -1,3 +1,5 @@
+@import "../../style/variables";
+
 .rateBtn{
   font-size: 2.4rem;
   line-height: 2rem;
@@ -6,7 +8,7 @@
   text-align: center;
 }
 .rateBtn__icon{
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  background: $gradient-purple;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;

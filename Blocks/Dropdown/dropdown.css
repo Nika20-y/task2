@@ -9,13 +9,13 @@
 .dropdown {
   position: relative;
   min-width: 26rem;
-  border: 1px solid rgba(31, 32, 65, 0.25);
-  border-radius: 4px;
-  color: rgba(31, 32, 65, 0.25);
+  border: 0.1rem solid rgba(31, 32, 65, 0.75);
+  border-radius: 0.4rem;
+  color: rgba(31, 32, 65, 0.75);
   font-family: Montserrat, sans-serif;
   font-style: normal;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
   cursor: pointer;
 }
 
@@ -26,8 +26,8 @@
 }
 
 .material-icons {
-  font-size: 24px;
-  color: rgba(31, 32, 65, 0.75);
+  font-size: 2.4rem;
+  color: rgba(31, 32, 65, 0.25);
 }
 
 .dropdown__list {
@@ -37,9 +37,9 @@
   padding-bottom: 0.4rem;
   padding-top: 0.2rem;
   padding-left: 0;
-  border: 1px solid rgba(31, 32, 65, 0.5);
+  border: 0.1rem solid rgba(31, 32, 65, 0.5);
   box-sizing: border-box;
-  box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
+  box-shadow: 0 1rem 2rem rgba(31, 32, 65, 0.5);
 }
 .dropdown__list li {
   list-style: none;
@@ -50,15 +50,15 @@
 
 .dropdown__minus, .dropdown__plus {
   text-decoration: none;
-  background: #fff;
+  background: #ffffff;
   width: 3rem;
   height: 3rem;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  border: 0.1rem solid rgba(31, 32, 65, 0.75);
   border-radius: 2rem;
   font-family: Montserrat, sans-serif;
   font-style: normal;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
   color: rgba(31, 32, 65, 0.5);
   outline: 0 !important;
 }
@@ -71,7 +71,7 @@
   font-style: normal;
   font-size: 1.8rem;
   line-height: 2.2rem;
-  font-weight: bold;
+  font-weight: 700;
   outline: 0 !important;
 }
 
@@ -80,9 +80,9 @@
   font-style: normal;
   font-size: 1.2rem;
   line-height: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
-  color: #1F2041;
+  color: #1f2041;
 }
 
 .dropdown__clear {
@@ -113,7 +113,7 @@
 }
 
 .btn-submit {
-  color: #bc9cff;
+  color: #BC9CFF;
 }
 
 .btn-clear {

@@ -22,7 +22,7 @@
   font-size: 1.2rem;
   line-height: 1.5rem;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 1rem;
 }
 
@@ -54,7 +54,7 @@
   left: 0;
   height: 2rem;
   width: 2rem;
-  border: 1px solid rgba(31, 32, 65, 0.25);
+  border: 0.1rem solid rgba(31, 32, 65, 0.75);
   border-radius: 50%;
   cursor: pointer;
   margin-right: 1rem;
@@ -66,7 +66,7 @@
   width: 1.2rem;
   height: 1.2rem;
   border-radius: 1rem;
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  background: linear-gradient(180deg, #BC9CFF 0%, #8ba4f9 100%);
   top: 49%;
   left: 10.2%;
   transform: translate(-50%, -50%);
@@ -79,8 +79,8 @@
 
 .radioBtns__adds input:checked + .radioBtns__radio {
   border-color: #BC9CFF;
-  background: #fff;
-  color: rgba(31, 32, 65, 0.75);
+  background: #ffffff;
+  color: rgba(31, 32, 65, 0.25);
 }
 
 .radioBtns__radio:hover {

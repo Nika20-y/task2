@@ -1,16 +1,18 @@
 @import "../../style/mixins/mixin";
+@import "../../style/variables";
+
 input.Text-field{
   height: 4.4rem;
   width: 32rem;
-  border: .1rem solid rgba(31, 32, 65,.25);
+  border: .1rem solid $light-dark;
   border-radius: .4rem;
-  color: rgba(31, 32, 65,.25);
+  color: $light-dark;
   @include fontContent(1.4rem, 1.8rem);
   padding: 1.1rem 1.4rem 1.3rem;
 }
 .Text-field:focus , input.Text-field:hover{
-  border: .1rem solid rgba(31, 32, 65,.75);
-  color: rgba(31, 32, 65,.5);
+  border: .1rem solid $lighter-dark;
+  color: $half-dark;
   border-radius: .4rem;
   outline: none !important;
 }
