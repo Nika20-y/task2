@@ -1,11 +1,12 @@
 meta(charset="UTF-8")
-link(href='checkboxList.css' rel='stylesheet')
-mixin checkboxList(title,...items)
+link(href='richCheckbox.css' rel='stylesheet')
+mixin richCheckbox(title)
     .checkboxList
         .checkboxList__name= title
         .checkboxList__buttons
-            each item in items
-                label.checkboxList__adds= item
+            mixin richCheckbox-label(name,text)
+                label.checkboxList__adds= name
                     input(type="checkbox" name="adds" class="checkboxList__custom")
                     span.checkboxList__checkbox
+                    p.checkboxList__text= text
 

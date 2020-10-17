@@ -1,0 +1,81 @@
+@import "../../style/mixins/mixin";
+.checkboxList{
+  min-width: 24rem;
+}
+.checkboxList__wrapper{
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.checkboxList__buttons{
+  display: grid;
+}
+.checkboxList__name{
+  @include fontContent(1.2rem, 1.5rem);
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.checkboxList__adds{
+  display: block;
+  position: relative;
+  padding-top: .1rem;
+  padding-left: 2rem;
+  padding-bottom: .1rem;
+  @include fontContent(1.4rem, 1.8rem);
+  font-weight: bold;
+  color: rgba(31, 32, 65, 0.75);
+  margin-bottom: 1.1rem;
+}
+
+.checkboxList__custom{
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  width: 0;
+  height: 0;
+}
+.checkboxList__checkbox::before {
+  content: "";
+  width: .4rem;
+  height: .6rem;
+  position: absolute;
+  left: .7rem;
+  top: .4rem;
+  transition: background 0.3s ease;
+  border: solid transparent;
+  border-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-image-slice: 1;
+  border-width: 0 .2rem .2rem 0;
+  transform: rotate(45deg);
+  display: none;
+}
+.checkboxList__custom:checked ~.checkboxList__checkbox:before {
+  display: block;
+}
+.checkboxList__adds input:checked +.checkboxList__checkbox{
+  border-color: #BC9CFF;
+}
+.checkboxList__checkbox{
+  display: block;
+  position: absolute;
+  top: .046rem;
+  left: 0;
+  height: 2rem;
+  width: 2rem;
+  background-color: #fff;
+  border: .1rem solid rgba(31,32,65,.25);
+  box-sizing: border-box;
+  border-radius: .4rem;
+  cursor: pointer;
+}
+.checkboxList__checkbox:hover{
+  border-color: #BC9CFF;
+}
+.checkboxList__text{
+  @include fontContent(1.2rem, 1.4rem);
+  color: rgba(31,32,65,.5);
+  font-weight: 400;
+  margin: 0;
+}
