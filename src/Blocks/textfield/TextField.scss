@@ -1,0 +1,22 @@
+@import "../../style/mixins/mixin";
+@import "../../style/variables";
+.textField__wrapper{
+
+}
+input.Text-field{
+  width: 100%;
+  border: .1rem solid $light-dark;
+  border-radius: .4rem;
+  @include fontContent(1.4rem, 1.8rem);
+  padding: 1.1rem 1.4rem 1.3rem;
+  outline: none !important;
+  color: $half-dark;
+}
+input::-webkit-input-placeholder {
+  color: $light-dark;
+}
+.Text-field:focus , input.Text-field:hover,{
+  border: .1rem solid $half-dark;
+  color: $half-dark;
+  border-radius: .4rem;
+}

@@ -1,0 +1,21 @@
+//Переменные для цветов
+$dark-black: rgba(31,32,65,1);
+$lighter-dark: transparentize($dark-black, .25);
+$half-dark: transparentize($dark-black, .5);
+$light-dark: transparentize($dark-black, .75);
+$lightest-dark: transparentize($dark-black, .05);
+$purple:#BC9CFF;
+$green: #6FCF97;
+$white: #ffffff;
+
+$gradient-blue: #66D2EA;
+$gradient-violet: #8ba4f9;
+$gradient-purple: linear-gradient(180deg,$purple 0%,$gradient-violet 100%);
+$gradient-purple-opacity: linear-gradient(180deg,rgba(188,156,255,.5),rgba(139,164,249,.5));
+$gradient-purple-opacity25: linear-gradient(180deg,rgba(188,156,255,.25),rgba(139,164,249,.25));
+$gradient-green: linear-gradient(180deg, $green 0%,$gradient-blue 100%);
+
+//Переменные для шрифта
+$bold-weight: 700;
+$light-weight: 400;
+

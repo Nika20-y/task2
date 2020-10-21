@@ -1,0 +1,32 @@
+@import "../../style/mixins/mixin";
+@import "../../style/variables";
+.button__wrapper{
+  height: 4.4rem;
+  position: relative;
+  background-image: $gradient-purple;
+  padding: .2rem;
+  border-radius: 2.2rem;
+  border: none;
+  outline: 0 !important;
+  z-index: -1;
+  cursor: pointer;
+  .buttonBorder {
+    border-radius: 2.2rem;
+    background: #fff;
+    padding: 0 2.2rem 0 1.9rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #BC9CFF;
+    @include fontContent(1.2rem, 1.5rem);
+    font-weight: 700;
+    text-transform: uppercase;
+
+  }
+}
+
+.button__wrapper:disabled{
+  background-image: $gradient-purple-opacity;
+}
+

@@ -1,0 +1,65 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        title Form Elements
+        link(href="../../Blocks/DateDropdown/datepicker.min.css" rel="stylesheet")
+        script(src="https://code.jquery.com/jquery-1.12.4.js")
+        script(src='../../Blocks/DateDropdown/calendar.js')
+        link(href="formElements.css" rel="stylesheet")
+        include  ../../Blocks/allBlocks
+    body
+        .logo
+            img(src="../../images/logo.svg").logo__img
+        .formElements__wrapper
+            .formElements__row
+                mixin containerHeader(label, status)
+                    .formElements__container-header
+                        .formElements__container-label= label
+                        .formElements__container-status= status
+                .formElements__column1
+                    .formElements__container
+                        +containerHeader('text field', 'default')
+                        +textfield('Email','')
+                    .formElements__container
+                        +containerHeader('text field', 'hover/focus')
+                        +textfield('This is pretty awesome','hover')
+                    .formElements__container
+                        +containerHeader('dropdown', '')
+                        +visitors
+                    .formElements__container
+                        +containerHeader('masked text field', '')
+                        +textfield('ДД.ММ.ГГГГ','')
+                    .formElements__container-date
+                        .formElements__container
+                            +containerHeader('date dropdown', '')
+                            +calendar
+                        .formElements__container
+                            +containerHeader('date dropdown', '')
+                            +calendar
+                    .formElements__container
+                        +containerHeader('filter date dropdown', '')
+                        +rangeCalendar
+                    .formElements__container
+                        +containerHeader('subscription text field', '')
+                        +subscription('Email')
+                .formElements__column2
+                    .formElements__container
+                        +containerHeader('checkbox buttons', '')
+                        +checkboxList('Можно курить','Можно с питомцами', 'Можно пригласить гостей (до 10 человек)')
+                    .formElements__container
+                        +containerHeader('radio buttons', '')
+                        +radioBtns('Мужчина', 'Женщина')
+
+
+
+
+
+                .formElements__column
+                .formElements__column
+            .formElements__row
+            .formElements__row
+            .formElements__row
+        script(src='../../../dist/main.bundle.js')
+        script(src='../../Blocks/DateDropdown/datepicker.min.js')
+

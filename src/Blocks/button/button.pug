@@ -1,0 +1,8 @@
+meta(charset="UTF-8")
+link(href='buttonBorder.css' rel='stylesheet')
+link(href='../button/button.css' rel='stylesheet')
+mixin button(classBtn, title)
+    button(class=''+classBtn)
+        .buttonBorder
+            .button__text= title
+//class = button||button__wrapper

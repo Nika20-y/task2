@@ -1,0 +1,10 @@
+meta(charset="UTF-8")
+link(href='checkboxList.css' rel='stylesheet')
+mixin checkboxList(...items)
+    .checkboxList
+        .checkboxList__buttons
+        each item in items
+            label.checkboxList__adds= item
+                input(type="checkbox" name="adds" class="checkboxList__custom")
+                span.checkboxList__checkbox
+

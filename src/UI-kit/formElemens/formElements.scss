@@ -1,0 +1,52 @@
+@import "../../Blocks/allBlocks";
+@import "../../style/mixins/mixin";
+@import "../../style/variables";
+html{
+  font-size: 10px;
+}
+body{
+  margin: 0;
+  background: #E5E5E5;
+
+}
+.logo__img{
+  width: 48px;
+  padding: 1.55%;
+}
+.formElements__wrapper{
+  width: 80.5%;
+  margin: 2.5rem auto 0;
+  text-align: center;
+}
+.formElements__row{
+  display: flex;
+  justify-content: space-between;
+}
+.formElements__container {
+  margin: 2rem 0;
+  .formElements__container-header{
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+    display: flex;
+    justify-content: space-between;
+    @include fontContent(1.2rem, 1.5rem);
+    .formElements__container-label{
+      font-weight: $bold-weight;
+      color: $dark-black;
+    }
+    .formElements__container-status{
+      font-weight: $light-weight;
+      color: $half-dark;
+    }
+  }
+}
+.formElements__container-date{
+  display: flex;
+  justify-content: space-between;
+}
+.formElements__column2:first-child{
+  margin-bottom: 4rem;
+}
+.formElements__column2:nth-child(2){
+  margin-bottom: 3.9rem;
+}
