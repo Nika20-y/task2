@@ -1,29 +1,22 @@
-export default  function likeBtn() {
-    let likeBtn = document.getElementsByClassName('likeBtn__wrapper')
-    let selectedBtn = document.getElementsByClassName('selected')
-    let quantitylikeBtn;
-    let iconLikeBtn;
+let likeBtn = document.getElementsByClassName('likeBtn')
+let quantitylikeBtn;
+let iconLikeBtn;
 
+for (let i = 0; i < likeBtn.length; i++) {
 
-    for (let i = 0; i < likeBtn.length; i++) {
-        quantitylikeBtn = document.getElementsByClassName('likeBtn__quantity')[i].textContent;
-        let borderLikeBtn = document.getElementsByClassName('likeBtn')[i]
-        likeBtn[i].onclick = function () {
-            likeBtn[i].classList.toggle('selected');
-            if (selectedBtn[i]) {
-                quantitylikeBtn++;
-                iconLikeBtn = 'favorite';
-                borderLikeBtn.style.backgroundImage = 'linear-gradient(180deg,#bc9cff,#8ba4f9)';
-            } else {
-                quantitylikeBtn--;
-                iconLikeBtn = 'favorite_border';
-                borderLikeBtn.style.background = 'rgba(31,32,65,.25)';
-            }
-            document.getElementsByClassName('likeBtn__quantity')[i].innerHTML = quantitylikeBtn;
-            document.getElementsByClassName('likeBtn__icon')[i].innerHTML = iconLikeBtn;
-
+    likeBtn[i].onclick=function () {
+        likeBtn[i].classList.toggle("likeBtn-selected");
+        quantitylikeBtn = document.getElementsByClassName('likeBtn__quantity')[i].innerHTML;
+        if (likeBtn[i].classList.contains('likeBtn-selected')){
+            quantitylikeBtn++;
+            iconLikeBtn = 'favorite';
         }
-
-
+        else {
+            iconLikeBtn = 'favorite_border';
+            quantitylikeBtn--;
+        }
+        document.getElementsByClassName('likeBtn__quantity')[i].innerHTML = quantitylikeBtn;
+        document.getElementsByClassName('likeBtn__icon')[i].innerHTML = iconLikeBtn;
     }
 }
+

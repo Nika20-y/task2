@@ -8,6 +8,7 @@
   border-radius: 1rem;
   padding: .1rem;
  background: $light-dark;
+  align-items: start;
 }
 
 .likeBtn__wrapper{
@@ -26,13 +27,19 @@ padding: .4rem;
   .material-icons{
     font-size: 1rem;
     line-height: .9rem;
+    color: $light-dark;
   }
   .likeBtn__quantity{
     @include fontContent(1rem, 1.2rem);
     margin-left: 25%;
   }
 }
-.selected{
-  border-radius: 1rem;
-  color: $purple;
+.likeBtn-selected{
+  background:$gradient-purple;
+  .likeBtn__wrapper{
+    color: $purple;
+  }
+  .material-icons{
+    color: $purple;
+  }
 }

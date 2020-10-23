@@ -60,6 +60,9 @@ display: none;
 .radioBtns__custom:checked ~.radioBtns__radio:before {
 display: block;
 }
+.radioBtns__custom:checked ~ .radioBtns__description{
+  color: $lighter-dark;
+}
 .radioBtns__adds input:checked+.radioBtns__radio{
   border-color: $purple;
   background: $white;

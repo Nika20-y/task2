@@ -49,3 +49,38 @@
 .toggle__adds input:checked+.toggle__item:before{
   border: .1rem solid $purple;
 }
+
+.active{
+  .toggle__adds .toggle__item:before{
+    left: 0;
+    margin-top: -1rem;
+    height: 2rem;
+    width: 4rem;
+    border-radius: 1rem;
+    border: .1rem solid $purple;
+    box-sizing: border-box;
+  }
+  .toggle__item:after {
+    height: 1.2rem;
+    width: 1.2rem;
+    margin-top: -.6rem;
+
+    border-radius: 1rem;
+
+    background: $gradient-purple;
+    left: 2.4rem;
+  }
+  .toggle__adds .toggle__item:before,
+  .toggle__item:after{
+    content: "";
+    position: absolute;
+    top: 55%;
+  }
+  .toggle__adds input:checked+.toggle__item:after{
+    left: .5rem;
+    background: $light-dark;
+  }
+  .toggle__adds input:checked+.toggle__item:before{
+    border: .1rem solid $light-dark;
+  }
+}

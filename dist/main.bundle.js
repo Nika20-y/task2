@@ -45,6 +45,18 @@ eval("$('.datepicker-here').datepicker({\r\n    dateFormat: \"dd M\",\r\n})\n\n/
 
 /***/ }),
 
+/***/ "./src/Blocks/likeBtn/likeBtn.js":
+/*!***************************************!*\
+  !*** ./src/Blocks/likeBtn/likeBtn.js ***!
+  \***************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements:  */
+/***/ (() => {
+
+eval("let likeBtn = document.getElementsByClassName('likeBtn__wrapper')\r\nlet quantitylikeBtn;\r\nlet iconLikeBtn;\r\nlet selectedBtn = document.getElementsByClassName('likeBtn-selected')\r\n\r\nfor (let i = 0; i < likeBtn.length; i++) {\r\n    let borderLikeBtn = document.getElementsByClassName('likeBtn')[i]\r\n    window.onload\r\n    {\r\n        if (selectedBtn[i]) {\r\n            iconLikeBtn = 'favorite';\r\n            borderLikeBtn.style.backgroundImage = 'linear-gradient(180deg,#bc9cff,#8ba4f9)';\r\n            document.getElementsByClassName('likeBtn__wrapper')[i].style.color = '#BC9CFF'\r\n            document.getElementsByClassName('likeBtn__icon')[i].style.color = '#BC9CFF'\r\n\r\n        }\r\n        else {\r\n            iconLikeBtn = 'favorite_border';\r\n            borderLikeBtn.style.background = 'rgba(31,32,65,.25)';\r\n            document.getElementsByClassName('likeBtn__wrapper')[i].style.color='rgba(31,32,65,.25)'\r\n            document.getElementsByClassName('likeBtn__icon')[i].style.color='rgba(31,32,65,.25)'\r\n        }\r\n        document.getElementsByClassName('likeBtn__icon')[i].innerHTML = iconLikeBtn;\r\n    }\r\n}\r\n    for (let i = 0; i < likeBtn.length; i++) {\r\n\r\n        let borderLikeBtn = document.getElementsByClassName('likeBtn')[i]\r\n        likeBtn[i].onclick = function () {\r\n            likeBtn[i].classList.toggle('likeBtn-selected');\r\n            quantitylikeBtn = document.getElementsByClassName('likeBtn__quantity')[i].innerHTML;\r\n            if (likeBtn[i]===selectedBtn[i]) {\r\n                quantitylikeBtn++;\r\n                iconLikeBtn = 'favorite';\r\n                borderLikeBtn.style.backgroundImage = 'linear-gradient(180deg,#bc9cff,#8ba4f9)';\r\n                document.getElementsByClassName('likeBtn__wrapper')[i].style.color='#BC9CFF'\r\n                document.getElementsByClassName('likeBtn__icon')[i].style.color='#BC9CFF'\r\n            } else {\r\n                quantitylikeBtn--;\r\n                iconLikeBtn = 'favorite_border';\r\n                borderLikeBtn.style.background = 'rgba(31,32,65,.25)';\r\n                document.getElementsByClassName('likeBtn__wrapper')[i].style.color='rgba(31,32,65,.25)'\r\n                document.getElementsByClassName('likeBtn__icon')[i].style.color='rgba(31,32,65,.25)'\r\n            }\r\n\r\n            document.getElementsByClassName('likeBtn__quantity')[i].innerHTML = quantitylikeBtn;\r\n            document.getElementsByClassName('likeBtn__icon')[i].innerHTML = iconLikeBtn;\r\n\r\n        }\r\n\r\n\r\n    }\r\n\n\n//# sourceURL=webpack://task2/./src/Blocks/likeBtn/likeBtn.js?");
+
+/***/ }),
+
 /***/ "./src/Blocks/rangeSlider/rangeSlider.js":
 /*!***********************************************!*\
   !*** ./src/Blocks/rangeSlider/rangeSlider.js ***!
@@ -60,6 +72,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/Blocks/rateBtn/rateBtn.js":
+/*!***************************************!*\
+  !*** ./src/Blocks/rateBtn/rateBtn.js ***!
+  \***************************************/
+/*! unknown exports (runtime-defined) */
+/*! runtime requirements:  */
+/***/ (() => {
+
+eval("\r\n    let rateBtn = document.getElementsByClassName('rateBtn__icon');\r\n    for (let i = 0; i < rateBtn.length; i++) {\r\n        rateBtn[i].onclick = function () {\r\n            let star = document.getElementsByClassName('material-icons')[i].innerHTML;\r\n            if (star === 'star_border') {\r\n                star = 'star';\r\n                for (let a = 0; a <= i; a++) {\r\n                    document.getElementsByClassName('material-icons')[a].innerHTML = star;\r\n                }\r\n            } else {\r\n                star = 'star_border'\r\n                for (let a = i + 1; a < rateBtn.length; a++) {\r\n                    document.getElementsByClassName('material-icons')[a].innerHTML = star;\r\n                }\r\n            }\r\n        }\r\n    }\r\n\n\n//# sourceURL=webpack://task2/./src/Blocks/rateBtn/rateBtn.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -70,7 +94,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Blocks_Dropdown_dropdown__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Blocks/Dropdown/dropdown */ \"./src/Blocks/Dropdown/dropdown.js\");\n/* harmony import */ var _Blocks_Dropdown_dropdown__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Blocks_Dropdown_dropdown__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Blocks_DateDropdown_calendar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Blocks/DateDropdown/calendar */ \"./src/Blocks/DateDropdown/calendar.js\");\n/* harmony import */ var _Blocks_DateDropdown_calendar__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Blocks_DateDropdown_calendar__WEBPACK_IMPORTED_MODULE_1__);\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module './Blocks/DropdownFacil/drpdownFacil'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n/* harmony import */ var _Blocks_FilterDateDropdown_FilterDateDropdown__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Blocks/FilterDateDropdown/FilterDateDropdown */ \"./src/Blocks/FilterDateDropdown/FilterDateDropdown.js\");\n/* harmony import */ var _Blocks_FilterDateDropdown_FilterDateDropdown__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Blocks_FilterDateDropdown_FilterDateDropdown__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _Blocks_rangeSlider_rangeSlider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Blocks/rangeSlider/rangeSlider */ \"./src/Blocks/rangeSlider/rangeSlider.js\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://task2/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Blocks_Dropdown_dropdown__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Blocks/Dropdown/dropdown */ \"./src/Blocks/Dropdown/dropdown.js\");\n/* harmony import */ var _Blocks_Dropdown_dropdown__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Blocks_Dropdown_dropdown__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _Blocks_DateDropdown_calendar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Blocks/DateDropdown/calendar */ \"./src/Blocks/DateDropdown/calendar.js\");\n/* harmony import */ var _Blocks_DateDropdown_calendar__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_Blocks_DateDropdown_calendar__WEBPACK_IMPORTED_MODULE_1__);\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module './Blocks/DropdownFacil/drpdownFacil'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n/* harmony import */ var _Blocks_FilterDateDropdown_FilterDateDropdown__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Blocks/FilterDateDropdown/FilterDateDropdown */ \"./src/Blocks/FilterDateDropdown/FilterDateDropdown.js\");\n/* harmony import */ var _Blocks_FilterDateDropdown_FilterDateDropdown__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Blocks_FilterDateDropdown_FilterDateDropdown__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _Blocks_likeBtn_likeBtn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Blocks/likeBtn/likeBtn */ \"./src/Blocks/likeBtn/likeBtn.js\");\n/* harmony import */ var _Blocks_likeBtn_likeBtn__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_Blocks_likeBtn_likeBtn__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _Blocks_rangeSlider_rangeSlider__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Blocks/rangeSlider/rangeSlider */ \"./src/Blocks/rangeSlider/rangeSlider.js\");\n/* harmony import */ var _Blocks_rateBtn_rateBtn__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Blocks/rateBtn/rateBtn */ \"./src/Blocks/rateBtn/rateBtn.js\");\n/* harmony import */ var _Blocks_rateBtn_rateBtn__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_Blocks_rateBtn_rateBtn__WEBPACK_IMPORTED_MODULE_6__);\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://task2/./src/index.js?");
 
 /***/ })
 

@@ -1,7 +1,7 @@
 meta(charset="UTF-8")
 link(href='toggle.css' rel='stylesheet')
-mixin toggle(text)
-    .toggle
+mixin toggle(text, value)
+    div(class='toggle'+value)
         label.toggle__adds
             input(type="checkbox" name="adds" class="toggle__custom")
             span.toggle__item

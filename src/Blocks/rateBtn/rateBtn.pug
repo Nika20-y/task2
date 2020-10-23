@@ -1,16 +1,15 @@
 link(href='rateBtn.css' rel='stylesheet')
 link(href='../../style/fonts/iconfont/material-icons.css' rel='stylesheet')
-mixin rateBtn
+mixin rateBtn(icon1, icon2, icon3, icon4, icon5 )
     .rateBtn
         .rateBtn__icon
-            i(class='material-icons ') star_border
+            i(class='material-icons rateBtn__icon-star')= icon1
         .rateBtn__icon
-            i(class='material-icons ') star_border
+            i(class='material-icons rateBtn__icon-star')= icon2
         .rateBtn__icon
-            i(class='material-icons ') star_border
+            i(class='material-icons rateBtn__icon-star')= icon3
         .rateBtn__icon
-            i(class='material-icons ') star_border
+            i(class='material-icons rateBtn__icon-star')= icon4
         .rateBtn__icon
-            i(class='material-icons ') star_border
-
+            i(class='material-icons rateBtn__icon-star')= icon5
 script(src='rateBtn.js')

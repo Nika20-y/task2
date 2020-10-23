@@ -17,13 +17,13 @@ html
                     .formElements__container-header
                         .formElements__container-label= label
                         .formElements__container-status= status
-                .formElements__column1
+                .formElements__column_first
                     .formElements__container
                         +containerHeader('text field', 'default')
                         +textfield('Email','')
                     .formElements__container
                         +containerHeader('text field', 'hover/focus')
-                        +textfield('This is pretty awesome','hover')
+                        +textfield('This is pretty awesome',', hover')
                     .formElements__container
                         +containerHeader('dropdown', '')
                         +visitors
@@ -43,13 +43,27 @@ html
                     .formElements__container
                         +containerHeader('subscription text field', '')
                         +subscription('Email')
-                .formElements__column2
+                .formElements__column_second
                     .formElements__container
                         +containerHeader('checkbox buttons', '')
                         +checkboxList('Можно курить','Можно с питомцами', 'Можно пригласить гостей (до 10 человек)')
                     .formElements__container
                         +containerHeader('radio buttons', '')
                         +radioBtns('Мужчина', 'Женщина')
+                    .formElements__container
+                        +containerHeader('toggle', '')
+                        +toggle('Получать спецпредложения',', active')
+                        +toggle('Получать спецпредложения','')
+                    .formElements__container
+                        +containerHeader('like button', '')
+                        .formElements__container-like
+                            +likeBtn('2','','favorite_border')
+                            +likeBtn('12','likeBtn-selected','favorite')
+                    .formElements__container
+                        +containerHeader('rate button', '')
+                        .formElements__container-rate
+                            +rateBtn('star', 'star', 'star', 'star', 'star_border')
+                            +rateBtn('star', 'star', 'star', 'star', 'star')
 
 
 
@@ -62,4 +76,5 @@ html
             .formElements__row
         script(src='../../../dist/main.bundle.js')
         script(src='../../Blocks/DateDropdown/datepicker.min.js')
-
+        script(src='../../Blocks/likeBtn/likeBtn.js')
+        script(src='../../Blocks/rateBtn/rateBtn.js')
