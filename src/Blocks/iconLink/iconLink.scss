@@ -6,7 +6,11 @@
   text-transform: uppercase;
   color: $half-dark;
   font-weight: $bold-weight;
+  cursor: pointer;
 }
 .iconLink:hover{
+  color: $purple;
+}
+.hover{
   color: $purple;
 }

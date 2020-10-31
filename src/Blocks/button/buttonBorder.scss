@@ -9,7 +9,6 @@
   border: none;
   outline: 0 !important;
   z-index: -1;
-  cursor: pointer;
   .buttonBorder {
     border-radius: 2.2rem;
     background: #fff;
@@ -24,9 +23,12 @@
     text-transform: uppercase;
 
   }
+  .button__text{
+    cursor: pointer;
+  }
 }
 
-.button__wrapper:disabled{
+.buttonBorder-disabled{
   background-image: $gradient-purple-opacity;
 }
 

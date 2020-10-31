@@ -68,10 +68,22 @@ html
                     .formElements__container
                         .formElements__container-slider
                             +rangeSlider('range slider','5000','10000')
-                        .formElements__container
-                            +containerHeader('buttons', '')
-
-
+                    .formElements__container
+                        +containerHeader('buttons', '')
+                        .formElements__container-buttons
+                            +button('button', 'click me')
+                            +button('button button-disabled', 'click me')
+                        .formElements__container-buttonsBorder
+                            +button('button__wrapper', 'click me')
+                            +button('button__wrapper buttonBorder-disabled', 'click me')
+                        .formElements__container-iconLink
+                            +iconLink('click me', 'hover')
+                            +iconLink('click me', '')
+                        .formElements__container-btnPayment
+                            +btnPayment('перейти к оплате')
+                    .formElements__container
+                        +containerHeader('pagination', '')
+                        +pagination('2','3','...','15')
 
                 .formElements__column
                 .formElements__column

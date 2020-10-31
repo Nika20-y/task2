@@ -72,7 +72,7 @@
   outline: 0 !important;
 }
 
-.button:disabled {
+.button-disabled {
   opacity: 0.5;
 }
 
@@ -93,7 +93,6 @@
   border: none;
   outline: 0 !important;
   z-index: -1;
-  cursor: pointer;
 }
 .button__wrapper .buttonBorder {
   border-radius: 2.2rem;
@@ -111,8 +110,11 @@
   font-weight: 700;
   text-transform: uppercase;
 }
+.button__wrapper .button__text {
+  cursor: pointer;
+}
 
-.button__wrapper:disabled {
+.buttonBorder-disabled {
   background-image: linear-gradient(180deg, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5));
 }
 
@@ -618,9 +620,14 @@ input.datepicker-here {
   text-transform: uppercase;
   color: rgba(31, 32, 65, 0.5);
   font-weight: 700;
+  cursor: pointer;
 }
 
 .iconLink:hover {
+  color: #BC9CFF;
+}
+
+.hover {
   color: #BC9CFF;
 }
 
@@ -724,6 +731,9 @@ input.datepicker-here {
   font-size: 2.4rem;
   color: #ffffff;
   padding: 0.8rem;
+}
+.pagination__next .material-icons {
+  color: #ffffff;
 }
 
 .pagination__text {
@@ -920,6 +930,7 @@ input[type=range] {
   width: 100%;
   opacity: 0;
   padding: 0;
+  cursor: pointer;
 }
 
 input[type=range]::-webkit-slider-thumb {
@@ -1237,6 +1248,46 @@ input::-webkit-input-placeholder {
   font-family: Quicksand;
   src: url(../fonts/Quicksand-Bold.ttf);
 }
+.btnPayment {
+  position: relative;
+  padding: 0.1rem 2.2rem 0 1.9rem;
+  height: 4.4rem;
+  width: 100%;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8ba4f9 100%);
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  border: none;
+  outline: none;
+  display: flex;
+  cursor: pointer;
+  border-radius: 2.2rem;
+  align-items: center;
+  justify-content: space-around;
+}
+.btnPayment .btnPayment__icon {
+  font-size: 2.4rem;
+  position: absolute;
+  top: 50%;
+  left: 93.1%;
+  transform: translate(-50%, -50%);
+}
+.btnPayment .btnPayment__icon .material-icons {
+  color: #ffffff;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Quicksand;
+  src: url(../fonts/Quicksand-Bold.ttf);
+}
 html {
   font-size: 10px;
 }
@@ -1329,6 +1380,42 @@ body {
 
 .formElements__container-slider {
   text-align: start;
+}
+
+.formElements__column_third > :nth-child(2) {
+  margin-top: 7.4rem;
+  margin-bottom: 4rem;
+}
+
+.formElements__container-buttons {
+  display: flex;
+  margin-top: 1.6rem;
+  margin-bottom: 3.2rem;
+  margin-left: 0.1rem;
+}
+
+.formElements__container-buttons > :first-child {
+  margin-right: 1.9rem;
+}
+
+.formElements__container-buttonsBorder {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.formElements__container-buttonsBorder > :first-child {
+  margin-right: 1.9rem;
+}
+
+.formElements__container-iconLink {
+  margin-top: 3.3rem;
+  margin-bottom: 3rem;
+  margin-left: 0.1rem;
+  display: flex;
+}
+
+.formElements__container-iconLink > :first-child {
+  margin-right: 2.1rem;
 }
 
 /*# sourceMappingURL=formElements.css.map */

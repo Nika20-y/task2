@@ -76,3 +76,31 @@ body{
 .formElements__container-slider{
 text-align: start;
 }
+.formElements__column_third>:nth-child(2){
+  margin-top: 7.4rem;
+  margin-bottom: 4rem;
+}
+.formElements__container-buttons{
+  display: flex;
+  margin-top: 1.6rem;
+  margin-bottom: 3.2rem;
+  margin-left: .1rem;
+}
+.formElements__container-buttons>:first-child{
+  margin-right: 1.9rem;}
+.formElements__container-buttonsBorder{
+  display: flex;
+  justify-content: flex-start;
+}
+.formElements__container-buttonsBorder>:first-child{
+  margin-right: 1.9rem;
+}
+.formElements__container-iconLink{
+  margin-top: 3.3rem;
+  margin-bottom: 3rem;
+  margin-left: .1rem;
+  display: flex;
+}
+.formElements__container-iconLink>:first-child{
+  margin-right: 2.1rem;
+}
