@@ -64,8 +64,12 @@ html
                         .formElements__container-rate
                             +rateBtn('star', 'star', 'star', 'star', 'star_border')
                             +rateBtn('star', 'star', 'star', 'star', 'star')
-
-
+                .formElements__column_third
+                    .formElements__container
+                        .formElements__container-slider
+                            +rangeSlider('range slider','5000','10000')
+                        .formElements__container
+                            +containerHeader('buttons', '')
 
 
 
@@ -78,3 +82,4 @@ html
         script(src='../../Blocks/DateDropdown/datepicker.min.js')
         script(src='../../Blocks/likeBtn/likeBtn.js')
         script(src='../../Blocks/rateBtn/rateBtn.js')
+        script(src='../../Blocks/rangeSlider/rangeSlider.js')

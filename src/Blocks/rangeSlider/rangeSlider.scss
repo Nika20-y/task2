@@ -2,54 +2,91 @@
 @import "../../style/variables";
 
 .rangeSlider{
-  position: relative;
-  max-width: 26.6rem;
+ width: 266px;
+  padding: 0;
+
 }
-.rangeSlider__header{
+.rangeSlider__title{
   display: flex;
   justify-content: space-between;
-  color: $half-dark;
-  @include fontContent(1.2rem,1.5rem);
-  .rangeSlider__label{
-font-weight: $bold-weight;
-    text-transform: uppercase;
+  align-items: center;
+  margin-bottom: 2.3rem;
+  text-transform: uppercase;
+  @include fontContent(1.2rem, 1.5rem);
+  .rangeSlider__header{
     color: $dark-black;
+    font-weight: $bold-weight;
+  }
+  .rangeSlider__values{
+    color: $half-dark;
+    font-weight: $light-weight;
   }
 }
-.rangeSlider__input {
-  display: flex;
-  justify-content: flex-end;
-  margin: 0 0 2.3rem 0;
-  font-weight: $light-weight;
 
+.middle{
+  position: relative;
 }
 .rangeSlider__item {
   position: relative;
-  width:26.6rem;
-  height:.6rem;
-  border-radius: .3rem;
+  z-index: 1;
+}
+.rangeSlider__track{
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 3px;
   background: $white;
+  height: .6rem;
   border: .1rem solid $light-dark;
   box-sizing: border-box;
 }
 
-.rangeSlider__button1, .rangeSlider__button2 {
+.rangeSlider__range{
   position: absolute;
-  top: 50%;
-  width: 1.2rem;
-  height: 1.2rem;
-  cursor: pointer;
-  transform: translateY(-50%);
-  border-radius: 50%;
-  background: $gradient-green;
-  border: .2rem solid $white;
   z-index: 2;
-
-}
-.rangeSlider__beetwen
-{
-  position: absolute;
+  left: 25%;
+  right: 25%;
+  top: 0;
+  bottom: 0;
   height: .6rem;
   background: $gradient-green;
-  border-radius: .3rem;
 }
+.rangeSlider__thumbLeft, .rangeSlider__thumbRight{
+  position: absolute;
+  z-index: 3;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: $gradient-green;
+  border-radius: 1rem;
+  border: .2rem solid $white;
+}
+.rangeSlider__thumbLeft{
+  left: 25%;
+  transform: translate(-15px, -6px);
+}
+.rangeSlider__thumbRight{
+  right: 25%;
+  transform: translate(15px, -6px);
+}
+input[type=range] {
+  position: absolute;
+  pointer-events: none;
+  -webkit-appearance: none;
+  z-index: 2;
+  height: 1rem;
+  width: 100%;
+  opacity: 0;
+  padding: 0;
+}
+input[type=range]::-webkit-slider-thumb {
+  pointer-events: all;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0;
+  border: 0 none;
+  -webkit-appearance: none;
+}
+

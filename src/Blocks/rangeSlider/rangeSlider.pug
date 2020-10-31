@@ -2,15 +2,17 @@ meta(charset="UTF-8")
 link(href='rangeSlider.css' rel='stylesheet')
 mixin rangeSlider(label,input1,input2)
     .rangeSlider
-        .rangeSlider__header
-            span.rangeSlider__label= label
-            .rangeSlider__input
-                .rangeSlider__input1= input1
-                span.rangeSlider__separator -
-                .rangeSlider__input2= input2
-        .rangeSlider__item
-            .rangeSlider__beetwen
-            button.rangeSlider__button1
-            button.rangeSlider__button2
+        .rangeSlider__title
+            .rangeSlider__header= label
+            span.rangeSlider__values
+        .rangeSlider__wrapper
+            .middle
+                input.rangeSlider__input1(value=""+input1 min="0" max="18000" step="1" type="range")
+                input.rangeSlider__input2(value=""+input2 min="0" max="18000" step="1" type="range")
+                .rangeSlider__item
+                    .rangeSlider__track
+                    .rangeSlider__range
+                    .rangeSlider__thumbLeft
+                    .rangeSlider__thumbRight
 
 script(src='rangeSlider.js')
