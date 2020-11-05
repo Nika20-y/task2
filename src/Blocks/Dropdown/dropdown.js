@@ -1,5 +1,6 @@
 
     var acc = document.getElementsByClassName("dropdown");
+    let allGuests= [];
 
     for (let i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function () {
@@ -10,73 +11,90 @@
             } else {
                 panel.style.display = "block";
             }
-        });
+        })
     }
-
+    document.addEventListener('DOMContentLoaded', function(){
+        setTitle();
+    }, false);
 
     let quantity = []
     let minus = []
     let plus = []
 
-    for (let i = 0; i < 3; i++) {
-        quantity[i] = document.getElementsByClassName("dropdown__visitors")[i];
-        minus[i] = document.getElementsByClassName("dropdown__minus")[i];
-        plus[i] = document.getElementsByClassName("dropdown__plus")[i];
-    }
-
-    let counter = [0, 0, 0]
-    let btnClear = document.getElementsByClassName('dropdown__clear')[0];
-    let btnSubmit = document.getElementsByClassName('dropdown__submit')[0]
-    let title = document.getElementsByClassName("dropdown__name")[0]
-    let allGuests;
-    let list = document.getElementsByClassName('dropdown__list')[0]
-
-    for (let x = 0; x < 3; x++) {
-        plus[x].onclick = function () {
-            if (counter[x] < 10) {
-                counter[x]++;
-                quantity[x].value = counter[x];
-            }
-            allGuests = counter[0] + counter[1] + counter[2];
-            setTitle();
-        };
-        minus[x].onclick = function () {
-            if (counter[x] > 0) {
-                counter[x]--;
-                quantity[x].value = counter[x];
-            }
-            allGuests = counter[0] + counter[1] + counter[2];
-            setTitle();
+    for (let i = 0; i < acc.length; i++){
+        allGuests[i]=0;
+        let counter = []
+        let a = 0;
+        while (a < 3){
+            let number = document.getElementsByClassName('dropdown__list')
+            counter.push(number[i].getElementsByClassName("dropdown__visitors")[a].value)
+            allGuests[i]=allGuests[i]+Number(counter[a]);
+            a++;
         }
     }
-    btnClear.onclick = function () {
-        quantity[0].value = 0;
-        quantity[1].value = 0;
-        quantity[2].value = 0;
-        counter[0] = 0;
-        counter[1] = 0;
-        counter[2] = 0;
-        title.innerHTML = 'Сколько гостей';
-        btnClear.style.visibility = "hidden";
+    let number = document.getElementsByClassName('dropdown__list')
+    let counter= [];
+
+    for (let i = 0; i < acc.length; i++) {
+        quantity = number[i].getElementsByClassName("dropdown__visitors");
+        minus = number[i].getElementsByClassName("dropdown__minus");
+        plus = number[i].getElementsByClassName("dropdown__plus");
+        for (let x = 0; x < 3; x++) {
+            counter[x]= quantity[x].value;
+            plus[x].onclick = function () {
+                if (counter[x] < 100) {
+                    counter[x]++;
+                    number[i].getElementsByClassName("dropdown__visitors")[x].value = counter[x];
+                    allGuests[i] = allGuests[i]+1;}
+                setTitle();
+
+            };
+            minus[x].onclick = function () {
+                if (counter[x] > 0) {
+                    counter[x]--;
+                    number[i].getElementsByClassName("dropdown__visitors")[x].value = counter[x];
+                    allGuests[i] = allGuests[i]-1;
+                }
+
+                setTitle();
+            }
+        }
     }
-    btnSubmit.onclick = function () {
-        list.style.display = 'none';
-    }
+
+    let title = document.getElementsByClassName("dropdown__name");
+    let btnClear = document.getElementsByClassName("dropdown__clear");
 
     function setTitle() {
-        if (allGuests > 0) {
-            if (allGuests === 1) {
-                title.innerHTML = '1 гость';
-            } else if (allGuests < 5) {
-                title.innerHTML = allGuests + ' ' + 'гостя';
+        for(let i=0; i<acc.length; i++){
+
+        if (allGuests[i] > 0) {
+            if (allGuests[i] === 1) {
+                title[i].innerHTML = '1 гость';
+            } else if (allGuests[i] < 5) {
+                title[i].innerHTML = allGuests[i] + ' ' + 'гостя';
             } else {
-                title.innerHTML = allGuests + ' ' + 'гостей';
+                title[i].innerHTML = allGuests[i] + ' ' + 'гостей';
             }
-            btnClear.style.visibility = "visible";
+            btnClear[i].style.visibility = "visible";
         } else {
-            title.innerHTML = 'Сколько гостей';
-            btnClear.style.visibility = "hidden";
+            title[i].innerHTML = 'Сколько гостей';
+            btnClear[i].style.visibility = "hidden";
+        }
+    }}
+
+    for(let i=0; i<acc.length; i++) {
+        let btnSubmit = document.getElementsByClassName('dropdown__submit')
+        btnClear[i].onclick = function () {
+            let a = 0;
+            while (a < 3){
+            number[i].getElementsByClassName("dropdown__visitors")[a].value = 0;
+            allGuests[a]=0;
+            counter[a]=0;
+            a++;}
+            title[i].innerHTML = 'Сколько гостей';
+            btnClear[i].style.visibility = "hidden";
+        }
+        btnSubmit[i].onclick = function () {
+            number[i].style.display = 'none';
         }
     }
-
-

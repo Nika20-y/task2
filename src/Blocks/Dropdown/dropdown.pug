@@ -1,30 +1,30 @@
 meta(charset="UTF-8")
 link(href='dropdown.css' rel='stylesheet')
 link(href='../../style/fonts/iconfont/material-icons.css' rel='stylesheet')
-mixin visitors
+mixin visitors(dropdownClass, quantity1, quantity2, quantity3)
     .dropdown
         .dropdown__wrapper
             .dropdown__name Сколько гостей
             .dropdown__icon
                 i.material-icons expand_more
-    ul.dropdown__list
+    ul(class='dropdown__list' style='display: '+dropdownClass)
         li.dropdown__li
             .dropdown__meaning Взрослые
             .dropdown__input
                 button.dropdown__minus -
-                input(type='number' value='0' min='0' max='10').dropdown__visitors
+                input(type='number' value=''+quantity1 min='0' max='10').dropdown__visitors
                 button.dropdown__plus +
         li.dropdown__li
             .dropdown__meaning Дети
             .dropdown__input
                 button.dropdown__minus -
-                input(type='number' value='0' min='0' max='10').dropdown__visitors
+                input(type='number' value=''+quantity2 min='0' max='10').dropdown__visitors
                 button.dropdown__plus +
         li.dropdown__li
             .dropdown__meaning Младенцы
             .dropdown__input
                 button.dropdown__minus -
-                input(type='number' value='0' min='0' max='10').dropdown__visitors
+                input(type='number' value=''+quantity3 min='0' max='10').dropdown__visitors
                 button.dropdown__plus +
         li.dropdown__li.dropdown__li-buttons
             .dropdown__clear

@@ -1,6 +1,8 @@
-export default  function dropdownFacil() {
-    let choice = document.getElementsByClassName("dropdownFacilities")[0];
-    choice.addEventListener("click", function () {
+
+    let choice = document.getElementsByClassName("dropdownFacilities");
+
+    for(let i=0; i<choice.length; i++){
+    choice[i].addEventListener("click", function () {
         this.classList.toggle("active");
         let facilities = this.nextElementSibling;
         if (facilities.style.display === "block") {
@@ -8,31 +10,39 @@ export default  function dropdownFacil() {
         } else {
             facilities.style.display = "block";
         }
-    });
+    });}
 
+    document.addEventListener('DOMContentLoaded', function(){
+        setTitle();
+    }, false);
 
     let quantity = []
     let minus = []
     let plus = []
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < choice.length*3; i++) {
         quantity[i] = document.getElementsByClassName("dropdownFacilities__quantity")[i];
         minus[i] = document.getElementsByClassName("dropdownFacilities__minus")[i];
         plus[i] = document.getElementsByClassName("dropdownFacilities__plus")[i];
     }
 
-    let counter = [0, 0, 0]
-    let title = document.getElementsByClassName("dropdownFacilities__name")[0]
-    let allFacilities;
-    let list = document.getElementsByClassName('dropdownFacilities__list')[0]
+    let counter = []
+    let a = 0;
+    let allFacilities=0;
+    while (a < choice.length*3){
+        counter.push(document.getElementsByClassName("dropdownFacilities__quantity")[a].value)
+        allFacilities=allFacilities+Number(counter[a]);
+        a++;
+    }
 
-    for (let x = 0; x < 3; x++) {
+
+    for (let x = 0; x < choice.length*3; x++) {
         plus[x].onclick = function () {
-            if (counter[x] < 10) {
+            if (counter[x] < 100) {
                 counter[x]++;
                 quantity[x].value = counter[x];
             }
-            allFacilities = counter[0] + counter[1] + counter[2];
+            allFacilities = allFacilities+counter[x];
             setTitle();
         };
         minus[x].onclick = function () {
@@ -40,44 +50,45 @@ export default  function dropdownFacil() {
                 counter[x]--;
                 quantity[x].value = counter[x];
             }
-            allFacilities = counter[0] + counter[1] + counter[2];
+            allFacilities = allFacilities-counter[x];
             setTitle();
         }
     }
 
     function setTitle() {
-        if (allFacilities > 0) {
-            let bedroom;
-            let bed;
-            let bathroom;
-            if (counter[0] > 0) {
-                bedroom = counter[0] + ' ' + 'спальни';
-                title.innerHTML = bedroom;
+        for( let i=0; i<choice.length;i++) {
+            var title = document.getElementsByClassName("dropdownFacilities__name")[i];
+            if (allFacilities > 0) {
+                let bedroom;
+                let bed;
+                let bathroom;
+                var ordinal = i * 3;
+                if (counter[ordinal] > 0) {
+                    bedroom = counter[ordinal] + ' ' + 'спальни';
+                    title.innerHTML = bedroom;
+                }
+                if (counter[1 + ordinal] > 0) {
+                    bed = counter[1 + ordinal] + ' ' + 'кровати';
+                    title.innerHTML = bed;
+                    if (counter[ordinal] > 0) {
+                        title.innerHTML = bedroom + ',' + ' ' + bed + '...';
+                    }
+                }
+                if (counter[2 + ordinal] > 0) {
+                    bathroom = counter[2 + ordinal] + ' ' + 'ванные комнаты';
+                    title.innerHTML = bathroom;
+                    if (counter[ordinal] > 0) {
+                        title.innerHTML = bedroom + ',' + ' ' + bathroom + '...';
+                    }
+                    if (counter[1 + ordinal] > 0) {
+                        title.innerHTML = bed + ',' + ' ' + bathroom + '...';
+                    }
+                    if (counter[1 + ordinal] > 0 && counter[ordinal] > 0) {
+                        title.innerHTML = bedroom + ',' + ' ' + bed + '...';
+                    }
+                }
+            } else {
+                title.innerHTML = 'Удобства';
             }
-            if (counter[1] > 0) {
-                bed = counter[1] + ' ' + 'кровати';
-                title.innerHTML = bed;
-                if (counter[0] > 0) {
-                    title.innerHTML = bedroom + ',' + ' ' + bed;
-                }
-            }
-            if (counter[2] > 0) {
-                bathroom = counter[2] + ' ' + 'ванные комнаты';
-                title.innerHTML = bathroom;
-                if (counter[0] > 0) {
-                    title.innerHTML = bedroom + ',' + ' ' + bathroom;
-                }
-                if (counter[1] > 0) {
-                    title.innerHTML = bed + ',' + ' ' + bathroom;
-                }
-                if (counter[1] > 0 && counter[0] > 0) {
-                    title.innerHTML = bedroom + ',' + ' ' + bed + ',' + ' ' + bathroom;
-                }
-            }
-
-        } else {
-            title.innerHTML = 'Удобства';
-
         }
-    }
 }

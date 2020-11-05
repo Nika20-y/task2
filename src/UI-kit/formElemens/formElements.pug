@@ -12,7 +12,7 @@ html
         .logo
             img(src="../../images/logo.svg").logo__img
         .formElements__wrapper
-            .formElements__row
+            .formElements__row-first
                 mixin containerHeader(label, status)
                     .formElements__container-header
                         .formElements__container-label= label
@@ -26,7 +26,7 @@ html
                         +textfield('This is pretty awesome',', hover')
                     .formElements__container
                         +containerHeader('dropdown', '')
-                        +visitors
+                        +visitors('','0','0','0')
                     .formElements__container
                         +containerHeader('masked text field', '')
                         +textfield('ДД.ММ.ГГГГ','')
@@ -84,10 +84,28 @@ html
                     .formElements__container
                         +containerHeader('pagination', '')
                         +pagination('2','3','...','15')
-
+            .formElements__row-second
                 .formElements__column
+                    .formElements__container
+                        +containerHeader('dropdown', 'default')
+                        +facilities('2', '2', '0', '')
+                    .formElements__container
+                        +containerHeader('dropdown', 'expanded')
+                        +facilities('2', '2', '0', 'block')
                 .formElements__column
-            .formElements__row
+                    .formElements__container
+                        +containerHeader('dropdown', '')
+                        +visitors('block','0','0','0')
+                .formElements__column
+                    .formElements__container
+                        +containerHeader('dropdown', '')
+                        +visitors('block','2','1','0')
+            .formElements__row-third
+                .formElements__column
+                    +checkboxDropdown('expandable checkbox list', '', 'Завтрак', 'Письменный стол',
+                        'Стул для кормления', 'Кроватка', 'Телевизор', 'Шампунь', 'Телевизор', 'Шампунь')
+                    +checkboxDropdown('expandable checkbox list', 'checkboxListExpanded', 'Завтрак', 'Письменный стол',
+                        'Стул для кормления', 'Кроватка', 'Телевизор', 'Шампунь', 'Телевизор', 'Шампунь')
             .formElements__row
             .formElements__row
         script(src='../../../dist/main.bundle.js')
@@ -95,3 +113,4 @@ html
         script(src='../../Blocks/likeBtn/likeBtn.js')
         script(src='../../Blocks/rateBtn/rateBtn.js')
         script(src='../../Blocks/rangeSlider/rangeSlider.js')
+        script(src='../../Blocks/dropdownFacilities/drpdownFacil.js')

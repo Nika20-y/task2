@@ -2,7 +2,8 @@
 @import "../../style/variables";
 
 .dropdown{
-  width: 100%;
+  position: relative;
+  min-width: 26rem;
   color: $light-dark;
   @include fontContent(1.4rem, 1.8rem);
   cursor: pointer;

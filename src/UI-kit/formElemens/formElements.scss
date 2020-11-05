@@ -18,7 +18,7 @@ body{
   margin: 2.5rem auto 0;
   text-align: center;
 }
-.formElements__row{
+.formElements__row-first, .formElements__row-second{
   display: flex;
   justify-content: space-between;
 }
@@ -103,4 +103,29 @@ text-align: start;
 }
 .formElements__container-iconLink>:first-child{
   margin-right: 2.1rem;
+}
+.formElements__row-second{
+  margin-top: 4rem;
+}
+.formElements__row-second>:first-child{
+  padding-right: 2rem;
+  margin-right: 10.8rem;
+  max-width: 26.5rem;
+}
+.formElements__row-second>:nth-child(2)>:first-child{
+  max-width: 32rem;
+  min-height: 23rem;
+  padding-right: 2rem;
+}
+.formElements__row-third>:first-child{
+  padding: 2rem;
+  margin-right: 8rem;
+}
+.formElements__row-third>:first-child>:first-child{
+  margin-bottom: 4.3rem;
+  max-width: 25.6rem;
+}
+.formElements__row-third>:first-child>:nth-child(2){
+  margin-left: -.1rem;
+  max-width: 25.6rem;
 }

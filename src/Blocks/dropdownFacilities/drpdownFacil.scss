@@ -9,18 +9,18 @@
   color: $light-dark;
   @include fontContent(1.4rem, 1.8rem);
   cursor: pointer;
+  background: $white;
 }
 .dropdownFacilities__wrapper{
   padding: .9rem;
   display: flex;
   justify-content: space-between;
-
+  align-items: center;
 }
 .material-icons{
   font-size: 2.4rem;
   color: $lighter-dark;
 }
-
 .dropdownFacilities__list{
   display: none;
   width: 100%;
@@ -28,6 +28,7 @@
   padding-bottom: .4rem;
   padding-top: .2rem;
   padding-left: 0;
+  background: $white;
   li{
     list-style: none;
     display: flex;
@@ -38,6 +39,7 @@
   box-sizing: border-box;
   box-shadow: 0 1rem 2rem $half-dark;
 }
+
 .dropdownFacilities__minus, .dropdownFacilities__plus{
   text-decoration: none;
   background: $white;
@@ -45,7 +47,7 @@
   height: 3rem;
   border: .1rem solid $light-dark;
   border-radius: 2rem;
-  @include fontContent(1.8rem, 2.2rem);
+  @include fontContent(1.2rem, 1.5rem);
   color: $half-dark;
   outline: 0 !important;
 }
@@ -53,7 +55,7 @@
   text-align: center;
   text-decoration: none;
   border: none;
-  @include fontContent(1.8rem, 2.2rem);
+  @include fontContent(1.2rem, 1.5rem);
   font-weight: $bold-weight;
   outline: 0 !important;
   width: 3.2rem;

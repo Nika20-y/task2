@@ -7,12 +7,21 @@
   display: flex;
   justify-content: space-between;
   cursor: pointer;
+  align-items: center;
 }
 .checkboxList__dropdown{
   display: none;
 }
 .checkboxList__buttons{
   display: grid;
+}
+.checkboxListExpanded{
+  .checkboxList__dropdown{
+    display: block;
+  }
+  .checkboxList__icon-item{
+    transform: rotate(180deg);
+  }
 }
 
 .checkboxList__adds{
