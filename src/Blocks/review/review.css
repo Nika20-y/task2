@@ -1,0 +1,43 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Quicksand;
+  src: url(../fonts/Quicksand-Bold.ttf);
+}
+.review__item {
+  display: flex;
+}
+
+.review__avatar {
+  width: 4.8rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 1rem;
+}
+
+.review__likeBtn {
+  margin-left: 0.4rem;
+  margin-top: 1.2rem;
+}
+
+.review__username {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.review__date, .review__comment {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+/*# sourceMappingURL=review.css.map */

@@ -1300,6 +1300,104 @@ input::-webkit-input-placeholder {
   font-family: Quicksand;
   src: url(../fonts/Quicksand-Bold.ttf);
 }
+.properties__wrapper {
+  min-width: 24rem;
+}
+
+.properties__content {
+  display: flex;
+  margin-bottom: 1.2rem;
+}
+.properties__content .material-icons {
+  font-size: 4.8rem;
+  line-height: 4.1rem;
+  margin-right: 1rem;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8ba4f9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #BC9CFF;
+  text-align: center;
+}
+
+.properties__item {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: normal;
+}
+.properties__item .properties__name {
+  font-weight: 700;
+}
+
+.properties__line {
+  background: rgba(31, 32, 65, 0.1);
+  height: 0.1rem;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Quicksand;
+  src: url(../fonts/Quicksand-Bold.ttf);
+}
+.review__item {
+  display: flex;
+}
+
+.review__avatar {
+  width: 4.8rem;
+  margin-right: 1rem;
+}
+
+.review__avatar-img {
+  margin-left: -2rem;
+  margin-top: -1rem;
+  margin-bottom: -2rem;
+}
+
+.review__likeBtn {
+  margin-left: -1rem;
+}
+
+.review__username {
+  text-align: left;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.review__date, .review__comment {
+  text-align: left;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.review__comment {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Quicksand;
+  src: url(../fonts/Quicksand-Bold.ttf);
+}
 html {
   font-size: 10px;
 }
@@ -1320,7 +1418,7 @@ body {
   text-align: center;
 }
 
-.formElements__row-first, .formElements__row-second {
+.formElements__row-first, .formElements__row-second, .formElements__row-third, .formElements__row-fourth {
   display: flex;
   justify-content: space-between;
 }
@@ -1447,7 +1545,7 @@ body {
 }
 
 .formElements__row-third > :first-child {
-  padding: 2rem;
+  padding-right: 2rem;
   margin-right: 8rem;
 }
 
@@ -1459,6 +1557,28 @@ body {
 .formElements__row-third > :first-child > :nth-child(2) {
   margin-left: -0.1rem;
   max-width: 25.6rem;
+}
+
+.formElements__row-third > :nth-child(3) {
+  text-align: left;
+}
+
+.formElements__row-fourth {
+  margin-top: 5.1rem;
+}
+
+.formElements__row-fourth > :first-child {
+  max-width: 27rem;
+  padding-right: 2rem;
+  margin-left: -0.1rem;
+  text-align: left;
+}
+
+.formElements__row-fourth > :nth-child(2) {
+  flex: 1 1 0;
+  padding: 2rem;
+  max-width: 71.2rem;
+  margin-top: 1rem;
 }
 
 /*# sourceMappingURL=formElements.css.map */

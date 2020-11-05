@@ -18,7 +18,7 @@ body{
   margin: 2.5rem auto 0;
   text-align: center;
 }
-.formElements__row-first, .formElements__row-second{
+.formElements__row-first, .formElements__row-second, .formElements__row-third, .formElements__row-fourth{
   display: flex;
   justify-content: space-between;
 }
@@ -118,7 +118,7 @@ text-align: start;
   padding-right: 2rem;
 }
 .formElements__row-third>:first-child{
-  padding: 2rem;
+  padding-right: 2rem;
   margin-right: 8rem;
 }
 .formElements__row-third>:first-child>:first-child{
@@ -128,4 +128,22 @@ text-align: start;
 .formElements__row-third>:first-child>:nth-child(2){
   margin-left: -.1rem;
   max-width: 25.6rem;
+}
+.formElements__row-third>:nth-child(3){
+  text-align: left;
+}
+.formElements__row-fourth{
+  margin-top: 5.1rem;
+}
+.formElements__row-fourth>:first-child{
+  max-width: 27rem;
+  padding-right: 2rem;
+  margin-left: -.1rem;
+  text-align: left;
+}
+.formElements__row-fourth>:nth-child(2){
+  flex: 1 1 0;
+  padding: 2rem;
+  max-width: 71.2rem;
+  margin-top: 1rem;
 }

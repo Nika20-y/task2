@@ -1,10 +1,8 @@
 meta(charset="UTF-8")
 link(href='bulletList.css' rel='stylesheet')
-mixin bulletList(title,...items)
-    .bulletList
-        .bulletList__title= title
-        ul.bulletList__rules
-            each item in items
-                li.bulletList__li
-                    span.bulletList__text= item
+mixin bulletList(...items)
+    ul.bulletList__rules
+        each item in items
+            li.bulletList__li
+                span.bulletList__text= item
 
