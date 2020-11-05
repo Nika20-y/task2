@@ -6,3 +6,6 @@ $('.datepicker-here').datepicker({
     moveToOtherYearsOnSelect: false,
     autoClose: true,
 })
+$('.filterDate').datepicker({
+    dateFormat: "dd M",
+})

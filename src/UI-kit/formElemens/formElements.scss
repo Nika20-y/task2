@@ -22,30 +22,57 @@ body{
   display: flex;
   justify-content: space-between;
 }
+.formElements__column_first, .formElements__column_third{
+  flex: 1 1 0;
+  padding: 2rem;
+  max-width: 32rem;
+}
+.formElements__column_first>:first-child{
+  max-width: 32rem;
+}
 .formElements__container {
   margin: 2rem 0;
-  .formElements__container-header{
-    text-transform: uppercase;
-    margin-bottom: .5rem;
-    display: flex;
-    justify-content: space-between;
-    @include fontContent(1.2rem, 1.5rem);
-    .formElements__container-label{
-      font-weight: $bold-weight;
-      color: $dark-black;
-    }
-    .formElements__container-status{
-      font-weight: $light-weight;
-      color: $half-dark;
-    }
+}
+.formElements__container-header{
+  text-transform: uppercase;
+  margin-bottom: .5rem;
+  display: flex;
+  justify-content: space-between;
+  @include fontContent(1.2rem, 1.5rem);
+  .formElements__container-label{
+    font-weight: $bold-weight;
+    color: $dark-black;
+  }
+  .formElements__container-status{
+    font-weight: $light-weight;
+    color: $half-dark;
   }
 }
 .formElements__container-date{
   display: flex;
   justify-content: space-between;
+  max-width: 32rem;
+}
+.formElements__container-date>:first-child{
+  margin-right: 2rem;
+}
+.formElements__container-date>:first-child, .formElements__container-date>:nth-child(2){
+width: 100%;
+}
+.formElements__container-filterDate, .formElements__container-subTextfield{
+  max-width: 29rem;
+  margin: 2rem 0;
+}
+.formElements__column_second{
+  flex: 1 1 0;
+  max-width: 26.6rem;
+  padding: 2rem;
 }
 .formElements__column_second>:first-child{
   margin-bottom: 4rem;
+}
+.formElements__column_second>:first-child>:first-child{
+  margin-bottom: 1.6rem;
 }
 .formElements__column_second>:nth-child(2){
   margin-bottom: 3.9rem;
@@ -110,7 +137,10 @@ text-align: start;
 .formElements__row-second>:first-child{
   padding-right: 2rem;
   margin-right: 10.8rem;
-  max-width: 26.5rem;
+  max-width: 26.6rem;
+  flex: 1 1 0;
+  padding-left: 2rem;
+  min-height: 29rem;
 }
 .formElements__row-second>:nth-child(2)>:first-child{
   max-width: 32rem;

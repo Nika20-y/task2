@@ -126,8 +126,21 @@
   font-family: Quicksand;
   src: url(../fonts/Quicksand-Bold.ttf);
 }
-.checkboxList {
-  margin-top: 1.6rem;
+.checkboxList label {
+  padding-left: 2.98rem;
+}
+
+.checkboxlist_checked .checkboxList__checkbox::before {
+  display: block;
+}
+.checkboxlist_checked .checkboxList__adds input + .checkboxList__checkbox {
+  border-color: #BC9CFF;
+}
+.checkboxlist_checked .checkboxList__adds input:checked + .checkboxList__checkbox {
+  border-color: rgba(31, 32, 65, 0.25);
+}
+.checkboxlist_checked .checkboxList__custom:checked ~ .checkboxList__checkbox:before {
+  display: none;
 }
 
 .checkboxList__wrapper {
@@ -227,6 +240,10 @@
 .date {
   display: flex;
   position: relative;
+  width: 100%;
+}
+.date input::-webkit-input-placeholder {
+  color: rgba(31, 32, 65, 0.75);
 }
 
 .date__icon {
@@ -239,7 +256,7 @@
 input.datepicker-here {
   border: 0.1rem solid rgba(31, 32, 65, 0.25);
   border-radius: 0.4rem;
-  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.75);
   font-family: Montserrat, sans-serif;
   font-style: normal;
   font-size: 1.4rem;
@@ -399,7 +416,7 @@ input.datepicker-here {
 .dropdown {
   position: relative;
   min-width: 26rem;
-  color: rgba(31, 32, 65, 0.25);
+  color: rgba(31, 32, 65, 0.75);
   font-family: Montserrat, sans-serif;
   font-style: normal;
   font-size: 1.4rem;
@@ -522,8 +539,8 @@ input.datepicker-here {
   src: url(../fonts/Quicksand-Bold.ttf);
 }
 .dropdownFacilities {
+  width: 100%;
   position: relative;
-  min-width: 26rem;
   border: 0.1rem solid rgba(31, 32, 65, 0.25);
   border-radius: 0.4rem;
   color: rgba(31, 32, 65, 0.25);
@@ -755,6 +772,7 @@ input.datepicker-here {
   line-height: 2.4rem;
   color: rgba(31, 32, 65, 0.75);
   margin-top: 1rem;
+  text-align: left;
 }
 
 @font-face {
@@ -823,7 +841,7 @@ input.datepicker-here {
   border-radius: 10px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8ba4f9 100%);
   top: 50%;
-  left: 10.2%;
+  left: 11%;
   transform: translate(-50%, -50%);
   display: none;
 }
@@ -1088,7 +1106,6 @@ input[type=range]::-webkit-slider-thumb {
 .subTextfield {
   display: flex;
   position: relative;
-  width: 100%;
 }
 
 .subTextfield__icon {
@@ -1103,6 +1120,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 input.subTextfield__input {
+  width: 100%;
   border: 0.1rem solid rgba(31, 32, 65, 0.25);
   border-radius: 0.4rem;
   color: rgba(31, 32, 65, 0.25);
@@ -1128,8 +1146,12 @@ input.subTextfield__input {
   font-family: Quicksand;
   src: url(../fonts/Quicksand-Bold.ttf);
 }
+.textField__wrapper input {
+  min-width: 29rem;
+  position: relative;
+}
+
 input.Text-field {
-  width: 100%;
   border: 0.1rem solid rgba(31, 32, 65, 0.25);
   border-radius: 0.4rem;
   font-family: Montserrat, sans-serif;
@@ -1140,9 +1162,6 @@ input.Text-field {
   outline: none !important;
   color: rgba(31, 32, 65, 0.5);
 }
-input.Text-field .hover {
-  border: 0.1rem solid rgba(31, 32, 65, 0.5);
-}
 
 input::-webkit-input-placeholder {
   color: rgba(31, 32, 65, 0.25);
@@ -1152,6 +1171,13 @@ input::-webkit-input-placeholder {
   border: 0.1rem solid rgba(31, 32, 65, 0.5);
   color: rgba(31, 32, 65, 0.5);
   border-radius: 0.4rem;
+}
+
+.hover input.Text-field {
+  border: 0.1rem solid rgba(31, 32, 65, 0.5);
+}
+.hover input::-webkit-input-placeholder {
+  color: rgba(31, 32, 65, 0.75);
 }
 
 @font-face {
@@ -1423,10 +1449,21 @@ body {
   justify-content: space-between;
 }
 
+.formElements__column_first, .formElements__column_third {
+  flex: 1 1 0;
+  padding: 2rem;
+  max-width: 32rem;
+}
+
+.formElements__column_first > :first-child {
+  max-width: 32rem;
+}
+
 .formElements__container {
   margin: 2rem 0;
 }
-.formElements__container .formElements__container-header {
+
+.formElements__container-header {
   text-transform: uppercase;
   margin-bottom: 0.5rem;
   display: flex;
@@ -1436,11 +1473,11 @@ body {
   font-size: 1.2rem;
   line-height: 1.5rem;
 }
-.formElements__container .formElements__container-header .formElements__container-label {
+.formElements__container-header .formElements__container-label {
   font-weight: 700;
   color: #1f2041;
 }
-.formElements__container .formElements__container-header .formElements__container-status {
+.formElements__container-header .formElements__container-status {
   font-weight: 400;
   color: rgba(31, 32, 65, 0.5);
 }
@@ -1448,10 +1485,34 @@ body {
 .formElements__container-date {
   display: flex;
   justify-content: space-between;
+  max-width: 32rem;
+}
+
+.formElements__container-date > :first-child {
+  margin-right: 2rem;
+}
+
+.formElements__container-date > :first-child, .formElements__container-date > :nth-child(2) {
+  width: 100%;
+}
+
+.formElements__container-filterDate, .formElements__container-subTextfield {
+  max-width: 29rem;
+  margin: 2rem 0;
+}
+
+.formElements__column_second {
+  flex: 1 1 0;
+  max-width: 26.6rem;
+  padding: 2rem;
 }
 
 .formElements__column_second > :first-child {
   margin-bottom: 4rem;
+}
+
+.formElements__column_second > :first-child > :first-child {
+  margin-bottom: 1.6rem;
 }
 
 .formElements__column_second > :nth-child(2) {
@@ -1535,7 +1596,10 @@ body {
 .formElements__row-second > :first-child {
   padding-right: 2rem;
   margin-right: 10.8rem;
-  max-width: 26.5rem;
+  max-width: 26.6rem;
+  flex: 1 1 0;
+  padding-left: 2rem;
+  min-height: 29rem;
 }
 
 .formElements__row-second > :nth-child(2) > :first-child {

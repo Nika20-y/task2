@@ -41,4 +41,5 @@ display: flex;
   @include fontContent(1.4rem, 2.4rem);
   color: $lighter-dark;
   margin-top: 1rem;
+  text-align: left;
 }

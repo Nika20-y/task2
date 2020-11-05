@@ -2,8 +2,8 @@
 @import "../../style/variables";
 
 .dropdownFacilities{
+  width: 100%;
   position: relative;
-  min-width: 26rem;
   border: .1rem solid $light-dark;
   border-radius: .4rem;
   color: $light-dark;

@@ -1,7 +1,23 @@
 @import "../../style/mixins/mixin";
 @import "../../style/variables";
 .checkboxList{
-  margin-top: 1.6rem;
+  label{
+    padding-left: 2.98rem;
+  }
+}
+.checkboxlist_checked{
+  .checkboxList__checkbox::before {
+    display: block;
+  }
+  .checkboxList__adds input +.checkboxList__checkbox{
+    border-color: $purple;
+  }
+  .checkboxList__adds input:checked +.checkboxList__checkbox{
+    border-color: $light-dark;
+  }
+  .checkboxList__custom:checked ~.checkboxList__checkbox:before {
+    display: none;
+  }
 }
 .checkboxList__wrapper{
   display: flex;
@@ -14,6 +30,7 @@
 }
 .checkboxList__buttons{
   display: grid;
+
 }
 .checkboxListExpanded{
   .checkboxList__dropdown{
@@ -25,7 +42,6 @@
 }
 
 .checkboxList__adds{
-
   text-align: left;
   padding-top: .1rem;
   padding-bottom: .1rem;
@@ -62,6 +78,7 @@ position: absolute;
 .checkboxList__custom:checked ~.checkboxList__checkbox:before {
 display: block;
 }
+
 .checkboxList__adds input:checked +.checkboxList__checkbox{
   border-color: $purple;
 }

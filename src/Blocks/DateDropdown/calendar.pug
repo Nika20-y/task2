@@ -4,9 +4,9 @@ link(href='datepicker.min.css' rel='stylesheet')
 script(src="https://code.jquery.com/jquery-1.12.4.js")
 script(src='datepicker.min.js')
 link(href='calendar.css' rel='stylesheet')
-mixin calendar
+mixin calendar(datePlaceholder)
     .date
-        input(type="text" class="datepicker-here" placeholder='ДД.ММ.ГГГГ')
+        input(type="text" class="datepicker-here" placeholder=''+datePlaceholder)
         .date__icon
             i.material-icons expand_more
 

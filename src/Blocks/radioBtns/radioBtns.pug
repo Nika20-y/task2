@@ -1,13 +1,13 @@
 meta(charset="UTF-8")
 link(href='radioBtns.css' rel='stylesheet')
-mixin radioBtns(description1, description2)
+mixin radioBtns( description1, description2)
     .radioBtns
         .radioBtns__buttons
-            label.radioBtns__adds
-                input(type="radio" name="adds" class="radioBtns__custom")
+            label(class='radioBtns__adds')
+                input(type="radio" name="adds" class="radioBtns__custom" checked)
                 span.radioBtns__radio
                 span.radioBtns__description= description1
-            label.radioBtns__adds
+            label(class='radioBtns__adds')
                 input(type="radio" name="adds" class="radioBtns__custom")
                 span.radioBtns__radio
                 span.radioBtns__description= description2

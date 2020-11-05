@@ -5,9 +5,9 @@ link(href='../DateDropdown/datepicker.min.css' rel='stylesheet')
 script(src="https://code.jquery.com/jquery-1.12.4.js")
 script(src='../DateDropdown/datepicker.min.js')
 link(href='../DateDropdown/calendar.css' rel='stylesheet')
-mixin rangeCalendar
+mixin rangeCalendar(datePlaceholder)
     .date
-        input(type="text" class="datepicker-here" data-range="true" data-format="dd M" data-multiple-dates-separator=" - " placeholder='ДД.ММ.ГГГГ' )
+        input(type="text" class="datepicker-here filterDate" data-range="true" data-format="dd M" data-multiple-dates-separator=" - " placeholder=''+datePlaceholder )
         .date__icon
             i.material-icons expand_more
 
