@@ -17,17 +17,18 @@
   text-transform: uppercase;
   font-weight: $bold-weight;
   margin-bottom: 1rem;
+
 }
 .checkboxList__adds{
   display: block;
   position: relative;
   padding-top: .1rem;
-  padding-left: 2rem;
   padding-bottom: .1rem;
   @include fontContent(1.4rem, 1.8rem);
   font-weight: bold;
   color: $lighter-dark;
   margin-bottom: 1.1rem;
+  padding-left: 2.98rem;
 }
 
 .checkboxList__custom{
@@ -79,5 +80,6 @@
   @include fontContent(1.2rem, 1.4rem);
   color: $half-dark;
   font-weight: $light-weight;
-  margin: 0;
+  margin-left: 0;
+  margin-top: 1rem;
 }
