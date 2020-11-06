@@ -148,6 +148,12 @@
   justify-content: space-between;
   cursor: pointer;
   align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.checkboxList-icon {
+  display: flex;
+  align-items: center;
 }
 
 .checkboxList__dropdown {
@@ -549,7 +555,7 @@ input.datepicker-here {
 }
 
 .dropdownFacilities__wrapper {
-  padding: 0.9rem;
+  padding: 0.7rem 1.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -577,6 +583,10 @@ input.datepicker-here {
   display: flex;
   justify-content: space-between;
   padding: 0.4rem 0.6rem 0.3rem 1.3rem;
+}
+
+.dropdownFacilities__meaning {
+  margin-top: 0.6rem;
 }
 
 .dropdownFacilities__minus, .dropdownFacilities__plus {
@@ -1498,6 +1508,10 @@ body {
   margin: 2rem 0;
 }
 
+.formElements__container-subTextfield {
+  margin-top: 4rem;
+}
+
 .formElements__column_second {
   flex: 1 1 0;
   max-width: 26.6rem;
@@ -1505,7 +1519,7 @@ body {
 }
 
 .formElements__column_second > :first-child {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .formElements__column_second > :first-child > :first-child {
@@ -1555,6 +1569,10 @@ body {
   margin-bottom: 4rem;
 }
 
+.formElements__column_third > :nth-child(3) {
+  max-width: 24.1rem;
+}
+
 .formElements__container-buttons {
   display: flex;
   margin-top: 1.6rem;
@@ -1599,6 +1617,10 @@ body {
   min-height: 29rem;
 }
 
+.formElements__row-second > :first-child > :first-child {
+  margin-bottom: 1rem;
+}
+
 .formElements__row-second > :nth-child(2),
 .formElements__row-second > :nth-child(3) {
   flex: 1 1 0;
@@ -1615,13 +1637,13 @@ body {
 
 .formElements__row-third > :first-child {
   flex: 1 1 0;
-  padding: 2rem;
+  padding: 1.3rem 2rem 2rem 2rem;
   margin-right: 25rem;
 }
 
 .formElements__row-third > :nth-child(2) {
   flex: 1 1 0;
-  padding: 2rem;
+  padding: 1.3rem 2rem 2rem 2rem;
   margin-right: 2rem;
 }
 
@@ -1630,7 +1652,7 @@ body {
 }
 
 .formElements__row-third > :first-child > :first-child {
-  margin-bottom: 4.3rem;
+  margin-bottom: 3.9rem;
   max-width: 25.6rem;
 }
 
@@ -1642,7 +1664,7 @@ body {
 .formElements__row-third > :nth-child(3) {
   text-align: left;
   flex: 1 1 0;
-  padding: 2rem;
+  padding: 1.3rem 2rem 2rem 2rem;
   margin-left: 17rem;
 }
 

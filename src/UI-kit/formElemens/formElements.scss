@@ -63,13 +63,16 @@ width: 100%;
   max-width: 29rem;
   margin: 2rem 0;
 }
+.formElements__container-subTextfield{
+  margin-top: 4rem;
+}
 .formElements__column_second{
   flex: 1 1 0;
   max-width: 26.6rem;
   padding: 2rem;
 }
 .formElements__column_second>:first-child{
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 .formElements__column_second>:first-child>:first-child{
   margin-bottom: 1.6rem;
@@ -107,6 +110,9 @@ text-align: start;
   margin-top: 7.4rem;
   margin-bottom: 4rem;
 }
+.formElements__column_third>:nth-child(3){
+  max-width: 24.1rem;
+}
 .formElements__container-buttons{
   display: flex;
   margin-top: 1.6rem;
@@ -142,6 +148,9 @@ text-align: start;
   padding-left: 2rem;
   min-height: 29rem;
 }
+.formElements__row-second>:first-child>:first-child{
+margin-bottom: 1rem;
+}
 .formElements__row-second>:nth-child(2),
 .formElements__row-second>:nth-child(3){
   flex: 1 1 0;
@@ -157,19 +166,19 @@ text-align: start;
 }
 .formElements__row-third>:first-child{
   flex: 1 1 0;
-  padding: 2rem;
+  padding: 1.3rem 2rem 2rem 2rem;
   margin-right: 25rem;
 }
 .formElements__row-third>:nth-child(2){
   flex: 1 1 0;
-  padding: 2rem;
+  padding: 1.3rem 2rem 2rem 2rem;
   margin-right: 2rem;
 }
 .formElements__row-third>:nth-child(2)>:first-child>:first-child {
   margin-bottom: 1.6rem;
 }
   .formElements__row-third>:first-child>:first-child{
-    margin-bottom: 4.3rem;
+    margin-bottom: 3.9rem;
     max-width: 25.6rem;
   }
   .formElements__row-third>:first-child>:nth-child(2){
@@ -179,7 +188,7 @@ text-align: start;
   .formElements__row-third>:nth-child(3){
     text-align: left;
     flex: 1 1 0;
-    padding: 2rem;
+    padding: 1.3rem 2rem 2rem 2rem;
     margin-left: 17rem;
   }
   .formElements__row-fourth{

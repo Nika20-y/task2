@@ -12,7 +12,7 @@
   background: $white;
 }
 .dropdownFacilities__wrapper{
-  padding: .9rem;
+  padding: .7rem 1.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,6 +40,9 @@
   box-shadow: 0 1rem 2rem $half-dark;
 }
 
+.dropdownFacilities__meaning{
+  margin-top: .6rem;
+}
 .dropdownFacilities__minus, .dropdownFacilities__plus{
   text-decoration: none;
   background: $white;
@@ -50,6 +53,7 @@
   @include fontContent(1.2rem, 1.5rem);
   color: $half-dark;
   outline: 0 !important;
+
 }
 .dropdownFacilities__quantity{
   text-align: center;

@@ -24,6 +24,11 @@
   justify-content: space-between;
   cursor: pointer;
   align-items: center;
+  margin-bottom: .5rem;
+}
+.checkboxList-icon{
+  display: flex;
+  align-items: center;
 }
 .checkboxList__dropdown{
   display: none;
