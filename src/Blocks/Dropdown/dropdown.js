@@ -48,7 +48,7 @@ for (let i = 0; i < acc.length; i++) {
                 number[i].getElementsByClassName("dropdown__visitors")[x].value = counter[i][x];
                 allGuests[i] = allGuests[i]+1;}
             setTitle();
-
+            number[i].getElementsByClassName("dropdown__minus")[x].style.opacity = '1';
         };
         minus[x].onclick = function () {
             if (counter[i][x] > 0) {
@@ -56,9 +56,17 @@ for (let i = 0; i < acc.length; i++) {
                 number[i].getElementsByClassName("dropdown__visitors")[x].value = counter[i][x];
                 allGuests[i] = allGuests[i]-1;
             }
-
+            if (counter[i][x]===0) {
+                number[i].getElementsByClassName("dropdown__minus")[x].style.opacity = '0.5';
+            }
             setTitle();
         }
+        if (quantity[x].value > 0) {
+            minus[x].style.opacity = '1';
+        } else {
+            minus[x].style.opacity = '0.5';
+        }
+
     }
 }
 
@@ -81,7 +89,9 @@ function setTitle() {
             title[i].innerHTML = 'Сколько гостей';
             btnClear[i].style.visibility = "hidden";
         }
-    }}
+
+    }
+}
 
 for(let i=0; i<acc.length; i++) {
     let btnSubmit = document.getElementsByClassName('dropdown__submit')
@@ -99,3 +109,4 @@ for(let i=0; i<acc.length; i++) {
         number[i].style.display = 'none';
     }
 }
+

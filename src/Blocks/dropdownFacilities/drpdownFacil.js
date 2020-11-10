@@ -1,5 +1,6 @@
 
     let choice = document.getElementsByClassName("dropdownFacilities");
+    let list = document.getElementsByClassName("dropdownFacilities__list");
 
     for(let i=0; i<choice.length; i++){
     choice[i].addEventListener("click", function () {
@@ -21,48 +22,65 @@
     let plus = []
 
     for (let i = 0; i < choice.length*3; i++) {
-        quantity[i] = document.getElementsByClassName("dropdownFacilities__quantity")[i];
-        minus[i] = document.getElementsByClassName("dropdownFacilities__minus")[i];
-        plus[i] = document.getElementsByClassName("dropdownFacilities__plus")[i];
+
     }
 
     let counter = []
-    let a = 0;
-    let allFacilities=0;
-    while (a < choice.length*3){
-        counter.push(document.getElementsByClassName("dropdownFacilities__quantity")[a].value)
-        allFacilities=allFacilities+Number(counter[a]);
+
+    let allFacilities=[];
+    for(let i=0; i<choice.length; i++){
+        allFacilities[i]=0;
+        let a = 0;
+    while (a < 3) {
+        counter.push(list[i].getElementsByClassName("dropdownFacilities__quantity")[a].value)
+        allFacilities[i] = allFacilities[i] + Number(counter[a]);
         a++;
     }
+    }
 
-
-    for (let x = 0; x < choice.length*3; x++) {
+    for(let i=0; i<choice.length; i++){
+        quantity = list[i].getElementsByClassName("dropdownFacilities__quantity");
+        minus = list[i].getElementsByClassName("dropdownFacilities__minus");
+        plus = list[i].getElementsByClassName("dropdownFacilities__plus");
+    for (let x = 0; x < 3; x++) {
+        counter[x+(i*3)]= quantity[x].value;
         plus[x].onclick = function () {
-            if (counter[x] < 100) {
-                counter[x]++;
-                quantity[x].value = counter[x];
+            if (counter[x+(i*3)] < 100) {
+                counter[x+(i*3)]++;
+                list[i].getElementsByClassName("dropdownFacilities__quantity")[x].value = counter[x+(i*3)];
             }
-            allFacilities = allFacilities+counter[x];
+            allFacilities[i] = allFacilities[i]+1;
+            list[i].getElementsByClassName("dropdownFacilities__minus")[x].style.opacity="1";
             setTitle();
         };
         minus[x].onclick = function () {
-            if (counter[x] > 0) {
-                counter[x]--;
-                quantity[x].value = counter[x];
+            if (counter[x+(i*3)] > 0) {
+                allFacilities[i] = allFacilities[i]-1;
+                counter[x+(i*3)]--;
+                list[i].getElementsByClassName("dropdownFacilities__quantity")[x].value = counter[x+(i*3)];
             }
-            allFacilities = allFacilities-counter[x];
+            if (counter[x+(i*3)]===0) {
+                list[i].getElementsByClassName("dropdownFacilities__minus")[x].style.opacity="0.5";
+            }
             setTitle();
+            }
+        if (quantity[x].value > 0) {
+            minus[x].style.opacity = '1';
+        } else {
+            minus[x].style.opacity = '0.5';
         }
-    }
+    }}
+
+
 
     function setTitle() {
         for( let i=0; i<choice.length;i++) {
             var title = document.getElementsByClassName("dropdownFacilities__name")[i];
-            if (allFacilities > 0) {
+            var ordinal = i * 3;
+            if (allFacilities[i] > 0) {
                 let bedroom;
                 let bed;
                 let bathroom;
-                var ordinal = i * 3;
                 if (counter[ordinal] > 0) {
                     bedroom = counter[ordinal] + ' ' + 'спальни';
                     title.innerHTML = bedroom;
@@ -87,7 +105,8 @@
                         title.innerHTML = bedroom + ',' + ' ' + bed + '...';
                     }
                 }
-            } else {
+            }
+            else {
                 title.innerHTML = 'Удобства';
             }
         }
