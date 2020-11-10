@@ -17,9 +17,9 @@
   text-transform: uppercase;
   font-weight: $bold-weight;
   margin-bottom: 1rem;
-
 }
-.checkboxList__adds{
+
+.checkboxList__adds, .richcheckboxList__adds{
   display: block;
   position: relative;
   padding-top: .1rem;
@@ -30,8 +30,11 @@
   margin-bottom: 1.1rem;
   padding-left: 2.98rem;
 }
+.richcheckboxList__adds{
+  margin-bottom: -.4rem;
+}
 
-.checkboxList__custom{
+.checkboxList__custom, .richcheckboxList__custom{
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -39,7 +42,7 @@
   width: 0;
   height: 0;
 }
-.checkboxList__checkbox::before {
+.checkboxList__checkbox::before, .richcheckboxList__checkbox::before {
   content: "";
   width: .4rem;
   height: .6rem;
@@ -60,7 +63,13 @@
 .checkboxList__adds input:checked +.checkboxList__checkbox{
   border-color: $purple;
 }
-.checkboxList__checkbox{
+.richcheckboxList__custom:checked ~.richcheckboxList__checkbox:before {
+  display: block;
+}
+.richcheckboxList__adds input:checked +.richcheckboxList__checkbox{
+  border-color: $purple;
+}
+.checkboxList__checkbox, .richcheckboxList__checkbox{
   display: block;
   position: absolute;
   top: .046rem;
@@ -76,10 +85,15 @@
 .checkboxList__checkbox:hover{
   border-color: $purple;
 }
-.checkboxList__text{
+.checkboxList__text, .richcheckboxList__text{
   @include fontContent(1.2rem, 1.4rem);
   color: $half-dark;
   font-weight: $light-weight;
   margin-left: 0;
-  margin-top: 1rem;
+  margin-top: .9rem;
+  width: 80%;
+  text-align: left;
+}
+.richcheckboxList__text{
+  margin-top: .6rem;
 }

@@ -17,6 +17,8 @@
 }
 .bulletList__li{
   position: relative;
+  margin-bottom: 1rem;
+  width: 80%;
 }
 .bulletList__li:before {
   content: "";

@@ -32,6 +32,8 @@
 
 .bulletList__li {
   position: relative;
+  margin-bottom: 1rem;
+  width: 80%;
 }
 
 .bulletList__li:before {
@@ -56,7 +58,7 @@
   display: flex;
   align-items: center;
   text-align: center;
-  padding: 0.1rem 2.2rem 0 1.9rem;
+  padding: 0.1rem 2rem 0 1.9rem;
   height: 4.4rem;
   color: #ffffff;
   background: linear-gradient(180deg, #BC9CFF 0%, #8ba4f9 100%);
@@ -97,7 +99,7 @@
 .button__wrapper .buttonBorder {
   border-radius: 2.2rem;
   background: #fff;
-  padding: 0 2.2rem 0 1.9rem;
+  padding: 0 1.6rem 0 1.9rem;
   height: 100%;
   display: flex;
   align-items: center;
@@ -147,13 +149,7 @@
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-  align-items: center;
   margin-bottom: 0.5rem;
-}
-
-.checkboxList-icon {
-  display: flex;
-  align-items: center;
 }
 
 .checkboxList__dropdown {
@@ -162,6 +158,7 @@
 
 .checkboxList__buttons {
   display: grid;
+  width: 90%;
 }
 
 .checkboxListExpanded .checkboxList__dropdown {
@@ -178,7 +175,7 @@
   font-family: Montserrat, sans-serif;
   font-style: normal;
   font-size: 1.4rem;
-  line-height: 1.8rem;
+  line-height: 0.3rem;
   font-weight: 400;
   color: rgba(31, 32, 65, 0.5);
   margin-bottom: 1.1rem;
@@ -268,7 +265,9 @@ input.datepicker-here {
   font-size: 1.4rem;
   line-height: 1.8rem;
   width: 100%;
+  min-width: 11.8rem;
   padding: 1.1rem 1.4rem 1.3rem;
+  position: relative;
 }
 
 .datepicker-here:focus, .datepicker-here:hover {
@@ -433,7 +432,7 @@ input.datepicker-here {
 .dropdown__wrapper {
   border: 0.1rem solid rgba(31, 32, 65, 0.25);
   border-radius: 0.4rem;
-  padding: 0.9rem;
+  padding: 0.8rem 0.9rem 0.5rem 1.4rem;
   display: flex;
   justify-content: space-between;
   background: #ffffff;
@@ -453,6 +452,7 @@ input.datepicker-here {
   padding-top: 0.2rem;
   padding-left: 0;
   background: #ffffff;
+  border-radius: 0.4rem;
   border: 0.1rem solid rgba(31, 32, 65, 0.5);
   box-sizing: border-box;
   box-shadow: 0 1rem 2rem rgba(31, 32, 65, 0.5);
@@ -479,6 +479,10 @@ input.datepicker-here {
   outline: 0 !important;
 }
 
+.dropdown__minus {
+  opacity: 0.5;
+}
+
 .dropdown__visitors {
   text-align: center;
   text-decoration: none;
@@ -499,6 +503,7 @@ input.datepicker-here {
   font-weight: 700;
   text-transform: uppercase;
   color: #1f2041;
+  margin-top: 0.7rem;
 }
 
 .dropdown__clear {
@@ -515,6 +520,7 @@ input.datepicker-here {
 .dropdown__li-buttons {
   margin-top: 1.2rem;
   margin-bottom: 0.6rem;
+  padding-left: 0;
 }
 .dropdown__li-buttons button {
   border: none;
@@ -530,6 +536,14 @@ input.datepicker-here {
 
 .btn-submit, .btn-clear {
   color: #BC9CFF;
+}
+
+.btn-clear {
+  padding-left: 0;
+}
+
+.btn-submit {
+  padding-right: 0;
 }
 
 @font-face {
@@ -574,6 +588,7 @@ input.datepicker-here {
   padding-top: 0.2rem;
   padding-left: 0;
   background: #ffffff;
+  border-radius: 0.4rem;
   border: 0.1rem solid rgba(31, 32, 65, 0.5);
   box-sizing: border-box;
   box-shadow: 0 1rem 2rem rgba(31, 32, 65, 0.5);
@@ -708,7 +723,7 @@ input.datepicker-here {
   font-style: normal;
   font-size: 1rem;
   line-height: 1.2rem;
-  margin-left: 25%;
+  margin-left: 20%;
 }
 
 .likeBtn-selected {
@@ -777,7 +792,8 @@ input.datepicker-here {
   font-size: 1.4rem;
   line-height: 2.4rem;
   color: rgba(31, 32, 65, 0.75);
-  margin-top: 1rem;
+  margin-top: 0.7rem;
+  margin-left: 0.8rem;
   text-align: left;
 }
 
@@ -1025,7 +1041,7 @@ input[type=range]::-webkit-slider-thumb {
   margin-bottom: 1rem;
 }
 
-.checkboxList__adds {
+.checkboxList__adds, .richcheckboxList__adds {
   display: block;
   position: relative;
   padding-top: 0.1rem;
@@ -1040,7 +1056,11 @@ input[type=range]::-webkit-slider-thumb {
   padding-left: 2.98rem;
 }
 
-.checkboxList__custom {
+.richcheckboxList__adds {
+  margin-bottom: -0.4rem;
+}
+
+.checkboxList__custom, .richcheckboxList__custom {
   position: absolute;
   z-index: -1;
   opacity: 0;
@@ -1049,7 +1069,7 @@ input[type=range]::-webkit-slider-thumb {
   height: 0;
 }
 
-.checkboxList__checkbox::before {
+.checkboxList__checkbox::before, .richcheckboxList__checkbox::before {
   content: "";
   width: 0.4rem;
   height: 0.6rem;
@@ -1073,7 +1093,15 @@ input[type=range]::-webkit-slider-thumb {
   border-color: #BC9CFF;
 }
 
-.checkboxList__checkbox {
+.richcheckboxList__custom:checked ~ .richcheckboxList__checkbox:before {
+  display: block;
+}
+
+.richcheckboxList__adds input:checked + .richcheckboxList__checkbox {
+  border-color: #BC9CFF;
+}
+
+.checkboxList__checkbox, .richcheckboxList__checkbox {
   display: block;
   position: absolute;
   top: 0.046rem;
@@ -1091,7 +1119,7 @@ input[type=range]::-webkit-slider-thumb {
   border-color: #BC9CFF;
 }
 
-.checkboxList__text {
+.checkboxList__text, .richcheckboxList__text {
   font-family: Montserrat, sans-serif;
   font-style: normal;
   font-size: 1.2rem;
@@ -1099,7 +1127,13 @@ input[type=range]::-webkit-slider-thumb {
   color: rgba(31, 32, 65, 0.5);
   font-weight: 400;
   margin-left: 0;
-  margin-top: 1rem;
+  margin-top: 0.9rem;
+  width: 80%;
+  text-align: left;
+}
+
+.richcheckboxList__text {
+  margin-top: 0.6rem;
 }
 
 @font-face {
@@ -1356,7 +1390,7 @@ input::-webkit-input-placeholder {
   font-family: Montserrat, sans-serif;
   font-style: normal;
   font-size: 1.4rem;
-  line-height: 2.4rem;
+  line-height: 2.2rem;
   font-weight: normal;
 }
 .properties__item .properties__name {
@@ -1454,6 +1488,7 @@ body {
 .formElements__row-first, .formElements__row-second, .formElements__row-third, .formElements__row-fourth {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .formElements__column_first, .formElements__column_third {
@@ -1489,18 +1524,13 @@ body {
   color: rgba(31, 32, 65, 0.5);
 }
 
+.formElements__column_first > :nth-child(3) {
+  margin-bottom: 2.5rem;
+}
+
 .formElements__container-date {
   display: flex;
-  justify-content: space-between;
-  max-width: 32rem;
-}
-
-.formElements__container-date > :first-child {
-  margin-right: 2rem;
-}
-
-.formElements__container-date > :first-child, .formElements__container-date > :nth-child(2) {
-  width: 100%;
+  max-width: 30rem;
 }
 
 .formElements__container-filterDate, .formElements__container-subTextfield {
@@ -1509,7 +1539,7 @@ body {
 }
 
 .formElements__container-subTextfield {
-  margin-top: 4rem;
+  margin-top: 4.1rem;
 }
 
 .formElements__column_second {
@@ -1565,7 +1595,7 @@ body {
 }
 
 .formElements__column_third > :nth-child(2) {
-  margin-top: 7.4rem;
+  margin-top: 7.2rem;
   margin-bottom: 4rem;
 }
 
@@ -1576,7 +1606,7 @@ body {
 .formElements__container-buttons {
   display: flex;
   margin-top: 1.6rem;
-  margin-bottom: 3.2rem;
+  margin-bottom: 3rem;
   margin-left: 0.1rem;
 }
 
@@ -1594,7 +1624,7 @@ body {
 }
 
 .formElements__container-iconLink {
-  margin-top: 3.3rem;
+  margin-top: 3.1rem;
   margin-bottom: 3rem;
   margin-left: 0.1rem;
   display: flex;
@@ -1605,7 +1635,7 @@ body {
 }
 
 .formElements__row-second {
-  margin-top: 4rem;
+  margin-top: 4.1rem;
 }
 
 .formElements__row-second > :first-child {
@@ -1629,22 +1659,17 @@ body {
   padding: 0 2rem;
 }
 
-.formElements__row-second > :nth-child(2) > :first-child {
-  max-width: 32rem;
-  min-height: 23rem;
-  padding-right: 2rem;
-}
-
 .formElements__row-third > :first-child {
   flex: 1 1 0;
-  padding: 1.3rem 2rem 2rem 2rem;
+  padding: 1.3rem 2rem 0.6rem 2rem;
   margin-right: 25rem;
 }
 
 .formElements__row-third > :nth-child(2) {
   flex: 1 1 0;
-  padding: 1.3rem 2rem 2rem 2rem;
+  padding: 1.5rem 2rem 1.6rem 0.8rem;
   margin-right: 2rem;
+  text-align: left;
 }
 
 .formElements__row-third > :nth-child(2) > :first-child > :first-child {
@@ -1664,26 +1689,26 @@ body {
 .formElements__row-third > :nth-child(3) {
   text-align: left;
   flex: 1 1 0;
-  padding: 1.3rem 2rem 2rem 2rem;
+  padding: 1.4rem 2rem 2rem 0;
   margin-left: 17rem;
 }
 
 .formElements__row-fourth {
-  margin-top: 5.1rem;
+  justify-content: flex-start;
 }
 
 .formElements__row-fourth > :first-child {
   max-width: 27rem;
-  padding: 2rem;
+  padding: 0 2rem 2rem 2rem;
   margin-left: -0.1rem;
   text-align: left;
+  margin-right: 29.5rem;
 }
 
 .formElements__row-fourth > :nth-child(2) {
   flex: 1 1 0;
-  padding: 2rem;
+  padding: 0.9rem 2rem 2rem 1.8rem;
   max-width: 71.2rem;
-  margin-top: 1rem;
 }
 
 /*# sourceMappingURL=formElements.css.map */

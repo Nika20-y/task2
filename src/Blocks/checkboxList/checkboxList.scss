@@ -23,18 +23,15 @@
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-  align-items: center;
   margin-bottom: .5rem;
 }
-.checkboxList-icon{
-  display: flex;
-  align-items: center;
-}
+
 .checkboxList__dropdown{
   display: none;
 }
 .checkboxList__buttons{
   display: grid;
+  width: 90%;
 
 }
 .checkboxListExpanded{
@@ -50,7 +47,7 @@
   text-align: left;
   padding-top: .1rem;
   padding-bottom: .1rem;
-  @include fontContent(1.4rem, 1.8rem);
+  @include fontContent(1.4rem, .3rem);
   font-weight: $light-weight;
   color: $half-dark;
   margin-bottom: 1.1rem;

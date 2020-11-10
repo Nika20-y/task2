@@ -11,7 +11,7 @@
 .dropdown__wrapper{
   border: .1rem solid $light-dark;
   border-radius: .4rem;
-  padding: .9rem;
+  padding: .8rem .9rem .5rem 1.4rem;
   display: flex;
   justify-content: space-between;
  background: $white;
@@ -30,6 +30,7 @@
   padding-top: .2rem;
   padding-left: 0;
   background: $white;
+  border-radius: .4rem;
   li{
     list-style: none;
     display: flex;
@@ -51,6 +52,10 @@
   color: $half-dark;
   outline: 0 !important;
 }
+.dropdown__minus{
+opacity: 0.5;
+}
+
 .dropdown__visitors{
   text-align: center;
   text-decoration: none;
@@ -64,6 +69,7 @@
   font-weight: $bold-weight;
   text-transform: uppercase;
   color: $dark-black;
+  margin-top: .7rem;
 }
 
 .dropdown__clear{
@@ -79,6 +85,7 @@ appearance: none;
 .dropdown__li-buttons{
   margin-top: 1.2rem;
   margin-bottom: .6rem;
+  padding-left: 0;
   button{
     border: none;
     outline: none;
@@ -90,6 +97,12 @@ appearance: none;
 }
 .btn-submit, .btn-clear{
   color: $purple;
+}
+.btn-clear{
+  padding-left: 0;
+}
+.btn-submit{
+  padding-right: 0;
 }
 
 
