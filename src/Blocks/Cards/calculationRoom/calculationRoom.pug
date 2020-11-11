@@ -1,0 +1,52 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        link(href="calculationRoom.css" rel="stylesheet")
+        link(href="../../DateDropdown/datepicker.min.css" rel="stylesheet")
+        link(href="../../DateDropdown/calendar.css" rel="stylesheet")
+        script(src="https://code.jquery.com/jquery-1.12.4.js")
+        link(href='../../../style/fonts/iconfont/material-icons.css' rel='stylesheet')
+        include  ../../allBlocks
+    body
+        .calculationRoom
+            .calculationRoom__title
+                .calculationRoom__title-left
+                    .calculationRoom__numRoom-symbol №
+                    .calculationRoom__numRoom  888
+                    .calculationRoom__numCategory люкс
+                .calculationRoom__title-right 9 990₽ в сутки
+            .calculationRoom__dates
+                .calculationRoom__arrival
+                    h3.calculationRoom__label прибытие
+                    +calendar('19.08.2019')
+                .calculationRoom__departure
+                    h3.calculationRoom__label выезд
+                    +calendar('23.08.2019')
+            .calculationRoom__guests
+                h3.calculationRoom__label гости
+                +visitors('','2','1','0')
+            .calculationRoom__calc
+                .calculationRoom__price 9 990₽ х 4 суток
+                .calculationRoom__cost  39 960₽
+            .calculationRoom__service
+                .calculationRoom__service-price
+                    .calculationRoom__service-text Сбор за услуги: скидка 2 179₽
+                    .calculationRoom__symbol i
+                .calculationRoom__service-cost 0₽
+            .calculationRoom__adds
+                .calculationRoom__adds-price
+                    .calculationRoom__adds-text Сбор за дополнительные услуги
+                    .calculationRoom__symbol i
+                .calculationRoom__adds-cost 300₽
+            .calculationRoom__result
+                .calculationRoom__result-text Итого
+                .calculationRoom__result-line
+                .calculationRoom__result-price 38 081₽
+            .calculationRoom__button
+                +btnPayment('забронировать')
+
+script(src='../../../dist/main.bundle.js')
+script(src='../../DateDropdown/datepicker.min.js')
+script(src='../../DateDropdown/calendar.js')
+script(src='../../Dropdown/dropdown.js')

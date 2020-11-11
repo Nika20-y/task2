@@ -1,0 +1,116 @@
+@import "../../allBlocks";
+@import "../../../style/mixins/mixin";
+@import "../../../style/variables";
+
+html{
+  font-size: 10px;
+}
+body{
+  margin: 0;
+  background: #E5E5E5;
+
+}
+.calculationRoom{
+  max-width: 38rem;
+  min-width: 30rem;
+  padding: 4rem 3rem 3rem 3rem;
+  background: $white;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+.calculationRoom__title{
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+.calculationRoom__title-left{
+  display: flex;
+}
+.calculationRoom__numRoom-symbol{
+  @include fontContent(1.4rem,1.7rem);
+  color: $dark-black;
+  align-self: flex-end;
+  margin-right: .5rem;
+}
+.calculationRoom__numRoom{
+  @include fontContent(2.4rem,2rem);
+  color: $dark-black;
+  font-weight: bold;
+  margin-right: .5rem;
+  align-self: flex-end;
+}
+
+.calculationRoom__numCategory{
+  @include fontContent(1.2rem,1.5rem);
+  text-transform: uppercase;
+  color: $purple;
+  align-self: flex-end;
+}
+.calculationRoom__title-right{
+  @include fontContent(1.4rem,1.8rem);
+color: $half-dark;
+}
+.calculationRoom__dates{
+  width: 100%;
+  display: flex;
+  margin-bottom: 2rem;
+}
+.calculationRoom__label {
+  @include fontContent(1.2rem,1.5rem);
+  font-weight: $bold-weight;
+  color: $dark-black;
+  text-transform: uppercase;
+  margin-bottom: .5rem;
+}
+.calculationRoom__guests{
+  margin-bottom: 2.05rem;
+}
+.calculationRoom__calc,
+.calculationRoom__service,
+.calculationRoom__adds{
+  display: flex;
+  justify-content: space-between;
+  @include fontContent(1.4rem,2.4rem);
+  font-weight: $light-weight;
+  margin-bottom: 1rem;
+}
+.calculationRoom__symbol{
+  @include fontContent(1.2rem,1.4rem);
+  border: 1px solid $light-dark;
+  box-sizing: border-box;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  margin-left: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.calculationRoom__result{
+  margin-top: 2rem;
+  @include fontContent(1.9rem,2.4rem);
+  font-weight: $bold-weight;
+  color: $dark-black;
+  margin-bottom: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  .calculationRoom__result-line{
+    height: .4rem;
+    border-top: .1rem dashed rgba(31, 32, 65, 0.25);
+    flex-grow: 1;
+    align-self: flex-end;
+    margin: 0 .5rem 0 .5rem;
+  }
+}
+.calculationRoom__service-price,
+.calculationRoom__adds-price{
+  display: flex;
+  width: 70%;
+}
+.calculationRoom__service-text,
+.calculationRoom__adds-text{
+  width: 85%;
+}
