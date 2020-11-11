@@ -8,7 +8,7 @@ mixin checkboxDropdown(title,checkboxListExpanded,...items)
             .checkboxList__icon
                 i(class='material-icons checkboxList__icon-item') expand_more
         .checkboxList__dropdown
-            .checkboxList__buttons
+            .checkboxList__buttons 
                 each item in items
                     label.checkboxList__adds= item
                         input(type="checkbox" name="adds" class="checkboxList__custom")
