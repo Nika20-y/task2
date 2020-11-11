@@ -2,7 +2,7 @@
 @import "../../../style/mixins/mixin";
 @import "../../../style/variables";
 
-.registration{
+.authorization{
   max-width: 38rem;
   min-width: 32rem;
   padding: 3rem;
@@ -11,35 +11,26 @@
   border-radius: 4px;
   position: absolute;
 }
-.registration__title{
+.authorization__title{
   @include fontHeadline(2.4rem,3rem);
   font-weight: $bold-weight;
   color: $dark-black;
   margin-bottom: 2rem;
 }
-.registration__field{
+.authorization__field{
   margin-bottom: 1rem;
 }
-.registration__label{
-  @include fontContent(1.2rem,1.5rem);
-  font-weight: $bold-weight;
-  color: $dark-black;
-  text-transform: uppercase;
-  margin-bottom: .5rem;
-}
-.registration__radioBtns,
-.registration__dateBirth,
-.registration__toggle{
+.authorization__field-password{
   margin-bottom: 2rem;
 }
-.registration__button{
+.authorization__button{
   margin-bottom: 3rem;
 }
-.registration__authorization{
+.authorization__registration{
   display: flex;
   justify-content: space-between;
 }
-.registration__authorization-text{
+.authorization__registration-text{
   @include fontContent(1.4rem,1.8rem);
   font-weight: $light-weight;
   display: flex;

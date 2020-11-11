@@ -1,0 +1,17 @@
+meta(charset="UTF-8")
+link(href="authorization.css" rel="stylesheet")
+link(href='../../../style/fonts/iconfont/material-icons.css' rel='stylesheet')
+include  ../../allBlocks
+    mixin authorization
+        form.authorization
+            .authorization__title Войти
+            .authorization__field
+                +textfield('Email','')
+            .authorization__field-password
+                +textfield('Пароль','')
+            .authorization__button
+                +btnPayment('войти')
+            .authorization__registration
+                .authorization__registration-text Нет аккаунта на Toxin?
+                .authorization__registration-button
+                    +button('button__wrapper' , 'создать')

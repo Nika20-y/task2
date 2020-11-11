@@ -1460,7 +1460,7 @@ input::-webkit-input-placeholder {
   font-family: Quicksand;
   src: url(../fonts/Quicksand-Bold.ttf);
 }
-.registration {
+.authorization {
   max-width: 38rem;
   min-width: 32rem;
   padding: 3rem;
@@ -1470,7 +1470,7 @@ input::-webkit-input-placeholder {
   position: absolute;
 }
 
-.registration__title {
+.authorization__title {
   font-family: Quicksand, "Open Sans", sans-serif;
   font-style: normal;
   font-size: 2.4rem;
@@ -1480,37 +1480,24 @@ input::-webkit-input-placeholder {
   margin-bottom: 2rem;
 }
 
-.registration__field {
+.authorization__field {
   margin-bottom: 1rem;
 }
 
-.registration__label {
-  font-family: Montserrat, sans-serif;
-  font-style: normal;
-  font-size: 1.2rem;
-  line-height: 1.5rem;
-  font-weight: 700;
-  color: #1f2041;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-}
-
-.registration__radioBtns,
-.registration__dateBirth,
-.registration__toggle {
+.authorization__field-password {
   margin-bottom: 2rem;
 }
 
-.registration__button {
+.authorization__button {
   margin-bottom: 3rem;
 }
 
-.registration__authorization {
+.authorization__registration {
   display: flex;
   justify-content: space-between;
 }
 
-.registration__authorization-text {
+.authorization__registration-text {
   font-family: Montserrat, sans-serif;
   font-style: normal;
   font-size: 1.4rem;
@@ -1520,4 +1507,4 @@ input::-webkit-input-placeholder {
   align-items: center;
 }
 
-/*# sourceMappingURL=registration.css.map */
+/*# sourceMappingURL=authorization.css.map */
