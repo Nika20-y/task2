@@ -1,0 +1,34 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        link(href="registration.css" rel="stylesheet")
+        link(href='../../../style/fonts/iconfont/material-icons.css' rel='stylesheet')
+        include  ../../allBlocks
+    body
+        form.registration
+            h1.registration__title Регистрация аккаунта
+            .registration__field
+                +textfield('Имя','')
+            .registration__field
+                +textfield('Фамилия','')
+            .registration__radioBtns
+                +radioBtns('Мужчина', 'Женщина')
+            .registration__dateBirth
+                h3.registration__label дата рождения
+                .registration__field
+                    +textfield('ДД.ММ.ГГГГ','')
+            .registration__data
+                h3.registration__label данные для входа в сервис
+                .registration__field
+                    +textfield('Email','')
+                .registration__field
+                    +textfield('Пароль','')
+            .registration__toggle
+                +toggle('Получать спецпредложения','')
+            .registration__button
+                +btnPayment('перейти к оплате')
+            .registration__authorization
+                .registration__authorization-text Уже есть аккаунт на Toxin
+                .registration__authorization-btn
+                    +button('button__wrapper' , 'войти')

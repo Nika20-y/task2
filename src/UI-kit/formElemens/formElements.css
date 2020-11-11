@@ -94,12 +94,11 @@
   border-radius: 2.2rem;
   border: none;
   outline: 0 !important;
-  z-index: -1;
 }
 .button__wrapper .buttonBorder {
   border-radius: 2.2rem;
-  background: #fff;
-  padding: 0 1.6rem 0 1.9rem;
+  background: #ffffff;
+  padding: 0 1.6rem 0 1.7rem;
   height: 100%;
   display: flex;
   align-items: center;

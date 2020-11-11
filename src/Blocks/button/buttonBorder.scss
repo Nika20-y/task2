@@ -8,20 +8,18 @@
   border-radius: 2.2rem;
   border: none;
   outline: 0 !important;
-  z-index: -1;
   .buttonBorder {
     border-radius: 2.2rem;
-    background: #fff;
-    padding: 0 1.6rem 0 1.9rem;
+    background: $white;
+    padding: 0 1.6rem 0 1.7rem;
     height: 100%;
     display: flex;
     align-items: center;
     text-align: center;
-    color: #BC9CFF;
+    color: $purple;
     @include fontContent(1.2rem, 1.5rem);
     font-weight: 700;
     text-transform: uppercase;
-
   }
   .button__text{
     cursor: pointer;
