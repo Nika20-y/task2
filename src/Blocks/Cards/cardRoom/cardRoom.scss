@@ -1,0 +1,138 @@
+@import "../../allBlocks";
+@import "../../../style/mixins/mixin";
+@import "../../../style/variables";
+
+html{
+  font-size: 10px;
+}
+body{
+  margin: 0;
+  background: #E5E5E5;
+}
+.cardRoom{
+  width: 27rem;
+  height: 25.7rem;
+  background: #fff;
+  box-shadow: 0 1rem 2rem rgba(31,32,65,.05);
+  border-radius: 4px;
+}
+.cardRoom__image{
+  //background-image: url("../../../images/luxRoom.png");
+  background-size: cover;
+  width: 100%;
+  height: 58%;
+  border-radius: 4px 4px 0 0;
+  position: relative;
+}
+.cardRoom__slider{
+  display: none;
+  justify-content: space-between;
+  height: 100%;
+}
+.cardRoom__image:hover{
+  .cardRoom__slider{
+  display: flex;
+}}
+.cardRoom__slider-symbol_left,
+.cardRoom__slider-symbol_right{
+  width: 4.2rem;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  cursor: pointer;
+  border-radius: 4px 4px 0 0;
+}
+.cardRoom__slider-symbol_right{
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.cardRoom__icon_left, .cardRoom__icon_right{
+  transform: rotate(90deg);
+  color: $white;
+}
+.cardRoom__dots{
+  display: flex;
+  position: absolute;
+  right: 1.3rem;
+  bottom: 1.3rem;
+}
+.cardRoom__dots-symbol{
+  width: .75rem;
+  height: .74rem;
+  border: 1px solid $white;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 5px 5px rgba(31, 32, 65, 0.3));
+  margin-right: .375rem;
+  border-radius: 50%;
+}
+.cardRoom__dots>:first-child{
+  background: $white;
+}
+
+.cardRoom__description{
+  padding: 2rem 1.7rem 2rem 2rem;
+}
+.cardRoom__title{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.cardRoom__titleRoom{
+  display: flex;
+}
+.cardRoom__numRoom-symbol{
+  @include fontContent(1.4rem,1.75rem);
+  color: $dark-black;
+  align-self: flex-end;
+  margin-right: .5rem;
+  font-weight: $bold-weight;
+}
+.cardRoom__numRoom{
+  @include fontContent(1.9rem,2.37rem);
+  color: $dark-black;
+  font-weight: $bold-weight;
+  margin-right: .5rem;
+  align-self: flex-end;
+}
+.cardRoom__numCategory{
+  @include fontContent(1.2rem,1.5rem);
+  text-transform: uppercase;
+  color: $purple;
+  align-self: flex-end;
+  font-weight: $bold-weight;
+}
+.cardRoom__price{
+  @include fontContent(1.4rem,1.6rem);
+  color: $half-dark;
+  display: flex;
+  align-self: flex-end;
+  text-align: right;
+}
+.cardRoom__price-cost{
+  font-weight: $bold-weight;
+}
+.cardRoom__line{
+  height: .1rem;
+  background: rgba(31, 32, 65, 0.1);
+  width: 100%;
+  margin-bottom: .8rem;
+}
+.cardRoom__rating{
+  display: flex;
+  justify-content: space-between;
+}
+.cardRoom__review{
+  display: flex;
+  text-align: right;
+  align-self: flex-end;
+}
+.cardRoom__review-quantity{
+  @include fontContent(1.4rem,1.8rem);
+  color: $half-dark;
+  font-weight: $bold-weight;
+}
+.cardRoom__review-text{
+  @include fontContent(1.4rem,1.8rem);
+  color: $half-dark;
+}
