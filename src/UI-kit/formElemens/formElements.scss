@@ -56,7 +56,10 @@ body{
   display: flex;
   max-width: 30rem;
 }
-
+.formElements__container-dateTitle{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 .formElements__container-filterDate, .formElements__container-subTextfield{
   max-width: 29rem;
   margin: 2rem 0;

@@ -1,5 +1,6 @@
 @import "../../style/mixins/mixin";
 @import "../../style/variables";
+
 .date{
   display: flex;
   position: relative;
@@ -8,21 +9,52 @@
   }
   width: 100%;
 }
+.datepicker__dates{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
 .date__icon{
   display: flex;
   align-items: center;
   transform: translate(-140%);
   color: $half-dark;
 }
-input.datepicker-here{
+.rangeDate{
+  position: absolute;
+  opacity: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+input.filterDate{
+    border: .1rem solid $light-dark;
+    border-radius: .4rem;
+    color: $lighter-dark;
+    @include fontContent(1.4rem, 1.8rem);
+    width: 100%;
+    min-width: 11.8rem;
+    padding: 1.1rem 1.4rem 1.3rem;
+    position: relative;
+}
+.datepicker__datefrom,
+.datepicker__dateto{
+  min-width: 11.8rem;
   border: .1rem solid $light-dark;
   border-radius: .4rem;
   color: $lighter-dark;
-  @include fontContent(1.4rem, 1.8rem);
-  width: 100%;
-  min-width: 11.8rem;
-  padding: 1.1rem 1.4rem 1.3rem;
+  @include fontContent(1.4rem, 2.4rem);
+  padding: 1rem 1.4rem .8rem 1.3rem;
   position: relative;
+  z-index: -1;
+  text-align: left;
+  background: $white;
+}
+.datepicker{
+  min-width: 32rem;
+}
+.datepicker__datefrom{
+
 }
 
 .datepicker-here:focus, .datepicker-here:hover{
@@ -49,7 +81,9 @@ input.datepicker-here{
     color: $purple;
   }
 }
-
+.datepicker-input{
+  margin-right: 1rem;
+}
 .datepicker--nav-title{
   @include fontHeadline(1.9rem, 2.4rem);
   font-weight: $bold-weight;

@@ -248,6 +248,12 @@
   color: rgba(31, 32, 65, 0.75);
 }
 
+.datepicker__dates {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
 .date__icon {
   display: flex;
   align-items: center;
@@ -255,7 +261,15 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-input.datepicker-here {
+.rangeDate {
+  position: absolute;
+  opacity: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+input.filterDate {
   border: 0.1rem solid rgba(31, 32, 65, 0.25);
   border-radius: 0.4rem;
   color: rgba(31, 32, 65, 0.75);
@@ -267,6 +281,27 @@ input.datepicker-here {
   min-width: 11.8rem;
   padding: 1.1rem 1.4rem 1.3rem;
   position: relative;
+}
+
+.datepicker__datefrom,
+.datepicker__dateto {
+  min-width: 11.8rem;
+  border: 0.1rem solid rgba(31, 32, 65, 0.25);
+  border-radius: 0.4rem;
+  color: rgba(31, 32, 65, 0.75);
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  padding: 1rem 1.4rem 0.8rem 1.3rem;
+  position: relative;
+  z-index: -1;
+  text-align: left;
+  background: #ffffff;
+}
+
+.datepicker {
+  min-width: 32rem;
 }
 
 .datepicker-here:focus, .datepicker-here:hover {
@@ -294,6 +329,10 @@ input.datepicker-here {
 }
 .datepicker--nav .datepicker--nav-action {
   color: #BC9CFF;
+}
+
+.datepicker-input {
+  margin-right: 1rem;
 }
 
 .datepicker--nav-title {

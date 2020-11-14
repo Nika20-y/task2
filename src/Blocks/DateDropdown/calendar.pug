@@ -4,11 +4,17 @@ link(href='datepicker.min.css' rel='stylesheet')
 script(src="https://code.jquery.com/jquery-1.12.4.js")
 script(src='datepicker.min.js')
 link(href='calendar.css' rel='stylesheet')
-mixin calendar(datePlaceholder)
+mixin calendar(dateFrom, dateTo)
     .date
-        input(type="text" class="datepicker-here" placeholder=''+datePlaceholder)
-        .date__icon
-            i.material-icons expand_more
+        input(type="text" class="datepicker-here rangeDate" data-range="true"  placeholder='ДД.ММ.ГГГГ' )
+        .datepicker__dates
+            span.datepicker__datefrom= dateFrom
+            .date__icon
+                i.material-icons expand_more
+            span.datepicker__dateto= dateTo
+            .date__icon
+                i.material-icons expand_more
 
 
 script(src='calendar.js')
+script(src='rangeCalendar.js')
