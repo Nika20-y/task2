@@ -1,0 +1,155 @@
+@import "../../Blocks/allBlocks";
+@import "../../style/mixins/mixin";
+@import "../../style/variables";
+@import "../../style/fonts/brandsfont/all.min.css";
+html{
+  font-size: 10px;
+}
+body{
+  margin: 0;
+}
+footer{
+  margin: 0;
+  padding: 0;
+}
+.footer__wrapper{
+  min-width: 32rem;
+  background: $white;
+}
+.footer__top{
+  border-bottom: 1px solid #dedee3;
+  padding: 8.4rem 0 6.3rem;
+
+}
+.footer__widgets{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+.footer__column-brand,
+.footer__column-subscribe{
+  min-width: 26rem;
+  max-width: 26rem;
+}
+.footer__column-subscribe{
+  input.subTextfield__input{
+    min-width: 23rem;
+  }
+  .footer__column-title{
+    margin-bottom: 1.9rem;
+
+}
+}
+.footer__logo{
+  display: flex;
+  image{
+    width: 4rem;
+    height: 4rem;
+  }
+  margin-bottom: 1.6rem;
+}
+.footer__logo-image{
+  margin-right: 1.25rem;
+}
+.footer__logo-title{
+  display: flex;
+  align-content: center;
+}
+.footer__sitedescription,
+.footer__subscribe-text{
+  @include fontContent(1.4rem,2.4rem);
+  color: $lighter-dark;
+  font-weight: $light-weight;
+}
+.footer__subscribe-text{
+  margin-bottom: 2.1rem;
+}
+.footer__link,
+.footer__confidence {
+  @include fontContent(1.4rem,1.7rem);
+  color: $half-dark;
+  font-weight: $light-weight;
+}
+.footer__column-title{
+  @include fontContent(1.2rem,.5rem);
+  text-transform: uppercase;
+  color: $dark-black;
+  font-weight: $bold-weight;
+  margin-bottom: 2.2rem;
+}
+.footer__link{
+  margin-bottom: 2.1rem;
+  cursor: pointer;
+}
+.footer__bottom{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__confidence {
+  color: $lighter-dark;
+  padding-top: 2.6rem;
+  padding-bottom: 2.6rem;
+}
+.footer__sociallinks{
+  display: flex;
+  align-items: center;
+
+}
+.fa-twitter:before {
+  content: "\f099";
+  font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+  font-weight: 900;
+  width: 100px;
+  height: 100px;
+  margin-right: 2rem;
+}
+.fa-facebook-square:before {
+  content: "\f082";
+  font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+  font-weight: 900;
+  width: 100px;
+  height: 100px;
+  margin-right: 2rem;
+}
+.fa-instagram:before {
+  content: "\f16d";
+  font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+  font-weight: 900;
+  width: 100px;
+  height: 100px;
+}
+.fa {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 23px;
+  background: $gradient-purple;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: $purple;
+}
+.footerMobile__wrapper{
+  max-width: 76.8rem;
+  display:grid;
+  justify-content: center;
+  text-align: center;
+  .footer__confidence{
+    padding-top: 0;
+  }
+  .footer__sociallinks{
+    justify-content: center;
+    margin-bottom: 12rem;
+  }
+  .footer__logo{
+    margin-top: 12rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+}
