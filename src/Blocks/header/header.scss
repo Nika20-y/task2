@@ -1,0 +1,92 @@
+@import "../../Blocks/allBlocks";
+@import "../../style/mixins/mixin";
+@import "../../style/variables";
+html{
+  font-size: 10px;
+}
+.header__wrapper{
+  padding: .6rem 2rem;
+}
+.header__section{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.header__logo{
+  display: flex;
+  image{
+    width: 4rem;
+    height: 4rem;
+  }
+}
+.header__logo-image{
+  margin-right: 1.25rem;
+}
+.header__logo-title{
+  display: flex;
+  align-content: center;
+}
+.header__nav{
+  display: flex;
+
+}
+.header__link,
+.header__button-authorization{
+  margin-right: 2rem;
+  cursor: pointer;
+}
+.header__nav-title{
+  display: flex;
+@include fontContent(1.4rem,1.7rem);
+  color: $half-dark;
+  font-weight: $light-weight;
+  align-items: center;
+
+}
+.header__nav-title>:first-child{
+  font-weight: $bold-weight;
+  color: $lighter-dark;
+}
+.header__link-icon{
+  display: flex;
+  line-height: 2.2rem;
+  .material-icons{
+    font-size: 2.4rem;
+    line-height: 2rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+}
+.header__button-registration{
+  display: flex;
+  align-content: center;
+  .button{
+    height: 3.4rem;
+  }
+}
+.header__button-authorization{
+  display: flex;
+  align-content: center;
+
+}
+.button__wrapper{
+  height: 3.4rem;
+}
+.header__button-registration,
+.header__button-authorization{
+  margin-top: .3rem;
+}
+.header__line{
+  background: rgba(31, 32, 65, 0.1);
+  width: 1px;
+  height: 3rem;
+  margin-right: 2rem;
+}
+.header__user-name{
+  display: flex;
+  @include fontContent(1.4rem,1.7rem);
+  color: $half-dark;
+  align-items: center;
+}
