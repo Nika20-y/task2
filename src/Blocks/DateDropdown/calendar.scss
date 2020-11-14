@@ -13,6 +13,7 @@
   display: flex;
   width: 100%;
   height: 100%;
+  justify-content: flex-end;
 }
 .date__icon{
   display: flex;
@@ -26,6 +27,7 @@
   display: block;
   width: 100%;
   height: 100%;
+  z-index: 1;
 }
 input.filterDate{
     border: .1rem solid $light-dark;
@@ -46,15 +48,11 @@ input.filterDate{
   @include fontContent(1.4rem, 2.4rem);
   padding: 1rem 1.4rem .8rem 1.3rem;
   position: relative;
-  z-index: -1;
   text-align: left;
   background: $white;
 }
 .datepicker{
-  min-width: 32rem;
-}
-.datepicker__datefrom{
-
+  width: 31.8rem;
 }
 
 .datepicker-here:focus, .datepicker-here:hover{
@@ -100,14 +98,20 @@ input.filterDate{
   font-weight: $bold-weight;
   color: $purple;
 }
+.datepicker--cell {
+  height: 4rem;
+  box-sizing: border-box;
+  z-index: 1;
+}
 .datepicker--cells{
-  @include fontContent(1.2rem, 1.5rem);
+  @include fontContent(1.2rem, 1.8rem);
   font-weight: normal;
   .datepicker--cell-day{
     color: $half-dark;
   }
   .datepicker--cell-day:hover{
     border-radius: 2.2rem;
+
   }
   .-other-month-{
     color: $light-dark;
@@ -124,6 +128,7 @@ input.filterDate{
     color: $white;
     background: $gradient-purple;
     border-radius: 2.2rem;
+
   }
   .-selected-:hover{
     background: $purple;
@@ -176,4 +181,9 @@ input.filterDate{
 }
 .datepicker--cell.-range-to-:before{
   border-radius: 0 50% 50% 0;
+}
+.datepicker--nav-action{
+  .material-icons{
+    color: $purple;
+  }
 }

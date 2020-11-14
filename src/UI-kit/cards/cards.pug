@@ -1,0 +1,40 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        title Cards
+        link(href="../../Blocks/DateDropdown/datepicker.min.css" rel="stylesheet")
+        script(src="https://code.jquery.com/jquery-1.12.4.js")
+        link(href="cards.css" rel="stylesheet")
+        include  ../../Blocks/allBlocks
+        include ../../Blocks/Cards/allCards
+    body
+        .logo
+            img(src="../../images/logo.svg").logo__img
+        .cards
+            .cards__firstColumn
+                .cards__searchRoomn
+                    +searchRoom
+                .cards__registration
+                    +registration
+            .cards__secondColumn
+                .cards__calculationRoom
+                    +calculationRoom
+                .cards__authorization
+                    +authorization
+            .cards__thirdColumn
+                .cards__datepicker
+                    div(class="datepicker-here" inline="true" data-range="true"  placeholder='19.08.2019')
+                .cards__cardRoom
+                    +cardRoom('url("../../images/luxRoom.png")','888','люкс', '9 990₽','145',' cardRoom__image-hover')
+                .cards__cardRoom
+                    +cardRoom('url("../../images/standardRoom.png")','840','', '9 900₽','65', '')
+        script(src='../../../dist/main.bundle.js')
+        script(src='../../Blocks/DateDropdown/datepicker.min.js')
+        script(src='../../Blocks/DateDropdown/calendar.js')
+        script(src='../../Blocks/likeBtn/likeBtn.js')
+        script(src='../../Blocks/rateBtn/rateBtn.js')
+        script(src='../../Blocks/rangeSlider/rangeSlider.js')
+        script(src='../../Blocks/dropdownFacilities/drpdownFacil.js')
+        script(src='../../Blocks/DateDropdown/rangeCalendar.js')
+

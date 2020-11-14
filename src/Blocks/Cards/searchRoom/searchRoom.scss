@@ -9,7 +9,6 @@
   background: $white;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  position: absolute;
 }
 .searchRoom__title{
   @include fontHeadline(2.4rem,3rem);
@@ -25,6 +24,11 @@
 }
 .searchRoom__arrival{
   margin-right: 2rem;
+  width: 100%;
+}
+.searchRoom__arrival-titles{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .searchRoom__label{
   @include fontContent(1.2rem,1.5rem);

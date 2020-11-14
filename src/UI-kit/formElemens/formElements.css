@@ -252,6 +252,7 @@
   display: flex;
   width: 100%;
   height: 100%;
+  justify-content: flex-end;
 }
 
 .date__icon {
@@ -267,6 +268,7 @@
   display: block;
   width: 100%;
   height: 100%;
+  z-index: 1;
 }
 
 input.filterDate {
@@ -295,13 +297,12 @@ input.filterDate {
   line-height: 2.4rem;
   padding: 1rem 1.4rem 0.8rem 1.3rem;
   position: relative;
-  z-index: -1;
   text-align: left;
   background: #ffffff;
 }
 
 .datepicker {
-  min-width: 32rem;
+  width: 31.8rem;
 }
 
 .datepicker-here:focus, .datepicker-here:hover {
@@ -360,11 +361,17 @@ input.filterDate {
   color: #BC9CFF;
 }
 
+.datepicker--cell {
+  height: 4rem;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
 .datepicker--cells {
   font-family: Montserrat, sans-serif;
   font-style: normal;
   font-size: 1.2rem;
-  line-height: 1.5rem;
+  line-height: 1.8rem;
   font-weight: normal;
 }
 .datepicker--cells .datepicker--cell-day {
@@ -446,6 +453,10 @@ input.filterDate {
 
 .datepicker--cell.-range-to-:before {
   border-radius: 0 50% 50% 0;
+}
+
+.datepicker--nav-action .material-icons {
+  color: #BC9CFF;
 }
 
 @font-face {

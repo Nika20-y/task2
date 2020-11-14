@@ -5,21 +5,20 @@ link(href="../../DateDropdown/calendar.css" rel="stylesheet")
 script(src="https://code.jquery.com/jquery-1.12.4.js")
 link(href='../../../style/fonts/iconfont/material-icons.css' rel='stylesheet')
 include  ../../allBlocks
-    mixin searchRoom(title)
-            .searchRoom
-                h1.searchRoom__title= title
-                .searchRoom__dates
-                    .searchRoom__arrival
-                        h3.searchRoom__label прибытие
-                        +calendar('ДД.ММ.ГГГГ')
-                    .searchRoom__departure
-                        h3.searchRoom__label выезд
-                        +calendar('ДД.ММ.ГГГГ')
-                .searchRoom__guests
-                    h3.searchRoom__label гости
-                    +visitors('','0','0','0')
-                .searchRoom__button
-                    +btnPayment('подобрать номер')
+mixin searchRoom
+    .searchRoom
+        h1.searchRoom__title Найдём номера под ваши пожелания
+        .searchRoom__dates
+            .searchRoom__arrival
+                .searchRoom__arrival-titles
+                    h3.searchRoom__label прибытие
+                    h3.searchRoom__label выезд
+                +calendar('ДД.ММ.ГГГГ','ДД.ММ.ГГГГ')
+        .searchRoom__guests
+            h3.searchRoom__label гости
+            +visitors('','0','0','0')
+        .searchRoom__button
+            +btnPayment('подобрать номер')
 
 script(src='../../../dist/main.bundle.js')
 script(src='../../DateDropdown/datepicker.min.js')

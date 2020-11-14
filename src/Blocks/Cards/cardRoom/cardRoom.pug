@@ -2,35 +2,35 @@ meta(charset="UTF-8")
 link(href="cardRoom.css" rel="stylesheet")
 link(href='../../../style/fonts/iconfont/material-icons.css' rel='stylesheet')
 include  ../../allBlocks
-    mixin cardRoom(imageRoom, numRoom, categoryRoom, costRoom, reviews)
-        .cardRoom
-            div(class='cardRoom__image' style='background-image: '+imageRoom)
-                .cardRoom__slider
-                    .cardRoom__slider-symbol_left
-                        i(class='material-icons cardRoom__icon_left') expand_more
-                    .cardRoom__slider-symbol_right
-                        i(class='material-icons cardRoom__icon_right') expand_more
-                .cardRoom__dots
-                    .cardRoom__dots-symbol
-                    .cardRoom__dots-symbol
-                    .cardRoom__dots-symbol
-                    .cardRoom__dots-symbol
-            .cardRoom__description
-                .cardRoom__title
-                    .cardRoom__titleRoom
-                        .cardRoom__numRoom-symbol №
-                        .cardRoom__numRoom= numRoom
-                        .cardRoom__numCategory= categoryRoom
-                    .cardRoom__price
-                        .cardRoom__price-cost= costRoom
-                        .cardRoom__price-text в сутки
-                .cardRoom__line
-                .cardRoom__rating
-                    .cardRoom__rateBtn
-                        +rateBtn('star', 'star', 'star', 'star', 'star')
-                    .cardRoom__review
-                        .cardRoom__review-quantity= reviews
-                        .cardRoom__review-text Отзывов
+mixin cardRoom(imageRoom, numRoom, categoryRoom, costRoom, reviews,classHover )
+    .cardRoom
+        div(class='cardRoom__image'+classHover style='background-image: '+imageRoom)
+            .cardRoom__slider
+                .cardRoom__slider-symbol_left
+                    i(class='material-icons cardRoom__icon_left') expand_more
+                .cardRoom__slider-symbol_right
+                    i(class='material-icons cardRoom__icon_right') expand_more
+            .cardRoom__dots
+                .cardRoom__dots-symbol
+                .cardRoom__dots-symbol
+                .cardRoom__dots-symbol
+                .cardRoom__dots-symbol
+        .cardRoom__description
+            .cardRoom__title
+                .cardRoom__titleRoom
+                    .cardRoom__numRoom-symbol №
+                    .cardRoom__numRoom= numRoom
+                    .cardRoom__numCategory= categoryRoom
+                .cardRoom__price
+                    .cardRoom__price-cost= costRoom
+                    .cardRoom__price-text в сутки
+            .cardRoom__line
+            .cardRoom__rating
+                .cardRoom__rateBtn
+                    +rateBtn('star', 'star', 'star', 'star', 'star')
+                .cardRoom__review
+                    .cardRoom__review-quantity= reviews
+                    .cardRoom__review-text Отзывов
 
 
 script(src='../../../dist/main.bundle.js')

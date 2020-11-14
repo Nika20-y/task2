@@ -301,7 +301,7 @@ input.filterDate {
 }
 
 .datepicker {
-  min-width: 32rem;
+  min-width: 31.6rem;
 }
 
 .datepicker-here:focus, .datepicker-here:hover {
@@ -364,7 +364,7 @@ input.filterDate {
   font-family: Montserrat, sans-serif;
   font-style: normal;
   font-size: 1.2rem;
-  line-height: 1.5rem;
+  line-height: 2.4rem;
   font-weight: normal;
 }
 .datepicker--cells .datepicker--cell-day {
@@ -372,6 +372,8 @@ input.filterDate {
 }
 .datepicker--cells .datepicker--cell-day:hover {
   border-radius: 2.2rem;
+  width: 3.9rem;
+  height: 3.9rem;
 }
 .datepicker--cells .-other-month- {
   color: rgba(31, 32, 65, 0.25);
@@ -380,6 +382,8 @@ input.filterDate {
   font-weight: 700;
   color: #ffffff;
   background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  width: 3.9rem;
+  height: 3.9rem;
   border-radius: 2.2rem;
 }
 .datepicker--cells .-selected- {
@@ -387,6 +391,8 @@ input.filterDate {
   color: #ffffff;
   background: linear-gradient(180deg, #BC9CFF 0%, #8ba4f9 100%);
   border-radius: 2.2rem;
+  width: 3.9rem;
+  height: 3.9rem;
 }
 .datepicker--cells .-selected-:hover {
   background: #BC9CFF;
@@ -396,6 +402,10 @@ input.filterDate {
 }
 .datepicker--cells .-in-range- {
   background: linear-gradient(180deg, rgba(188, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
+}
+
+.datepicker--cells:nth-child(-n+7) {
+  margin-top: 1.2rem;
 }
 
 .datepicker--buttons {

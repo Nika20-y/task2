@@ -29,7 +29,7 @@ body{
   justify-content: space-between;
   height: 100%;
 }
-.cardRoom__image:hover{
+.cardRoom__image:hover, .cardRoom__image-hover{
   .cardRoom__slider{
   display: flex;
 }}

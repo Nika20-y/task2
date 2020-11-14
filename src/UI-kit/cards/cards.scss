@@ -1,0 +1,37 @@
+@import "../../Blocks/allBlocks";
+@import "../../Blocks/Cards/allCards";
+@import "../../style/mixins/mixin";
+@import "../../style/variables";
+html{
+  font-size: 10px;
+}
+body{
+  margin: 0;
+  background: #E5E5E5;
+}
+.logo__img{
+  width: 48px;
+  padding: 1.55%;
+}
+.cards{
+  margin: 5.2rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.cards__firstColumn,
+.cards__secondColumn,
+.cards__thirdColumn{
+  max-width: 40rem;
+  padding: 2rem;
+}
+.cards__datepicker,
+.cards__searchRoomn,
+.cards__calculationRoom,
+.cards__cardRoom{
+padding-bottom: 4rem;
+}
+.cardRoom__icon_left, .cardRoom__icon_right{
+  color: $white;
+}

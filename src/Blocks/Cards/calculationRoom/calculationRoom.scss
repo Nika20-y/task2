@@ -16,7 +16,6 @@ body{
   background: $white;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  position: absolute;
   display: flex;
   flex-direction: column;
 }
@@ -107,9 +106,13 @@ color: $half-dark;
 .calculationRoom__service-price,
 .calculationRoom__adds-price{
   display: flex;
-  width: 70%;
+  width: 75%;
 }
 .calculationRoom__service-text,
 .calculationRoom__adds-text{
   width: 85%;
+}
+.calculationRoom__arrival-title{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
