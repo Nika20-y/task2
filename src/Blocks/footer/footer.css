@@ -498,6 +498,7 @@ input.filterDate {
 }
 
 .dropdown__list {
+  max-width: 32rem;
   display: none;
   width: 100%;
   margin: 0;
@@ -506,6 +507,8 @@ input.filterDate {
   padding-left: 0;
   background: #ffffff;
   border-radius: 0.4rem;
+  position: absolute;
+  z-index: 100;
   border: 0.1rem solid rgba(31, 32, 65, 0.5);
   box-sizing: border-box;
   box-shadow: 0 1rem 2rem rgba(31, 32, 65, 0.05);
@@ -631,6 +634,7 @@ input.filterDate {
 
 .dropdownFacilities__list {
   display: none;
+  max-width: 26.8rem;
   width: 100%;
   margin: 0;
   padding-bottom: 0.4rem;
@@ -638,6 +642,8 @@ input.filterDate {
   padding-left: 0;
   background: #ffffff;
   border-radius: 0.4rem;
+  position: absolute;
+  z-index: 100;
   border: 0.1rem solid rgba(31, 32, 65, 0.5);
   box-sizing: border-box;
   box-shadow: 0 1rem 2rem rgba(31, 32, 65, 0.05);
@@ -1539,7 +1545,7 @@ footer {
 
 .footer__top {
   border-bottom: 1px solid #dedee3;
-  padding: 9.5rem 0 7.9rem;
+  padding: 9.5rem 2rem 7.9rem;
 }
 
 .footer__widgets {
@@ -1612,7 +1618,7 @@ footer {
   font-family: Montserrat, sans-serif;
   font-style: normal;
   font-size: 1.2rem;
-  line-height: 0.5rem;
+  line-height: 1.5rem;
   text-transform: uppercase;
   color: #1f2041;
   font-weight: 700;
@@ -1626,6 +1632,7 @@ footer {
 
 .footer__bottom {
   max-width: 1160px;
+  padding: 0 2rem;
   margin: 0.2rem auto 0.1rem;
   display: flex;
   justify-content: space-between;
@@ -1642,7 +1649,6 @@ footer {
   display: flex;
   flex: 1 1 0;
   padding: 0 2rem;
-  flex-wrap: wrap;
 }
 .footer__columns-widgets .footer__column {
   margin-left: 2rem;
@@ -1704,8 +1710,7 @@ footer {
 }
 
 .footerMobile__wrapper {
-  max-width: 76.8rem;
-  display: grid;
+  display: none;
   justify-content: center;
   text-align: center;
 }
@@ -1724,6 +1729,16 @@ footer {
 
 .fa-facebook-square {
   margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .footerMobile__wrapper {
+    display: grid;
+  }
+
+  .footer__wrapper {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=footer.css.map */

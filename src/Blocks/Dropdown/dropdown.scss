@@ -23,6 +23,7 @@
 }
 
 .dropdown__list{
+  max-width: 32rem;
   display: none;
   width: 100%;
   margin: 0;
@@ -31,6 +32,8 @@
   padding-left: 0;
   background: $white;
   border-radius: .4rem;
+  position: absolute;
+  z-index: 100;
   li{
     list-style: none;
     display: flex;

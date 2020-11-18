@@ -24,8 +24,14 @@ body{
   margin-bottom: 4rem;
 }
 .content__footer-mobile{
-  margin-bottom: 14rem;
+  max-width: 76.8rem;
+  margin: 0 auto 14rem;
   .footerMobile__wrapper{
-margin: 0 auto;
+    display: grid;
+
   }
+  .footer__wrapper{
+    display: none;
+  }
+
 }

@@ -496,6 +496,7 @@ input.filterDate {
 }
 
 .dropdown__list {
+  max-width: 32rem;
   display: none;
   width: 100%;
   margin: 0;
@@ -504,6 +505,8 @@ input.filterDate {
   padding-left: 0;
   background: #ffffff;
   border-radius: 0.4rem;
+  position: absolute;
+  z-index: 100;
   border: 0.1rem solid rgba(31, 32, 65, 0.5);
   box-sizing: border-box;
   box-shadow: 0 1rem 2rem rgba(31, 32, 65, 0.05);
@@ -629,6 +632,7 @@ input.filterDate {
 
 .dropdownFacilities__list {
   display: none;
+  max-width: 26.8rem;
   width: 100%;
   margin: 0;
   padding-bottom: 0.4rem;
@@ -636,6 +640,8 @@ input.filterDate {
   padding-left: 0;
   background: #ffffff;
   border-radius: 0.4rem;
+  position: absolute;
+  z-index: 100;
   border: 0.1rem solid rgba(31, 32, 65, 0.5);
   box-sizing: border-box;
   box-shadow: 0 1rem 2rem rgba(31, 32, 65, 0.05);
@@ -1555,6 +1561,20 @@ input::-webkit-input-placeholder {
   display: flex;
 }
 
+.header__navMobile {
+  display: none;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8ba4f9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #BC9CFF;
+  width: 4rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.header__navMobile .material-icons {
+  font-size: 4rem;
+}
+
 .header__link,
 .header__button-authorization {
   margin-right: 2.1rem;
@@ -1623,6 +1643,53 @@ input::-webkit-input-placeholder {
   line-height: 1.7rem;
   color: rgba(31, 32, 65, 0.5);
   align-items: center;
+}
+
+.header__authorization-icon,
+.header__user-icon {
+  display: none;
+  cursor: pointer;
+  width: 4rem;
+}
+
+.header__authorization-icon .material-icons,
+.header__user-icon .material-icons {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8ba4f9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #BC9CFF;
+  font-size: 4rem;
+}
+
+@media (max-width: 1000px) {
+  .header__button-registration,
+.header__button-authorization,
+.header__line,
+.header__user-name {
+    display: none;
+  }
+
+  .header__authorization-icon,
+.header__user-icon {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .header__nav-title {
+    width: 20rem;
+    flex-direction: column;
+    margin-top: 5.5rem;
+    right: 0;
+    position: absolute;
+    background: #ffffff;
+    z-index: 100;
+    opacity: 0;
+  }
+
+  .header__navMobile {
+    display: block;
+    position: relative;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */

@@ -20,7 +20,7 @@ footer{
 }
 .footer__top{
   border-bottom: 1px solid #dedee3;
-  padding: 9.5rem 0 7.9rem;
+  padding: 9.5rem 2rem 7.9rem;
 }
 .footer__widgets{
   display: flex;
@@ -78,7 +78,7 @@ footer{
 }
 
 .footer__column-title{
-  @include fontContent(1.2rem,.5rem);
+  @include fontContent(1.2rem,1.5rem);
   text-transform: uppercase;
   color: $dark-black;
   font-weight: $bold-weight;
@@ -90,6 +90,7 @@ footer{
 }
 .footer__bottom{
   max-width: 1160px;
+  padding: 0 2rem;
   margin: .2rem auto .1rem;
   display: flex;
   justify-content: space-between;
@@ -104,7 +105,6 @@ footer{
   display: flex;
   flex: 1 1 0;
   padding: 0 2rem;
-  flex-wrap: wrap;
   .footer__column{
 margin-left: 2rem;
   }
@@ -161,8 +161,7 @@ padding: 0 7rem 0 .5rem;
   color: $purple;
 }
 .footerMobile__wrapper{
-  max-width: 76.8rem;
-  display:grid;
+  display:none;
   justify-content: center;
   text-align: center;
   .footer__confidence{
@@ -180,4 +179,12 @@ padding: 0 7rem 0 .5rem;
 }
 .fa-facebook-square{
   margin-right: .5rem;
+}
+@media (max-width: 768px) {
+  .footerMobile__wrapper{
+    display: grid;
+  }
+  .footer__wrapper{
+    display: none;
+  }
 }

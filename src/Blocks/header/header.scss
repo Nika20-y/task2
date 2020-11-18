@@ -35,6 +35,19 @@
 .header__nav{
   display: flex;
 }
+.header__navMobile{
+  display: none;
+  background: $gradient-purple;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: $purple;
+  width: 4rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  .material-icons{
+   font-size: 4rem;
+  }
+}
 .header__link,
 .header__button-authorization{
   margin-right: 2.1rem;
@@ -80,11 +93,6 @@
     padding-left: 2rem;
   }
 }
-
-.header__button-registration,
-.header__button-authorization{
-
-}
 .header__line{
   background: rgba(31, 32, 65, 0.1);
   width: 1px;
@@ -96,4 +104,49 @@
   @include fontContent(1.4rem,1.7rem);
   color: $half-dark;
   align-items: center;
+}
+.header__authorization-icon,
+.header__user-icon{
+  display: none;
+  cursor: pointer;
+  width: 4rem;
+}
+.header__authorization-icon,
+.header__user-icon{
+  .material-icons{
+  background: $gradient-purple;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: $purple;
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header__button-registration,
+  .header__button-authorization,
+  .header__line,
+  .header__user-name{
+display: none;
+  }
+  .header__authorization-icon,
+  .header__user-icon{
+  display: block;
+}
+}
+@media (max-width: 768px) {
+  .header__nav-title{
+    width: 20rem;
+    flex-direction: column;
+    margin-top: 5.5rem;
+    right: 0;
+    position: absolute;
+    background: $white;
+    z-index: 100;
+    opacity: 0;
+  }
+  .header__navMobile{
+    display: block;
+    position: relative;
+  }
 }
