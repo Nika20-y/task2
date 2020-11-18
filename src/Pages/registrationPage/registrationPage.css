@@ -9661,36 +9661,24 @@ html {
 
 body {
   margin: 0;
-  background: #E5E5E5;
 }
 
-.logo__img {
-  width: 48px;
-  padding: 1.55%;
+.wrapper__mainBlock {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  background-image: url("../../images/registration.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.content__header {
-  margin-top: 14rem;
-  margin-bottom: 4rem;
-}
-
-.content__headerAuthorisation {
-  margin-bottom: 4rem;
-}
-
-.content__footer {
-  margin-bottom: 4rem;
-}
-
-.content__footer-mobile {
-  max-width: 76.8rem;
-  margin: 0 auto 14rem;
-}
-.content__footer-mobile .footerMobile__wrapper {
+.wrapper__registrationCard {
   display: grid;
-}
-.content__footer-mobile .footer__wrapper {
-  display: none;
+  justify-content: center;
+  padding-top: 1.9rem;
+  padding-bottom: 1.9rem;
 }
 
-/*# sourceMappingURL=headersFooters.css.map */
+/*# sourceMappingURL=registrationPage.css.map */

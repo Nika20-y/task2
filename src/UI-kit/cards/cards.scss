@@ -35,3 +35,9 @@ padding-bottom: 4.2rem;
 .cardRoom__icon_left, .cardRoom__icon_right{
   color: $white;
 }
+.cards__registration,
+.cards__authorization{
+  input.Text-field{
+    min-width: 29rem;
+  }
+}
