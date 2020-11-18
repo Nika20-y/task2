@@ -1,0 +1,47 @@
+@import "../../Blocks/allBlocks";
+@import "../../Blocks/Cards/allCards";
+@import "../../style/mixins/mixin";
+@import "../../style/variables";
+html{
+  font-size: 10px;
+}
+body{
+  margin: 0;
+}
+.wrapper__mainBlock{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  min-height: 100rem;
+ background-image: url("../../images/landing.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.wrapper__searchCard{
+  position: absolute;
+  top: 7rem;
+  left: 17rem;
+}
+.mainBlock__text{
+  position: absolute;
+  bottom: 1.8rem;
+  right: 17rem;
+  @include fontContent(1.4rem, 2.4rem);
+  text-align: right;
+  color: $lighter-dark;
+  width: 15%;
+}
+@media (max-width: 768px) {
+  .wrapper__mainBlock{
+    min-height: 70rem;
+  }
+  .wrapper__searchCard{
+    left: 5rem;
+  }
+  .mainBlock__text{
+    width: 70%;
+    right: 7rem;
+  }
+}

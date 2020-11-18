@@ -136,7 +136,7 @@ display: none;
 }
 @media (max-width: 768px) {
   .header__nav-title{
-    width: 20rem;
+    width: 22rem;
     flex-direction: column;
     margin-top: 5.5rem;
     right: 0;
@@ -144,6 +144,8 @@ display: none;
     background: $white;
     z-index: 100;
     opacity: 0;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
   }
   .header__navMobile{
     display: block;
