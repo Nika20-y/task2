@@ -1,0 +1,22 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        title Sign in
+        link(href="../../Blocks/DateDropdown/datepicker.min.css" rel="stylesheet")
+        script(src="https://code.jquery.com/jquery-1.12.4.js")
+        link(href="../../Blocks/header/header.css" rel="stylesheet")
+        link(href="../../Blocks/footer/footer.css" rel="stylesheet")
+        link(href="landingPage.css" rel="stylesheet")
+        include  ../../Blocks/allBlocks
+        include ../../Blocks/Cards/allCards
+    body
+        .wrapper
+            .wrapper__header
+                include ../../Blocks/header/header
+            .wrapper__mainBlock
+                .wrapper__authorizationCard
+                    +authorization
+            .wrapper__footer
+                include ../../Blocks/footer/footer
+        script(src="../../Blocks/header/headerDropdown.js")

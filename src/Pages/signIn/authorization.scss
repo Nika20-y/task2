@@ -1,0 +1,27 @@
+@import "../../Blocks/allBlocks";
+@import "../../Blocks/Cards/allCards";
+@import "../../style/mixins/mixin";
+@import "../../style/variables";
+html{
+  font-size: 10px;
+}
+body{
+  margin: 0;
+}
+.wrapper__mainBlock{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  background-image: url("../../images/registration.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.wrapper__authorizationCard{
+  display: grid;
+  justify-content: center;
+  padding-top: 16.3rem ;
+  padding-bottom: 16.3rem ;
+
+}
