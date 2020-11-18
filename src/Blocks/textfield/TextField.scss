@@ -1,6 +1,7 @@
 @import "../../style/mixins/mixin";
 @import "../../style/variables";
 .textField__wrapper{
+  width: 100%;
   input{
     min-width: 29rem;
     position: relative;

@@ -1,17 +1,19 @@
 @import "../../Blocks/allBlocks";
 @import "../../style/mixins/mixin";
 @import "../../style/variables";
-html{
-  font-size: 10px;
-}
 .header__wrapper{
-  padding: .6rem 2rem;
+  padding: 1.5rem 2rem;
+  background: $white;
+  box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
+
 }
 .header__section{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: 1160px;
-  margin: 0 auto;
+  margin: auto;
+  height: 100%;
 }
 .header__logo{
   display: flex;
@@ -27,12 +29,15 @@ html{
   display: flex;
   align-content: center;
 }
+.header__rightside{
+  display: flex;
+}
 .header__nav{
   display: flex;
 }
 .header__link,
 .header__button-authorization{
-  margin-right: 2rem;
+  margin-right: 2.1rem;
   cursor: pointer;
 }
 .header__nav-title{
@@ -68,14 +73,17 @@ html{
 .header__button-authorization{
   display: flex;
   align-content: center;
+  .button__wrapper{
+    height: 3.4rem;
+  }
+  .buttonBorder {
+    padding-left: 2rem;
+  }
+}
 
-}
-.button__wrapper{
-  height: 3.4rem;
-}
 .header__button-registration,
 .header__button-authorization{
-  margin-top: .3rem;
+
 }
 .header__line{
   background: rgba(31, 32, 65, 0.1);

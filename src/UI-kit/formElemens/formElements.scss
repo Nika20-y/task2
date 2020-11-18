@@ -33,6 +33,11 @@ body{
 }
 .formElements__container {
   margin: 2rem 0;
+  .textField__wrapper{
+    input{
+      min-width: 29rem;
+    }
+  }
 }
 .formElements__container-header{
   text-transform: uppercase;

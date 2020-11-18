@@ -9633,30 +9633,24 @@ body {
   padding: 1.55%;
 }
 
-.cards {
-  margin: 5.2rem;
-  padding: 2rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.content__header {
+  margin-top: 14rem;
+  margin-bottom: 4rem;
 }
 
-.cards__firstColumn,
-.cards__secondColumn,
-.cards__thirdColumn {
-  max-width: 40rem;
-  padding: 2rem;
+.content__headerAuthorisation {
+  margin-bottom: 4rem;
 }
 
-.cards__datepicker,
-.cards__searchRoomn,
-.cards__calculationRoom,
-.cards__cardRoom {
-  padding-bottom: 4.2rem;
+.content__footer {
+  margin-bottom: 4rem;
 }
 
-.cardRoom__icon_left, .cardRoom__icon_right {
-  color: #ffffff;
+.content__footer-mobile {
+  margin-bottom: 14rem;
+}
+.content__footer-mobile .footerMobile__wrapper {
+  margin: 0 auto;
 }
 
-/*# sourceMappingURL=cards.css.map */
+/*# sourceMappingURL=headersFooters.css.map */

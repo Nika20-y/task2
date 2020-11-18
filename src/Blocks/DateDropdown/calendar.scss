@@ -35,22 +35,23 @@ input.filterDate{
     color: $lighter-dark;
     @include fontContent(1.4rem, 1.8rem);
     width: 100%;
-    min-width: 11.8rem;
+    min-width: 12rem;
     padding: 1.1rem 1.4rem 1.3rem;
     position: relative;
 }
 .datepicker__datefrom,
 .datepicker__dateto{
-  min-width: 11.8rem;
+  min-width: 11.9rem;
   border: .1rem solid $light-dark;
   border-radius: .4rem;
   color: $lighter-dark;
   @include fontContent(1.4rem, 2.4rem);
-  padding: 1rem 1.4rem .8rem 1.3rem;
+  padding: .8rem 1.4rem .8rem 1.4rem;
   position: relative;
   text-align: left;
   background: $white;
 }
+
 .datepicker{
   width: 31.8rem;
 }
@@ -73,7 +74,7 @@ input.filterDate{
 }
 .datepicker--nav{
   border-bottom: none;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 0;
   justify-content: space-between;
   .datepicker--nav-action{
     color: $purple;
@@ -83,6 +84,8 @@ input.filterDate{
   margin-right: 1rem;
 }
 .datepicker--nav-title{
+  width: 10%;
+  padding-left: 2rem;
   @include fontHeadline(1.9rem, 2.4rem);
   font-weight: $bold-weight;
   color: $dark-black;

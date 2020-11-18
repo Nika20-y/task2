@@ -282,14 +282,14 @@ input.filterDate {
   font-size: 1.4rem;
   line-height: 1.8rem;
   width: 100%;
-  min-width: 11.8rem;
+  min-width: 12rem;
   padding: 1.1rem 1.4rem 1.3rem;
   position: relative;
 }
 
 .datepicker__datefrom,
 .datepicker__dateto {
-  min-width: 11.8rem;
+  min-width: 11.9rem;
   border: 0.1rem solid rgba(31, 32, 65, 0.25);
   border-radius: 0.4rem;
   color: rgba(31, 32, 65, 0.75);
@@ -297,7 +297,7 @@ input.filterDate {
   font-style: normal;
   font-size: 1.4rem;
   line-height: 2.4rem;
-  padding: 1rem 1.4rem 0.8rem 1.3rem;
+  padding: 0.8rem 1.4rem 0.8rem 1.4rem;
   position: relative;
   text-align: left;
   background: #ffffff;
@@ -327,7 +327,7 @@ input.filterDate {
 
 .datepicker--nav {
   border-bottom: none;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 0;
   justify-content: space-between;
 }
 .datepicker--nav .datepicker--nav-action {
@@ -339,6 +339,8 @@ input.filterDate {
 }
 
 .datepicker--nav-title {
+  width: 10%;
+  padding-left: 2rem;
   font-family: Quicksand, "Open Sans", sans-serif;
   font-style: normal;
   font-size: 1.9rem;
@@ -894,8 +896,8 @@ input.filterDate {
   display: block;
   top: 0.046rem;
   left: 0;
-  height: 2rem;
-  width: 2rem;
+  height: 18px;
+  width: 18px;
   border: 0.1rem solid rgba(31, 32, 65, 0.25);
   border-radius: 50%;
   cursor: pointer;
@@ -910,7 +912,7 @@ input.filterDate {
   border-radius: 10px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8ba4f9 100%);
   top: 50%;
-  left: 11%;
+  left: 10%;
   transform: translate(-50%, -50%);
   display: none;
 }
@@ -1234,6 +1236,9 @@ input.subTextfield__input {
   font-family: Quicksand;
   src: url(../fonts/Quicksand-Bold.ttf);
 }
+.textField__wrapper {
+  width: 100%;
+}
 .textField__wrapper input {
   min-width: 29rem;
   position: relative;
@@ -1512,10 +1517,6 @@ input::-webkit-input-placeholder {
   font-family: Quicksand;
   src: url(../fonts/Quicksand-Bold.ttf);
 }
-html {
-  font-size: 10px;
-}
-
 body {
   margin: 0;
 }
@@ -1528,18 +1529,24 @@ footer {
 .footer__wrapper {
   min-width: 32rem;
   background: #ffffff;
+  box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
+}
+
+.footerMobile__wrapper {
+  background: #ffffff;
+  box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
 }
 
 .footer__top {
   border-bottom: 1px solid #dedee3;
-  padding: 8.4rem 0 6.3rem;
+  padding: 9.5rem 0 7.9rem;
 }
 
 .footer__widgets {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 1160px;
   margin: 0 auto;
   text-align: left;
 }
@@ -1548,13 +1555,15 @@ footer {
 .footer__column-subscribe {
   min-width: 26rem;
   max-width: 26rem;
+  margin-top: 0.5rem;
 }
 
 .footer__column-subscribe input.subTextfield__input {
   min-width: 23rem;
 }
 .footer__column-subscribe .footer__column-title {
-  margin-bottom: 1.9rem;
+  margin-bottom: 2.1rem;
+  margin-top: 0.9rem;
 }
 
 .footer__logo {
@@ -1616,8 +1625,8 @@ footer {
 }
 
 .footer__bottom {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1160px;
+  margin: 0.2rem auto 0.1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1629,9 +1638,31 @@ footer {
   padding-bottom: 2.6rem;
 }
 
+.footer__columns-widgets {
+  display: flex;
+  flex: 1 1 0;
+  padding: 0 2rem;
+  flex-wrap: wrap;
+}
+.footer__columns-widgets .footer__column {
+  margin-left: 2rem;
+}
+.footer__columns-widgets .footer__column-title {
+  margin-bottom: 2.8rem;
+}
+
+.footer__columns-widgets > :nth-child(2) {
+  padding: 0 7rem 0 0.5rem;
+}
+
+.footer__columns-widgets > :nth-child(2) {
+  margin-left: 5.5rem;
+}
+
 .footer__sociallinks {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .fa-twitter:before {
@@ -1689,6 +1720,10 @@ footer {
   margin-top: 12rem;
   justify-content: center;
   margin-bottom: 2rem;
+}
+
+.fa-facebook-square {
+  margin-right: 0.5rem;
 }
 
 /*# sourceMappingURL=footer.css.map */

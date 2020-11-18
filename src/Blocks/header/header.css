@@ -280,14 +280,14 @@ input.filterDate {
   font-size: 1.4rem;
   line-height: 1.8rem;
   width: 100%;
-  min-width: 11.8rem;
+  min-width: 12rem;
   padding: 1.1rem 1.4rem 1.3rem;
   position: relative;
 }
 
 .datepicker__datefrom,
 .datepicker__dateto {
-  min-width: 11.8rem;
+  min-width: 11.9rem;
   border: 0.1rem solid rgba(31, 32, 65, 0.25);
   border-radius: 0.4rem;
   color: rgba(31, 32, 65, 0.75);
@@ -295,7 +295,7 @@ input.filterDate {
   font-style: normal;
   font-size: 1.4rem;
   line-height: 2.4rem;
-  padding: 1rem 1.4rem 0.8rem 1.3rem;
+  padding: 0.8rem 1.4rem 0.8rem 1.4rem;
   position: relative;
   text-align: left;
   background: #ffffff;
@@ -325,7 +325,7 @@ input.filterDate {
 
 .datepicker--nav {
   border-bottom: none;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 0;
   justify-content: space-between;
 }
 .datepicker--nav .datepicker--nav-action {
@@ -337,6 +337,8 @@ input.filterDate {
 }
 
 .datepicker--nav-title {
+  width: 10%;
+  padding-left: 2rem;
   font-family: Quicksand, "Open Sans", sans-serif;
   font-style: normal;
   font-size: 1.9rem;
@@ -892,8 +894,8 @@ input.filterDate {
   display: block;
   top: 0.046rem;
   left: 0;
-  height: 2rem;
-  width: 2rem;
+  height: 18px;
+  width: 18px;
   border: 0.1rem solid rgba(31, 32, 65, 0.25);
   border-radius: 50%;
   cursor: pointer;
@@ -908,7 +910,7 @@ input.filterDate {
   border-radius: 10px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8ba4f9 100%);
   top: 50%;
-  left: 11%;
+  left: 10%;
   transform: translate(-50%, -50%);
   display: none;
 }
@@ -1232,6 +1234,9 @@ input.subTextfield__input {
   font-family: Quicksand;
   src: url(../fonts/Quicksand-Bold.ttf);
 }
+.textField__wrapper {
+  width: 100%;
+}
 .textField__wrapper input {
   min-width: 29rem;
   position: relative;
@@ -1510,19 +1515,19 @@ input::-webkit-input-placeholder {
   font-family: Quicksand;
   src: url(../fonts/Quicksand-Bold.ttf);
 }
-html {
-  font-size: 10px;
-}
-
 .header__wrapper {
-  padding: 0.6rem 2rem;
+  padding: 1.5rem 2rem;
+  background: #ffffff;
+  box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
 }
 
 .header__section {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: 1160px;
-  margin: 0 auto;
+  margin: auto;
+  height: 100%;
 }
 
 .header__logo {
@@ -1542,13 +1547,17 @@ html {
   align-content: center;
 }
 
+.header__rightside {
+  display: flex;
+}
+
 .header__nav {
   display: flex;
 }
 
 .header__link,
 .header__button-authorization {
-  margin-right: 2rem;
+  margin-right: 2.1rem;
   cursor: pointer;
 }
 
@@ -1592,14 +1601,11 @@ html {
   display: flex;
   align-content: center;
 }
-
-.button__wrapper {
+.header__button-authorization .button__wrapper {
   height: 3.4rem;
 }
-
-.header__button-registration,
-.header__button-authorization {
-  margin-top: 0.3rem;
+.header__button-authorization .buttonBorder {
+  padding-left: 2rem;
 }
 
 .header__line {

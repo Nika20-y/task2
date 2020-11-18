@@ -5,13 +5,13 @@
 .authorization{
   max-width: 38rem;
   min-width: 32rem;
-  padding: 3rem;
+  padding: 3.7rem 3rem 3.3rem;
   background: $white;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 .authorization__title{
-  @include fontHeadline(2.4rem,3rem);
+  @include fontContent(2.4rem,3rem);
   font-weight: $bold-weight;
   color: $dark-black;
   margin-bottom: 2rem;

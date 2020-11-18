@@ -3,32 +3,42 @@
 @import "../../../style/variables";
 
 .searchRoom{
-  max-width: 38rem;
-  min-width: 32rem;
-  padding: 3rem;
+  max-width: 32rem;
+  min-width: 30rem;
+  padding: 2.3rem 3rem 1.3rem;
   background: $white;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  display: flex;
+  flex-direction: column;
 }
 .searchRoom__title{
-  @include fontHeadline(2.4rem,3rem);
+  @include fontContent(2.4rem,3rem);
   font-weight: $bold-weight;
   color: $dark-black;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  width: 90%;
 }
 .searchRoom__dates{
   width: 100%;
   display: flex;
-  margin-bottom: 2.05rem;
-  max-width: 44rem;
+  margin-bottom: 1rem;
+  max-width: 32rem;
+  align-items: center;
+
 }
 .searchRoom__arrival{
   margin-right: 2rem;
   width: 100%;
+  .datepicker__dates{
+margin-left: 2.6rem;
+  }
+
 }
 .searchRoom__arrival-titles{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 2.2rem;
 }
 .searchRoom__label{
   @include fontContent(1.2rem,1.5rem);
@@ -39,5 +49,8 @@
 }
 .searchRoom__guests{
   margin-bottom: 3.1rem;
+}
+.searchRoom__button{
+  margin-bottom: 1.6rem;
 }
 

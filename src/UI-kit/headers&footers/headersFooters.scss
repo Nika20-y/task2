@@ -1,0 +1,31 @@
+@import "../../Blocks/allBlocks";
+@import "../../Blocks/Cards/allCards";
+@import "../../style/mixins/mixin";
+@import "../../style/variables";
+html{
+  font-size: 10px;
+}
+body{
+  margin: 0;
+  background: #E5E5E5;
+}
+.logo__img{
+  width: 48px;
+  padding: 1.55%;
+}
+.content__header{
+  margin-top: 14rem;
+  margin-bottom: 4rem;
+}
+.content__headerAuthorisation{
+  margin-bottom: 4rem;
+}
+.content__footer{
+  margin-bottom: 4rem;
+}
+.content__footer-mobile{
+  margin-bottom: 14rem;
+  .footerMobile__wrapper{
+margin: 0 auto;
+  }
+}

@@ -35,8 +35,8 @@
   display: block;
   top: .046rem;
   left: 0;
-  height: 2rem;
-  width: 2rem;
+  height: 18px;
+  width: 18px;
   border: .1rem solid $light-dark;
   border-radius: 50%;
   cursor: pointer;
@@ -50,7 +50,7 @@
   border-radius: 10px;
   background: $gradient-purple;
   top: 50%;
-  left: 11%;
+  left: 10%;
   transform: translate(-50%,-50%);
 display: none;
 }

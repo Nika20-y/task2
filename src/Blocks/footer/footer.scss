@@ -2,9 +2,6 @@
 @import "../../style/mixins/mixin";
 @import "../../style/variables";
 @import "../../style/fonts/brandsfont/all.min.css";
-html{
-  font-size: 10px;
-}
 body{
   margin: 0;
 }
@@ -15,17 +12,21 @@ footer{
 .footer__wrapper{
   min-width: 32rem;
   background: $white;
+  box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
+}
+.footerMobile__wrapper{
+  background: $white;
+  box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
 }
 .footer__top{
   border-bottom: 1px solid #dedee3;
-  padding: 8.4rem 0 6.3rem;
-
+  padding: 9.5rem 0 7.9rem;
 }
 .footer__widgets{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  max-width: 1200px;
+  max-width: 1160px;
   margin: 0 auto;
   text-align: left;
 }
@@ -33,14 +34,15 @@ footer{
 .footer__column-subscribe{
   min-width: 26rem;
   max-width: 26rem;
+  margin-top: .5rem;
 }
 .footer__column-subscribe{
   input.subTextfield__input{
     min-width: 23rem;
   }
   .footer__column-title{
-    margin-bottom: 1.9rem;
-
+    margin-bottom: 2.1rem;
+    margin-top: .9rem;
 }
 }
 .footer__logo{
@@ -64,6 +66,7 @@ footer{
   color: $lighter-dark;
   font-weight: $light-weight;
 }
+
 .footer__subscribe-text{
   margin-bottom: 2.1rem;
 }
@@ -73,6 +76,7 @@ footer{
   color: $half-dark;
   font-weight: $light-weight;
 }
+
 .footer__column-title{
   @include fontContent(1.2rem,.5rem);
   text-transform: uppercase;
@@ -85,8 +89,8 @@ footer{
   cursor: pointer;
 }
 .footer__bottom{
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1160px;
+  margin: .2rem auto .1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -96,9 +100,30 @@ footer{
   padding-top: 2.6rem;
   padding-bottom: 2.6rem;
 }
+.footer__columns-widgets{
+  display: flex;
+  flex: 1 1 0;
+  padding: 0 2rem;
+  flex-wrap: wrap;
+  .footer__column{
+margin-left: 2rem;
+  }
+  .footer__column-title{
+    margin-bottom: 2.8rem;
+  }
+}
+.footer__columns-widgets>:nth-child(2){
+padding: 0 7rem 0 .5rem;
+}
+.footer__columns-widgets>:nth-child(2){
+  margin-left: 5.5rem;
+}
+
+
 .footer__sociallinks{
   display: flex;
   align-items: center;
+ justify-content: space-between;
 
 }
 .fa-twitter:before {
@@ -152,4 +177,7 @@ footer{
     justify-content: center;
     margin-bottom: 2rem;
   }
+}
+.fa-facebook-square{
+  margin-right: .5rem;
 }

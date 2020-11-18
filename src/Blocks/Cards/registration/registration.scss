@@ -3,21 +3,25 @@
 @import "../../../style/variables";
 
 .registration{
-  max-width: 38rem;
-  min-width: 32rem;
-  padding: 3rem;
+  max-width: 32rem;
+  min-width: 30rem;
+  padding: 2.4rem 3rem 1.5rem;
   background: $white;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 .registration__title{
-  @include fontHeadline(2.4rem,3rem);
+  @include fontContent(2.4rem,3rem);
   font-weight: $bold-weight;
   color: $dark-black;
   margin-bottom: 2rem;
 }
 .registration__field{
   margin-bottom: 1rem;
+  max-width: 29rem;
+}
+.registration>:nth-child(3){
+  margin-bottom: .8rem;
 }
 .registration__label{
   @include fontContent(1.2rem,1.5rem);
@@ -26,17 +30,29 @@
   text-transform: uppercase;
   margin-bottom: .5rem;
 }
-.registration__radioBtns,
-.registration__dateBirth,
+.registration__radioBtns{
+  margin-bottom: 2.2rem;
+}
+.registration__dateBirth{
+  margin-bottom: 2rem;
+}
+.registration__data{
+  margin-bottom: .1rem;
+}
 .registration__toggle{
   margin-bottom: 2rem;
 }
 .registration__button{
   margin-bottom: 3rem;
+  .buttonBorder{
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
 }
 .registration__authorization{
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1.5rem;
 }
 .registration__authorization-text{
   @include fontContent(1.4rem,1.8rem);
