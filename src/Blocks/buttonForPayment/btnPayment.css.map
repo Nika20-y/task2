@@ -1,1 +1,0 @@
-{"version":3,"sourceRoot":"","sources":["../../style/mixins/mixin.scss","btnPayment.scss","../../style/variables.scss"],"names":[],"mappings":"AAAA;EACE;EACA;;AAEF;EACE;EACA;;ACJF;EACE;EACA;EACA;EACA;EACA,YCKgB;EDJhB;EACA,OCDM;EDEN,aCQY;EFHZ;EACA;EACA,WCNqB;EDOrB,aCP6B;EAC7B;EACA;EACA;EACA;EACA;EACA;EACA;;AACA;EACE;EACA;EACA;EACA;EACA","file":"btnPayment.css"}

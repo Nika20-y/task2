@@ -1,1 +1,0 @@
-{"version":3,"sourceRoot":"","sources":["../../style/mixins/mixin.scss","properties.scss","../../style/variables.scss"],"names":[],"mappings":"AAAA;EACE;EACA;;AAEF;EACE;EACA;;ACHF;EACE;;;AAEF;EACE;EACA;;AACA;EACE;EACA;EACA;EACA,YCDc;EDEd;EACA;EACA,OCVI;EDWJ;;;AAGJ;EDLE;EACA;EACA,WCIqB;EDHrB,aCG6B;EAI7B;;AAHF;EACA,aCLc;;;ADSd;EACE;EACA;EACA;EACA;EACA","file":"properties.css"}

@@ -1,6 +1,3 @@
-meta(charset="UTF-8")
-link(href='checkboxList.css' rel='stylesheet')
-link(href='../../style/fonts/iconfont/material-icons.css' rel='stylesheet')
 mixin checkboxDropdown(title,checkboxListExpanded,...items)
     div(class='checkboxList ' +checkboxListExpanded)
         .checkboxList__wrapper
@@ -13,6 +10,3 @@ mixin checkboxDropdown(title,checkboxListExpanded,...items)
                     label.checkboxList__adds= item
                         input(type="checkbox" name="adds" class="checkboxList__custom")
                         span.checkboxList__checkbox
-
-
-script( src="checkboxList.js")

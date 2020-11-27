@@ -1,9 +1,8 @@
 
     let rateBtn = document.getElementsByClassName('rateBtn');
-    let quantityStar = rateBtn.length*5;
     for (let i = 0; i < rateBtn.length; i++) {
         let rateBtnIcon = rateBtn[i].getElementsByClassName('rateBtn__icon');
-        for (let a = 0; a < rateBtnIcon.length; a++) {
+        for (let a = 0; a < 5; a++) {
             rateBtnIcon[a].onclick = function () {
                 let star =  rateBtnIcon[a].getElementsByClassName('rateBtn__icon-star')[0].innerHTML;
                 if (star === 'star_border') {

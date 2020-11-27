@@ -1,10 +1,3 @@
-meta(charset="UTF-8")
-link(href="searchRoom.css" rel="stylesheet")
-link(href="../../DateDropdown/datepicker.min.css" rel="stylesheet")
-link(href="../../DateDropdown/calendar.css" rel="stylesheet")
-script(src="https://code.jquery.com/jquery-1.12.4.js")
-link(href='../../../style/fonts/iconfont/material-icons.css' rel='stylesheet')
-include  ../../allBlocks
 mixin searchRoom
     .searchRoom
         h1.searchRoom__title Найдём номера под ваши пожелания
@@ -19,8 +12,3 @@ mixin searchRoom
             +visitors('','0','0','0')
         .searchRoom__button
             +btnPayment('подобрать номер')
-
-script(src='../../../dist/main.bundle.js')
-script(src='../../DateDropdown/datepicker.min.js')
-script(src='../../DateDropdown/calendar.js')
-script(src='../../Dropdown/dropdown.js')

@@ -1,5 +1,10 @@
+@import "../../style/mixins/mixin";
+@import "../../style/variables";
+
 @import "authorization/authorization";
 @import "calculationRoom/calculationRoom";
 @import "cardRoom/cardRoom";
 @import "registration/registration";
 @import "searchRoom/searchRoom";
+@import "../header/header";
+@import "../footer/footer";

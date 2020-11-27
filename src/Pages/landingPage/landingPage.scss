@@ -13,11 +13,10 @@ body{
   width: 100%;
   height: 100%;
   max-width: 1920px;
-  margin: 0 auto;
-  min-height: 100rem;
- background-image: url("../../images/landing.png");
+  min-height: 91rem;
+ background: url("../../images/landing.png") 100% 100% no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
+
 }
 .wrapper__searchCard{
   position: absolute;

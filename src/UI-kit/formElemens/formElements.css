@@ -1,11 +1,42 @@
 @font-face {
   font-family: Montserrat;
-  src: url(../fonts/Montserrat-Regular.ttf);
+  src: "./assets/fonts/Montserrat-Regular.ttf";
 }
 @font-face {
   font-family: Quicksand;
-  src: url(../fonts/Quicksand-Bold.ttf);
+  src: "./assets/fonts/Quicksand-Bold.ttf";
 }
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: "./assets/fonts/iconfont/MaterialIcons-Regular.eot";
+  /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"), "./assets/fonts/iconfont/MaterialIcons-Regular.woff2" format("woff2"), "./assets/fonts/iconfont/MaterialIcons-Regular.woff" format("woff"), "./assets/fonts/iconfont/MaterialIcons-Regular.ttf" format("truetype");
+}
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
 .bulletList__title {
   font-family: Montserrat, sans-serif;
   font-style: normal;
@@ -46,14 +77,6 @@
   border-radius: 50%;
 }
 
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat-Regular.ttf);
-}
-@font-face {
-  font-family: Quicksand;
-  src: url(../fonts/Quicksand-Bold.ttf);
-}
 .button {
   display: flex;
   align-items: center;
@@ -78,14 +101,6 @@
   opacity: 0.5;
 }
 
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat-Regular.ttf);
-}
-@font-face {
-  font-family: Quicksand;
-  src: url(../fonts/Quicksand-Bold.ttf);
-}
 .button__wrapper {
   height: 4.4rem;
   position: relative;
@@ -119,14 +134,6 @@
   background-image: linear-gradient(180deg, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5));
 }
 
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat-Regular.ttf);
-}
-@font-face {
-  font-family: Quicksand;
-  src: url(../fonts/Quicksand-Bold.ttf);
-}
 .checkboxList label {
   padding-left: 2.98rem;
 }
@@ -231,14 +238,6 @@
   border-color: #BC9CFF;
 }
 
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat-Regular.ttf);
-}
-@font-face {
-  font-family: Quicksand;
-  src: url(../fonts/Quicksand-Bold.ttf);
-}
 .date {
   display: flex;
   position: relative;
@@ -461,14 +460,6 @@ input.filterDate {
   color: #BC9CFF;
 }
 
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat-Regular.ttf);
-}
-@font-face {
-  font-family: Quicksand;
-  src: url(../fonts/Quicksand-Bold.ttf);
-}
 .dropdown {
   position: relative;
   min-width: 26rem;
@@ -596,14 +587,6 @@ input.filterDate {
   padding-right: 0;
 }
 
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat-Regular.ttf);
-}
-@font-face {
-  font-family: Quicksand;
-  src: url(../fonts/Quicksand-Bold.ttf);
-}
 .dropdownFacilities {
   width: 100%;
   position: relative;
@@ -707,14 +690,6 @@ input.filterDate {
   margin: 0;
 }
 
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat-Regular.ttf);
-}
-@font-face {
-  font-family: Quicksand;
-  src: url(../fonts/Quicksand-Bold.ttf);
-}
 .iconLink {
   font-family: Montserrat, sans-serif;
   font-style: normal;
@@ -734,14 +709,6 @@ input.filterDate {
   color: #BC9CFF;
 }
 
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat-Regular.ttf);
-}
-@font-face {
-  font-family: Quicksand;
-  src: url(../fonts/Quicksand-Bold.ttf);
-}
 .likeBtn {
   left: 0;
   border: none;
@@ -789,14 +756,6 @@ input.filterDate {
   color: #BC9CFF;
 }
 
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat-Regular.ttf);
-}
-@font-face {
-  font-family: Quicksand;
-  src: url(../fonts/Quicksand-Bold.ttf);
-}
 .pagination {
   margin-top: 1.7rem;
 }
@@ -850,14 +809,6 @@ input.filterDate {
   text-align: left;
 }
 
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat-Regular.ttf);
-}
-@font-face {
-  font-family: Quicksand;
-  src: url(../fonts/Quicksand-Bold.ttf);
-}
 .radioBtns__buttons {
   display: flex;
   flex-direction: row;
@@ -939,14 +890,6 @@ input.filterDate {
   border-color: #BC9CFF;
 }
 
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat-Regular.ttf);
-}
-@font-face {
-  font-family: Quicksand;
-  src: url(../fonts/Quicksand-Bold.ttf);
-}
 .rangeSlider {
   width: 266px;
   padding: 0;
@@ -982,6 +925,7 @@ input.filterDate {
 }
 
 .rangeSlider__track {
+  width: 100%;
   position: absolute;
   z-index: 1;
   left: 0;
@@ -1017,12 +961,12 @@ input.filterDate {
 }
 
 .rangeSlider__thumbLeft {
-  left: 25%;
+  left: 30%;
   transform: translate(-15px, -6px);
 }
 
 .rangeSlider__thumbRight {
-  right: 25%;
+  right: 30%;
   transform: translate(15px, -6px);
 }
 
@@ -1036,6 +980,7 @@ input[type=range] {
   opacity: 0;
   padding: 0;
   cursor: pointer;
+  margin: 0;
 }
 
 input[type=range]::-webkit-slider-thumb {
@@ -1062,14 +1007,6 @@ input[type=range]::-webkit-slider-thumb {
   cursor: pointer;
 }
 
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat-Regular.ttf);
-}
-@font-face {
-  font-family: Quicksand;
-  src: url(../fonts/Quicksand-Bold.ttf);
-}
 .checkboxList {
   min-width: 24rem;
 }
@@ -1189,14 +1126,6 @@ input[type=range]::-webkit-slider-thumb {
   margin-top: 0.6rem;
 }
 
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat-Regular.ttf);
-}
-@font-face {
-  font-family: Quicksand;
-  src: url(../fonts/Quicksand-Bold.ttf);
-}
 .subTextfield {
   display: flex;
   position: relative;
@@ -1232,14 +1161,6 @@ input.subTextfield__input {
   outline: none !important;
 }
 
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat-Regular.ttf);
-}
-@font-face {
-  font-family: Quicksand;
-  src: url(../fonts/Quicksand-Bold.ttf);
-}
 .textField__wrapper {
   width: 100%;
 }
@@ -1277,14 +1198,6 @@ input::-webkit-input-placeholder {
   color: rgba(31, 32, 65, 0.75);
 }
 
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat-Regular.ttf);
-}
-@font-face {
-  font-family: Quicksand;
-  src: url(../fonts/Quicksand-Bold.ttf);
-}
 .toggle__adds {
   display: flex;
   position: relative;
@@ -1375,14 +1288,6 @@ input::-webkit-input-placeholder {
   border: 0.1rem solid rgba(31, 32, 65, 0.25);
 }
 
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat-Regular.ttf);
-}
-@font-face {
-  font-family: Quicksand;
-  src: url(../fonts/Quicksand-Bold.ttf);
-}
 .btnPayment {
   position: relative;
   padding: 0.1rem 2.2rem 0 1.9rem;
@@ -1415,14 +1320,6 @@ input::-webkit-input-placeholder {
   color: #ffffff;
 }
 
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat-Regular.ttf);
-}
-@font-face {
-  font-family: Quicksand;
-  src: url(../fonts/Quicksand-Bold.ttf);
-}
 .properties__wrapper {
   min-width: 24rem;
 }
@@ -1461,14 +1358,6 @@ input::-webkit-input-placeholder {
   margin-bottom: 2rem;
 }
 
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat-Regular.ttf);
-}
-@font-face {
-  font-family: Quicksand;
-  src: url(../fonts/Quicksand-Bold.ttf);
-}
 .review__item {
   display: flex;
 }
@@ -1513,14 +1402,6 @@ input::-webkit-input-placeholder {
   margin-top: 1rem;
 }
 
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat-Regular.ttf);
-}
-@font-face {
-  font-family: Quicksand;
-  src: url(../fonts/Quicksand-Bold.ttf);
-}
 html {
   font-size: 10px;
 }

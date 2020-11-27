@@ -1,7 +1,4 @@
-@import "../../Blocks/allBlocks";
-@import "../../style/mixins/mixin";
-@import "../../style/variables";
-@import "../../style/fonts/brandsfont/all.min.css";
+
 body{
   margin: 0;
 }
@@ -119,12 +116,13 @@ padding: 0 7rem 0 .5rem;
   margin-left: 5.5rem;
 }
 
-
 .footer__sociallinks{
   display: flex;
   align-items: center;
  justify-content: space-between;
-
+}
+.footer__socialLink{
+  text-decoration: none;
 }
 .fa-twitter:before {
   content: "\f099";

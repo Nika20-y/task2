@@ -4,11 +4,11 @@ html
         meta(charset="UTF-8")
         title Landing page
         link(href="../../Blocks/DateDropdown/datepicker.min.css" rel="stylesheet")
+        link(href='../../style/fonts/iconfont/material-icons.css' rel='stylesheet')
         script(src="https://code.jquery.com/jquery-1.12.4.js")
-        link(href="../../Blocks/header/header.css" rel="stylesheet")
-        link(href="../../Blocks/footer/footer.css" rel="stylesheet")
         link(href="landingPage.css" rel="stylesheet")
-        include  ../../Blocks/allBlocks
+        link(href="../../../dist/main.css" rel="stylesheet")
+        include ../../Blocks/allBlocks
         include ../../Blocks/Cards/allCards
     body
         .wrapper
@@ -21,8 +21,6 @@ html
             .wrapper__footer
                 include ../../Blocks/footer/footer
 
-        script(src='../../../dist/main.bundle.js')
         script(src='../../Blocks/DateDropdown/datepicker.min.js')
         script(src='../../Blocks/DateDropdown/calendar.js')
-        script(src='../../Blocks/DateDropdown/rangeCalendar.js')
-        script(src="../../Blocks/header/headerDropdown.js")
+        script(src='../../../dist/main.bundle.js')

@@ -1,10 +1,5 @@
-meta(charset="UTF-8")
-link(href='likeBtn.css' rel='stylesheet')
-link(href='../../style/fonts/iconfont/material-icons.css' rel='stylesheet')
 mixin likeBtn(number,likeBtn, iconLike)
     button(class='likeBtn '+likeBtn)
         div(class='likeBtn__wrapper')
             i(class='material-icons likeBtn__icon')= iconLike
             .likeBtn__quantity= number
-
-script(src='likeBtn.js')

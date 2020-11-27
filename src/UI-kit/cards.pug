@@ -1,0 +1,34 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        title Cards
+        script(src="https://code.jquery.com/jquery-1.12.4.js")
+        link(href='assets/fonts/iconfont/material-icons.css' rel='stylesheet')
+        include ../Blocks/allBlocks
+        include  ../Blocks/Cards/allCards
+
+    body
+        .logo
+            img(src="assets/images/logo.svg").logo__img
+        .cards
+            .cards__firstColumn
+                .cards__searchRoomn
+                    +searchRoom
+                .cards__registration
+                    +registration
+            .cards__secondColumn
+                .cards__calculationRoom
+                    +calculationRoom
+                .cards__authorization
+                    +authorization
+            .cards__thirdColumn
+                .cards__datepicker
+                    div(class="datepicker-here" data-range="true" data-format="dd M" )
+                .cards__cardRoom
+                    +cardRoom('url("assets/images/luxRoom.png")','888','люкс', '9 990₽','145',' cardRoom__image-hover','star','star','star','star','star')
+                .cards__cardRoom
+                    +cardRoom('url("assets/images/standardRoom.png")','840','', '9 900₽','65', '','star','star','star','star','star_border')
+
+
+

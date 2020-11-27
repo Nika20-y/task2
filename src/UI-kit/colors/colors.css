@@ -1,11 +1,7 @@
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat-Regular.ttf);
+html {
+  font-size: 10px;
 }
-@font-face {
-  font-family: Quicksand;
-  src: url(../fonts/Quicksand-Bold.ttf);
-}
+
 body {
   margin: 0;
   background: #E5E5E5;
@@ -99,18 +95,20 @@ body {
 .typeColors__description {
   font-family: Quicksand, "Open Sans", sans-serif;
   font-style: normal;
-  font-size: 100%;
-  line-height: 7px;
+  font-size: 1.9rem;
+  line-height: 2.779rem;
   color: #1F2041;
 }
 .typeColors__description h3 {
   font-weight: 900;
-  margin-top: 5.5%;
+  margin-top: 1.7%;
+  margin-bottom: 0;
 }
 .typeColors__description p {
   font-weight: normal;
   font-size: 110%;
-  padding-top: 0.5%;
+  margin-bottom: 0;
+  margin-top: 0.5%;
 }
 
 .typeFonts__item {
@@ -122,36 +120,37 @@ body {
 .typeFonts__item h3 {
   font-family: Montserrat, sans-serif;
   font-style: normal;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
   text-transform: uppercase;
 }
 .typeFonts__item p {
   font-family: Montserrat, sans-serif;
   font-style: normal;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
   color: rgba(31, 32, 65, 0.75);
 }
 
 .typeFonts {
   display: grid;
   grid-template-rows: 17.5% 15.7% 10% 10%;
-  justify-content: end;
+  justify-content: start;
+  padding-left: 10.5%;
 }
 
 h1 {
   font-family: Quicksand, "Open Sans", sans-serif;
   font-style: normal;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 2.4rem;
+  line-height: 3rem;
 }
 
 h2 {
   font-family: Quicksand, "Open Sans", sans-serif;
   font-style: normal;
-  font-size: 19px;
-  line-height: 24px;
+  font-size: 1.9rem;
+  line-height: 2.4rem;
 }
 
 .typeFonts__headline {
@@ -167,29 +166,29 @@ h2 {
 .headlineFonts1 {
   font-family: Montserrat, sans-serif;
   font-style: normal;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
 }
 
 .headlineFonts2 {
   font-family: Montserrat, sans-serif;
   font-style: normal;
-  font-size: 19px;
-  line-height: 23px;
+  font-size: 1.9rem;
+  line-height: 2.3rem;
 }
 
 .headlineFonts3 {
   font-family: Montserrat, sans-serif;
   font-style: normal;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
 }
 
 .headlineFonts4 {
   font-family: Montserrat, sans-serif;
   font-style: normal;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
 }
 
 @media screen and (max-width: 1000px) {

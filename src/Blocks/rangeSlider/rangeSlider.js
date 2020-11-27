@@ -16,7 +16,7 @@ function setLeftValue() {
 
     var percent = ((leftButton.value - min) / (max - min)) * 100;
 
-    thumbLeft.style.left = percent + "%";
+    thumbLeft.style.left = percent + "5%";
     range.style.left = percent + "%";
     rangePrice.innerHTML = leftButton.value + "₽"+ " - "+ inputRight.value+"₽";
 }
@@ -31,7 +31,7 @@ function setRightValue() {
 
     var percent = ((rightButton.value - min) / (max - min)) * 100;
 
-    thumbRight.style.right = (100 - percent) + "%";
+    thumbRight.style.right = (100 - percent) + 5 + "%";
     range.style.right = (100 - percent) + "%";
     rangePrice.innerHTML = inputLeft.value + "₽"+ " - "+ rightButton.value+"₽";
 }

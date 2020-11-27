@@ -1,8 +1,4 @@
-meta(charset="UTF-8")
-link(href="cardRoom.css" rel="stylesheet")
-link(href='../../../style/fonts/iconfont/material-icons.css' rel='stylesheet')
-include  ../../allBlocks
-mixin cardRoom(imageRoom, numRoom, categoryRoom, costRoom, reviews,classHover )
+mixin cardRoom(imageRoom, numRoom, categoryRoom, costRoom, reviews,classHover,star1, star2,star3,star4,star5 )
     .cardRoom
         div(class='cardRoom__image'+classHover style='background-image: '+imageRoom)
             .cardRoom__slider
@@ -27,11 +23,7 @@ mixin cardRoom(imageRoom, numRoom, categoryRoom, costRoom, reviews,classHover )
             .cardRoom__line
             .cardRoom__rating
                 .cardRoom__rateBtn
-                    +rateBtn('star', 'star', 'star', 'star', 'star')
+                    +rateBtn(star1, star2, star3, star4, star5)
                 .cardRoom__review
                     .cardRoom__review-quantity= reviews
                     .cardRoom__review-text Отзывов
-
-
-script(src='../../../dist/main.bundle.js')
-script(src='../../rateBtn/rateBtn.js')

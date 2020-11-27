@@ -1,5 +1,3 @@
-meta(charset="UTF-8")
-link(href='rangeSlider.css' rel='stylesheet')
 mixin rangeSlider(label,input1,input2)
     .rangeSlider
         .rangeSlider__title
@@ -7,12 +5,10 @@ mixin rangeSlider(label,input1,input2)
             span.rangeSlider__values
         .rangeSlider__wrapper
             .middle
-                input.rangeSlider__input1(value=""+input1 min="0" max="15650" step="1" type="range")
-                input.rangeSlider__input2(value=""+input2 min="0" max="15650" step="1" type="range")
+                input.rangeSlider__input1(value=""+input1 min="0" max="15650" step="10" type="range")
+                input.rangeSlider__input2(value=""+input2 min="0" max="15650" step="10" type="range")
                 .rangeSlider__item
                     .rangeSlider__track
                     .rangeSlider__range
                     .rangeSlider__thumbLeft
                     .rangeSlider__thumbRight
-
-script(src='rangeSlider.js')

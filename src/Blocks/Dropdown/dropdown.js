@@ -99,7 +99,7 @@ for(let i=0; i<acc.length; i++) {
         let a = 0;
         while (a < 3){
             number[i].getElementsByClassName("dropdown__visitors")[a].value = 0;
-            allGuests[a]=0;
+            allGuests[i]=0;
             counter[i][a]=0;
             a++;}
         title[i].innerHTML = 'Сколько гостей';

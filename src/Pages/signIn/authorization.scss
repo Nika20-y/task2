@@ -14,9 +14,8 @@ body{
   height: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  background-image: url("../../images/registration.png");
+  background: url("../../images/registration.png") 100% 100% no-repeat;
   background-size: cover;
-  background-repeat: no-repeat;
 }
 .wrapper__authorizationCard{
   display: grid;

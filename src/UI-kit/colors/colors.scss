@@ -6,6 +6,9 @@
   margin-bottom: 20px;
   background: $bgColor;
 }
+html{
+  font-size: 10px;
+}
 body{
   margin: 0;
   background: #E5E5E5;
@@ -57,42 +60,45 @@ display: grid;
   justify-self: end;
 }
 .typeColors__description{
-  @include fontHeadline(100%,7px);
+  @include fontHeadline(1.9rem,2.779rem);
   h3{
     font-weight: 900;
-    margin-top: 5.5%;
+    margin-top: 1.7%;
+    margin-bottom: 0;
   }
   p{
     font-weight: normal;
     font-size: 110%;
-    padding-top: .5%;
+    margin-bottom: 0;
+    margin-top: .5%;
   }
   color: #1F2041;
 }
 .typeFonts__item{
   display: grid;
   grid-template-columns: 5.5% 60%;
-grid-gap: 4.5%;
+  grid-gap: 4.5%;
   justify-content: end;
   h3{
-    @include fontContent(12px, 15px);
+    @include fontContent(1.2rem, 1.5rem);
     text-transform: uppercase;
   }
   p{
-    @include fontContent(14px, 24px);
+    @include fontContent(1.4rem, 2.4rem);
     color: rgba(31, 32, 65, 0.75);
   }
 }
 .typeFonts{
   display: grid;
   grid-template-rows: 17.5% 15.7% 10% 10%;
-  justify-content: end;
+  justify-content: start;
+  padding-left: 10.5%;
 }
 h1{
-  @include fontHeadline(24px, 30px)
+  @include fontHeadline(2.4rem, 3rem)
 }
 h2{
-  @include fontHeadline(19px, 24px)
+  @include fontHeadline(1.9rem, 2.4rem)
 }
 .typeFonts__headline{
   color: rgba(31, 32, 65, 0.25);
@@ -104,16 +110,16 @@ justify-self: end;
   justify-content: start;
 }
 .headlineFonts1{
-  @include fontContent(24px, 29px)
+  @include fontContent(2.4rem, 2.9rem)
 }
 .headlineFonts2{
-  @include fontContent(19px,23px)
+  @include fontContent(1.9rem,2.3rem)
 }
 .headlineFonts3{
-  @include fontContent(12px, 15px)
+  @include fontContent(1.2rem, 1.5rem)
 }
 .headlineFonts4{
-  @include fontContent(14px, 24px)
+  @include fontContent(1.4rem, 2.4rem)
 }
 @media screen and (max-width: 1000px) {
 .wrapper{
