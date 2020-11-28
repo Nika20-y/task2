@@ -2270,36 +2270,72 @@ html {
 
 body {
   margin: 0;
-  background: #E5E5E5;
+  background: #ffffff;
 }
 
-.logo__img {
-  width: 48px;
-  padding: 1.55%;
+.searchRoom__content {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 67.7%;
+  margin-top: 1rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.content__header {
-  margin-top: 14rem;
-  margin-bottom: 4rem;
+.searchRoom__filter {
+  flex-basis: 23.8%;
+  margin: 1rem 4.5rem 1rem 1rem;
 }
 
-.content__headerAuthorisation {
-  margin-bottom: 4rem;
+.searchRoom__block {
+  margin: 1rem 1rem 2rem;
+}
+.searchRoom__filter-title {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-.content__footer {
-  margin-bottom: 4rem;
+.searchRoom__prices-description {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: rgba(31, 32, 65, 0.5);
+  font-weight: 400;
+  margin-top: 4rem;
 }
 
-.content__footer-mobile {
-  max-width: 76.8rem;
-  margin: 0 auto 14rem;
-}
-.content__footer-mobile .footerMobile__wrapper {
-  display: grid;
-}
-.content__footer-mobile .footer__wrapper {
-  display: none;
+.searchRoom__results {
+  flex-basis: 70.4%;
 }
 
-/*# sourceMappingURL=headersFooters.css.map */
+.searchRoom__results-title {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  margin: 2rem 0.5rem 1.5rem;
+  font-weight: 700;
+}
+
+.searchRoom__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.searchRoom__cardRoom {
+  padding: 0.6rem;
+}
+
+.searchRoom__pagination {
+  width: 25.5rem;
+  margin: 2.6rem auto 6.8rem;
+}
+
+/*# sourceMappingURL=searchRoom.css.map */

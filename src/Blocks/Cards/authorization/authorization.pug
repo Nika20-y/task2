@@ -2,9 +2,9 @@ mixin authorization
     form.authorization
         .authorization__title Войти
         .authorization__field
-            +textfield('Email','')
+            +textfield('Email','','')
         .authorization__field-password
-            +textfield('Пароль','')
+            +textfield('Пароль','','')
         .authorization__button
             +btnPayment('войти')
         .authorization__registration

@@ -2,15 +2,15 @@ mixin registration
     form.registration
         h1.registration__title Регистрация аккаунта
         .registration__field
-            +textfield('Имя','')
+            +textfield('Имя','','')
         .registration__field
-            +textfield('Фамилия','')
+            +textfield('Фамилия','','')
         .registration__radioBtns
             +radioBtns('Мужчина', 'Женщина')
         .registration__dateBirth
             h3.registration__label дата рождения
             .registration__field
-                +textfield('ДД.ММ.ГГГГ','')
+                +textfield('ДД.ММ.ГГГГ','','masked')
         .registration__data
             h3.registration__label данные для входа в сервис
             .registration__field

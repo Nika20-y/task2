@@ -1,0 +1,18 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        title Registration
+        link(href='assets/fonts/iconfont/material-icons.css' rel='stylesheet')
+        script(src="https://code.jquery.com/jquery-1.12.4.js")
+        include ../Blocks/allBlocks
+        include ../Blocks/Cards/allCards
+    body
+        .wrapper
+            .wrapper__header
+                include ../Blocks/header/header
+            div(class='wrapper__mainBlock' style='background: url("assets/images/registration.png") 100% 100% no-repeat; background-size: cover;')
+                .wrapper__registrationCard
+                    +registration
+            .wrapper__footer
+                include ../Blocks/footer/footer

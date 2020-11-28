@@ -278,10 +278,7 @@ input.filterDate {
   font-style: normal;
   font-size: 1.4rem;
   line-height: 1.8rem;
-  width: 100%;
-  min-width: 12rem;
   padding: 1.1rem 1.4rem 1.3rem;
-  position: relative;
 }
 
 .datepicker__datefrom,
@@ -891,7 +888,6 @@ input.filterDate {
 }
 
 .rangeSlider {
-  width: 266px;
   padding: 0;
 }
 
@@ -932,7 +928,6 @@ input.filterDate {
   right: 0;
   top: 0;
   bottom: 0;
-  border-radius: 3px;
   background: #ffffff;
   height: 0.6rem;
   border: 0.1rem solid rgba(31, 32, 65, 0.25);
@@ -961,12 +956,12 @@ input.filterDate {
 }
 
 .rangeSlider__thumbLeft {
-  left: 30%;
+  left: 25%;
   transform: translate(-15px, -6px);
 }
 
 .rangeSlider__thumbRight {
-  right: 30%;
+  right: 25%;
   transform: translate(15px, -6px);
 }
 

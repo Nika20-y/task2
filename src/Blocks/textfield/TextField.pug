@@ -1,4 +1,4 @@
-mixin textfield(place,hover)
+mixin textfield(place,hover, masked)
     div(class='textField__wrapper'+hover)
-        input( type="text" name="username" class="Text-field"+hover  placeholder=""+place)
+        input( type="text" name="username" class="Text-field"+hover id=""+masked placeholder=""+place)
 

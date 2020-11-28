@@ -10,7 +10,8 @@ const PATHS ={
     dist: path.join(__dirname,'../dist'),
     assets: 'assets/'
 }
-const PAGES_DIR = `${PATHS.src}/UI-kit/`
+const PAGES_DIR = `${PATHS.src}/Pages/`
+// const PAGES_DIR2 = `${PATHS.src}/Pages/landingPage/`
 const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'))
 
 
@@ -22,10 +23,12 @@ module.exports={
         app: PATHS.src,
         datepicker: `${PATHS.src}/Blocks/DateDropdown/datepickerDropdown.js`,
         uiKit: `${PATHS.src}/UI-kit/uiKit.js`,
+        pages: `${PATHS.src}/Pages/Pages.js`,
     },
     output: {
         filename: '[name].bundle.js',
         path: PATHS.dist,
+        publicPath: ''
     },
     module: {
         rules: [
@@ -107,7 +110,11 @@ module.exports={
         ...PAGES.map(page => new HtmlWebpackPlugin({
             template: `${PAGES_DIR}/${page}`,
             filename: `./${page.replace(/\.pug/,'.html')}`
-        }))
+        })),
+        // ...PAGES.map(page => new HtmlWebpackPlugin({
+        //     template: `${PAGES_DIR2}/${page}`,
+        //     filename: `./${page.replace(/\.pug/,'.html')}`
+        // }))
     ]
 }
 

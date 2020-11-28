@@ -1,6 +1,5 @@
 
 .rangeSlider{
- width: 266px;
   padding: 0;
 
 }
@@ -36,7 +35,7 @@
   right: 0;
   top: 0;
   bottom: 0;
-  border-radius: 3px;
+
   background: $white;
   height: .6rem;
   border: .1rem solid $light-dark;
@@ -63,11 +62,11 @@
   border: .2rem solid $white;
 }
 .rangeSlider__thumbLeft{
-  left: 30%;
+  left: 25%;
   transform: translate(-15px, -6px);
 }
 .rangeSlider__thumbRight{
-  right: 30%;
+  right: 25%;
   transform: translate(15px, -6px);
 }
 input[type=range] {

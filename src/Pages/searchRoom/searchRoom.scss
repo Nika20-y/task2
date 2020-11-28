@@ -1,0 +1,64 @@
+@import "../../Blocks/allBlocks";
+@import "../../Blocks/Cards/allCards";
+@import "../../style/mixins/mixin";
+@import "../../style/variables";
+html{
+  font-size: 10px;
+}
+body{
+  margin: 0;
+  background: $white;
+}
+
+.searchRoom__content{
+  display: flex;
+  justify-content: flex-start;
+
+  max-width: 67.7%;
+  margin-top: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+.searchRoom__filter{
+  flex-basis: 23.8%;
+  margin: 1rem 4.5rem 1rem 1rem;
+}
+.searchRoom__block{
+  margin: 1rem 1rem 2rem;
+  input.filterDate{
+
+  }
+}
+.searchRoom__filter-title{
+  @include fontContent(1.2rem,1.5rem);
+  margin-bottom: .5rem;
+  font-weight: $bold-weight;
+  text-transform: uppercase;
+}
+.searchRoom__prices-description{
+  @include fontContent(1.2rem,1.4rem);
+  color: $half-dark;
+  font-weight: $light-weight;
+  margin-top: 4rem;
+}
+.searchRoom__results{
+  flex-basis: 70.4%;
+}
+.searchRoom__results-title{
+  @include fontContent(2.4rem,2.9rem);
+  margin: 2rem .5rem 1.5rem;
+  font-weight: $bold-weight;
+}
+.searchRoom__cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.searchRoom__cardRoom{
+  padding: .6rem;
+}
+.searchRoom__pagination{
+  width: 25.5rem;
+  margin: 2.6rem auto 6.8rem;
+}

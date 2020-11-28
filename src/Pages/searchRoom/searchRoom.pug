@@ -1,0 +1,75 @@
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        title Sign in
+        link(href='../../fonts/iconfont/material-icons.css' rel='stylesheet')
+        link(href='searchRoom.css' rel='stylesheet')
+        link(href='../../../dist/assets/css/datepicker.css' rel='stylesheet')
+        script(src="https://code.jquery.com/jquery-1.12.4.js")
+        include ../../Blocks/Cards/allCards
+        include ../../Blocks/allBlocks
+    body
+        .wrapper
+            .wrapper__header
+                include ../../Blocks/header/header
+            div(class='wrapper__mainBlock' style='background: url("assets/images/registration.png") 100% 100% no-repeat; background-size: cover;')
+            .searchRoom__content
+                .searchRoom__filter
+                    .searchRoom__block
+                        .searchRoom__filter-title даты пребывания в отеле
+                        +rangeCalendar('19 авг-23 авг')
+                    .searchRoom__block
+                        .searchRoom__filter-title гости
+                        +visitors('','2','1','0')
+                    .searchRoom__block
+                        +rangeSlider('диапозон цены','5000','10000')
+                        .searchRoom__prices-description Стоимость за сутки пребывания в номер
+                    .searchRoom__block
+                        .searchRoom__filter-title правила дома
+                        +checkboxList('','Можно курить')
+                        +checkboxList(' checkboxlist_checked','Можно с питомцами')
+                        +checkboxList(' checkboxlist_checked','Можно пригласить гостей (до 10 человек)')
+                    .searchRoom__block
+                        .searchRoom__filter-title доступность
+                        +richCheckbox-label('Широкий коридор','Ширина коридоров в номере не менее 91 см.')
+                        +richCheckbox-label('Помощник для инвалидов','На 1 этаже вас встретит специалист и проводит до номера.')
+                    .searchRoom__block
+                        .searchRoom__filter-title удобства
+                        +facilities('2', '2', '0', '')
+                    .searchRoom__block
+                        +checkboxDropdown('expandable checkbox list', '', 'Завтрак', 'Письменный стол',
+                            'Стул для кормления', 'Кроватка', 'Телевизор', 'Шампунь', 'Телевизор', 'Шампунь')
+                .searchRoom__results
+                    h1.searchRoom__results-title Номера, которые мы для вас подобрали
+                    .searchRoom__cards
+                        .searchRoom__cardRoom
+                            +cardRoom('url("../../images/luxRoom.png")','888','люкс', '9 990₽','145',' cardRoom__image-hover','star','star','star','star','star')
+                        .searchRoom__cardRoom
+                            +cardRoom('url("../../images/standardRoom.png")','840','', '9 900₽','65', '','star','star','star','star','star_border')
+                        .searchRoom__cardRoom
+                            +cardRoom('url("../../images/standardRoom.png")','840','', '9 900₽','65', '','star','star','star','star','star_border')
+                        .searchRoom__cardRoom
+                            +cardRoom('url("../../images/luxRoom.png")','888','люкс', '9 990₽','145',' cardRoom__image-hover','star','star','star','star','star')
+                        .searchRoom__cardRoom
+                            +cardRoom('url("../../images/standardRoom.png")','840','', '9 900₽','65', '','star','star','star','star','star_border')
+                        .searchRoom__cardRoom
+                            +cardRoom('url("../../images/standardRoom.png")','840','', '9 900₽','65', '','star','star','star','star','star_border')
+                        .searchRoom__cardRoom
+                            +cardRoom('url("../../images/luxRoom.png")','888','люкс', '9 990₽','145',' cardRoom__image-hover','star','star','star','star','star')
+                        .searchRoom__cardRoom
+                            +cardRoom('url("../../images/standardRoom.png")','840','', '9 900₽','65', '','star','star','star','star','star_border')
+                        .searchRoom__cardRoom
+                            +cardRoom('url("../../images/standardRoom.png")','840','', '9 900₽','65', '','star','star','star','star','star_border')
+                        .searchRoom__cardRoom
+                            +cardRoom('url("../../images/luxRoom.png")','888','люкс', '9 990₽','145',' cardRoom__image-hover','star','star','star','star','star')
+                        .searchRoom__cardRoom
+                            +cardRoom('url("../../images/standardRoom.png")','840','', '9 900₽','65', '','star','star','star','star','star_border')
+                        .searchRoom__cardRoom
+                            +cardRoom('url("../../images/standardRoom.png")','840','', '9 900₽','65', '','star','star','star','star','star_border')
+                    .searchRoom__pagination
+                        +pagination('2','3','...','15')
+            .wrapper__footer
+                include ../../Blocks/footer/footer
+        script(src='../../../dist/datepicker.bundle.js')
+        script(src='../../../dist/app.bundle.js')
