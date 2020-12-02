@@ -3,14 +3,40 @@ html
     head
         meta(charset="UTF-8")
         title Colors & Type
-        link(href='diagram.css')
+        link(href='diagram.css' rel='stylesheet')
     body
-        svg(width="10%" height="10%" viewBox="0 0 42 42" class="donut")
-            circle(class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff")
-            circle(class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#fff" stroke-width="3" )
-            circle(class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#FFBA9C" stroke-width="3" stroke-dasharray="50 50" stroke-dashoffset="75")
-            circle(class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#BC9CFF" stroke-width="3" stroke-dasharray="25 75" stroke-dashoffset="225")
-            circle(class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#6FCF97" stroke-width="3" stroke-dasharray="25 75" stroke-dashoffset="300")
-            circle(class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#919191" stroke-width="3" stroke-dasharray="0 100" stroke-dashoffset="375")
+        .diagram__wrapper
+            svg( viewBox="0 0 42 42" class="diagram")
+                linearGradient(id='excellent' )
+                    stop(offset='0%' stop-color='#FFE39C')
+                    stop(offset='100%' stop-color='#FFBA9C')
+                linearGradient(id='normal')
+                    stop(offset='0%' stop-color='#BC9CFF')
+                    stop(offset='100%' stop-color='#8BA4F9')
+                linearGradient(id='good' x1="1" x2="0" y1="0" y2="1")
+                    stop(offset='0%' stop-color='#6FCF97')
+                    stop(offset='100%' stop-color='#66D2EA')
+                linearGradient(id='disapointed')
+                    stop(offset='0%' stop-color='#919191')
+                    stop(offset='100%' stop-color='#3D4975')
+                circle(class="diagram__hole" cx="21" cy="21" r="15.91549430918952" fill="#fff")
+                circle(class="diagram__ring" cx="21" cy="21" r="15.91549430918952" fill="transparent" stroke="#fff" stroke-width="1.5")
+                circle(class="diagram__segment excellent" cx="21" cy="21" r="15.91549430918952" fill="transparent" stroke="url(#excellent)" stroke-width="1.5" )
+                circle(class="diagram__segment normal" cx="21" cy="21" r="15.91549430918952" fill="transparent" stroke="url(#normal)" stroke-width="1.5" )
+                circle(class="diagram__segment good" cx="21" cy="21" r="15.91549430918952" fill="transparent" stroke="url(#good)" stroke-width="1.5" )
+                circle(class="diagram__segment disapointed" cx="21" cy="21" r="15.91549430918952" fill="transparent" stroke="url(#disapointed)" stroke-width="1.5" )
+                g(class="diagram__quantity" )
+                    text(x="50%" y="50%" class="diagram__number")
+                    text(x="50%" y="50%" class="diagram__text") голосов
+            ul.diagram__legend
+                li.diagram__color
+                    span.diagram__color-text Великолепно
+                li.diagram__color
+                    span.diagram__color-text Хорошо
+                li.diagram__color
+                    span.diagram__color-text Удовлетворительно
+                li.diagram__color
+                    span.diagram__color-text Разочарован
 
         script(src='diagram.js')
+

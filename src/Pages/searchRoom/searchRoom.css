@@ -241,6 +241,9 @@ input.filterDate {
   font-size: 1.4rem;
   line-height: 1.8rem;
   padding: 1.1rem 1.4rem 1.3rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .datepicker__datefrom,
@@ -260,7 +263,7 @@ input.filterDate {
 }
 
 .datepicker {
-  width: 31.8rem;
+  min-width: 26.6rem;
 }
 
 .datepicker-here:focus, .datepicker-here:hover {
@@ -2284,12 +2287,23 @@ body {
 
 .searchRoom__filter {
   flex-basis: 23.8%;
-  margin: 1rem 4.5rem 1rem 1rem;
+  margin: 1rem 5rem 1rem 2.5rem;
 }
 
 .searchRoom__block {
   margin: 1rem 1rem 2rem;
+  max-width: 26.6rem;
 }
+.searchRoom__block .dropdown__list {
+  max-width: 26.6rem;
+}
+.searchRoom__block .dropdownFacilities__list {
+  max-width: 26.6rem;
+}
+.searchRoom__block input.filterDate {
+  min-width: 23.7rem;
+}
+
 .searchRoom__filter-title {
   font-family: Montserrat, sans-serif;
   font-style: normal;
@@ -2307,11 +2321,13 @@ body {
   line-height: 1.4rem;
   color: rgba(31, 32, 65, 0.5);
   font-weight: 400;
-  margin-top: 4rem;
+  margin-top: 4.5rem;
+  margin-bottom: 2.9rem;
 }
 
 .searchRoom__results {
-  flex-basis: 70.4%;
+  flex-basis: 69%;
+  margin-right: 2rem;
 }
 
 .searchRoom__results-title {
@@ -2326,16 +2342,110 @@ body {
 .searchRoom__cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .searchRoom__cardRoom {
   padding: 0.6rem;
+  margin-bottom: 0.9rem;
 }
 
 .searchRoom__pagination {
   width: 25.5rem;
-  margin: 2.6rem auto 6.8rem;
+  margin: 2.6rem auto 7.1rem;
+}
+
+.searchRoom__filter > :nth-child(3) {
+  margin-top: 3rem;
+}
+
+.searchRoom__filter > :nth-child(4) .searchRoom__filter-title {
+  margin-bottom: 1.3rem;
+}
+
+.searchRoom__filter > :nth-child(5) .richcheckboxList__text {
+  width: 95%;
+}
+.searchRoom__filter > :nth-child(5) .searchRoom__filter-title {
+  margin-bottom: 1.5rem;
+}
+
+.searchRoom__filter > :nth-child(7) {
+  margin-top: 3rem;
+}
+.searchRoom__filter > :nth-child(7) .checkboxList__wrapper {
+  max-width: 26.6rem;
+}
+.searchRoom__filter > :nth-child(7) .checkboxList__icon {
+  margin-right: 1rem;
+}
+
+@media (max-width: 1820px) {
+  .searchRoom__content {
+    max-width: 80%;
+  }
+}
+@media (max-width: 1600px) {
+  .searchRoom__content {
+    max-width: 90%;
+  }
+}
+@media (max-width: 1400px) {
+  .searchRoom__content {
+    max-width: 100%;
+  }
+}
+@media (max-width: 1280px) {
+  .searchRoom__cardRoom {
+    min-width: 30rem;
+    max-width: 37rem;
+  }
+  .searchRoom__cardRoom .cardRoom {
+    min-width: 30rem;
+    max-width: 37rem;
+  }
+}
+@media (max-width: 1050px) {
+  .searchRoom__cardRoom {
+    min-width: 40rem;
+  }
+  .searchRoom__cardRoom .cardRoom {
+    min-width: 40rem;
+  }
+}
+@media (max-width: 800px) {
+  .searchRoom__cardRoom {
+    max-width: 32rem;
+  }
+  .searchRoom__cardRoom .cardRoom {
+    min-width: 32rem;
+  }
+
+  .searchRoom__results-title {
+    width: 80%;
+  }
+}
+@media (max-width: 700px) {
+  .searchRoom__content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .searchRoom__results {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .searchRoom__cards {
+    justify-content: center;
+  }
+
+  .searchRoom__cardRoom {
+    min-width: 35rem;
+  }
+  .searchRoom__cardRoom .cardRoom {
+    min-width: 35rem;
+  }
 }
 
 /*# sourceMappingURL=searchRoom.css.map */

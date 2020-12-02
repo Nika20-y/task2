@@ -34,6 +34,9 @@ input.filterDate{
     color: $lighter-dark;
     @include fontContent(1.4rem, 1.8rem);
     padding: 1.1rem 1.4rem 1.3rem;
+    width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 .datepicker__datefrom,
 .datepicker__dateto{
@@ -49,7 +52,7 @@ input.filterDate{
 }
 
 .datepicker{
-  width: 31.8rem;
+  min-width: 26.6rem;
 }
 
 .datepicker-here:focus, .datepicker-here:hover{
