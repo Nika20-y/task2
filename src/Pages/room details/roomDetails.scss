@@ -1,0 +1,100 @@
+@import "../../Blocks/allBlocks";
+@import "../../Blocks/Cards/allCards";
+@import "../../style/mixins/mixin";
+@import "../../style/variables";
+html{
+  font-size: 10px;
+}
+body{
+  margin: 0;
+  background: $white;
+}
+.roomDetails__images{
+  display: flex;
+
+}
+.roomDetails__images_left{
+  width: 68%;
+  img{
+    width: 100%;
+  }
+}
+.roomDetails__images_right{
+  width: 32%;
+  img{
+    width: 100%;
+  }
+}
+.roomDetails__images_right>:nth-child(2){
+margin-top: -.7rem;
+}
+.roomDetails__diagram{
+  margin-left: 9rem;
+  .roomDetails__title{
+    margin-bottom: .8rem;
+    margin-left: 1.5rem;
+  }
+}
+.roomDetails__content{
+  padding: 2rem;
+}
+.roomDetails__contentWrapper{
+  width: 67%;
+  margin: 7rem auto;
+  display: flex;
+
+}
+.roomDetails__information{
+  display: flex;
+  justify-content: flex-start;
+
+}
+.roomDetails__title{
+  @include fontContent(1.9rem,2.1rem);
+  font-weight: $bold-weight;
+  margin-bottom: 2.3rem;
+}
+.roomDetails__reviews{
+  width: 87.5%;
+}
+.roomDetails__reviews>:nth-child(2){
+  margin-bottom: 2.2rem;
+}
+.roomDetails__reviews-title{
+  display: flex;
+  justify-content: space-between;
+  margin-top: -.3rem;
+}
+.roomDetails__reviews-count{
+  @include fontContent(1.4rem,1.4rem);
+  color: $half-dark;
+  text-align: right;
+  margin-top: .5rem;
+}
+.roomDetails__rules{
+  flex: 1 1 67%;
+  .roomDetails__title{
+margin-left: 1.7rem;
+  }
+}
+.roomDetails__rulesInformation{
+  display: flex;
+  margin-top: 3.3rem;
+  .bulletList__li{
+    width: 100%;
+  }
+
+}
+.roomDetails__cancel{
+  flex: 1 1 auto;
+
+}
+.roomDetails__cancel-information{
+  @include fontContent(1.4rem,2.4rem);
+  color: $lighter-dark;
+  width: 60%;
+  margin-left: 11rem;
+}
+.roomDetails__sidebar{
+  margin-top: 1.8rem;
+}

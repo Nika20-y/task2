@@ -1,10 +1,4 @@
-doctype html
-html
-    head
-        meta(charset="UTF-8")
-        title Colors & Type
-        link(href='diagram.css' rel='stylesheet')
-    body
+mixin diagram
         .diagram__wrapper
             svg( viewBox="0 0 42 42" class="diagram")
                 linearGradient(id='excellent' )
@@ -38,5 +32,5 @@ html
                 li.diagram__color
                     span.diagram__color-text Разочарован
 
-        script(src='diagram.js')
+
 

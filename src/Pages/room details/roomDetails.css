@@ -2372,21 +2372,118 @@ html {
 
 body {
   margin: 0;
+  background: #ffffff;
 }
 
-.wrapper__mainBlock {
-  position: relative;
+.roomDetails__images {
+  display: flex;
+}
+
+.roomDetails__images_left {
+  width: 68%;
+}
+.roomDetails__images_left img {
   width: 100%;
-  height: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
 }
 
-.wrapper__authorizationCard {
-  display: grid;
-  justify-content: center;
-  padding-top: 16.3rem;
-  padding-bottom: 16.3rem;
+.roomDetails__images_right {
+  width: 32%;
+}
+.roomDetails__images_right img {
+  width: 100%;
 }
 
-/*# sourceMappingURL=authorization.css.map */
+.roomDetails__images_right > :nth-child(2) {
+  margin-top: -0.7rem;
+}
+
+.roomDetails__diagram {
+  margin-left: 9rem;
+}
+.roomDetails__diagram .roomDetails__title {
+  margin-bottom: 0.8rem;
+  margin-left: 1.5rem;
+}
+
+.roomDetails__content {
+  padding: 2rem;
+}
+
+.roomDetails__contentWrapper {
+  width: 67%;
+  margin: 7rem auto;
+  display: flex;
+}
+
+.roomDetails__information {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.roomDetails__title {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-size: 1.9rem;
+  line-height: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 2.3rem;
+}
+
+.roomDetails__reviews {
+  width: 87.5%;
+}
+
+.roomDetails__reviews > :nth-child(2) {
+  margin-bottom: 2.2rem;
+}
+
+.roomDetails__reviews-title {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -0.3rem;
+}
+
+.roomDetails__reviews-count {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  color: rgba(31, 32, 65, 0.5);
+  text-align: right;
+  margin-top: 0.5rem;
+}
+
+.roomDetails__rules {
+  flex: 1 1 67%;
+}
+.roomDetails__rules .roomDetails__title {
+  margin-left: 1.7rem;
+}
+
+.roomDetails__rulesInformation {
+  display: flex;
+  margin-top: 3.3rem;
+}
+.roomDetails__rulesInformation .bulletList__li {
+  width: 100%;
+}
+
+.roomDetails__cancel {
+  flex: 1 1 auto;
+}
+
+.roomDetails__cancel-information {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: rgba(31, 32, 65, 0.75);
+  width: 60%;
+  margin-left: 11rem;
+}
+
+.roomDetails__sidebar {
+  margin-top: 1.8rem;
+}
+
+/*# sourceMappingURL=roomDetails.css.map */
