@@ -1,14 +1,15 @@
-mixin review(pathImg, username,date, comment,likes,activeLike)
+mixin review(pathImg, username,date, comment,likes,activeLike,likeIcon)
     .review
         .review__item
             .review__item_left
                 .review__avatar
                     img(class='review__avatar-img' src=''+pathImg)
                 .review__likeBtn
-                    +likeBtn(''+likes,''+activeLike,'favorite')
+                    +likeBtn(''+likes,''+activeLike,''+likeIcon)
             .review__item_right
                 .review__username= username
                 .review__date= date
                 .review__comment= comment
 
                 //if like selected - likeBtn-selected
+                //likeIcon : favorite or favorite_border

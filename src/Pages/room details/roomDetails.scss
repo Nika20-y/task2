@@ -11,7 +11,6 @@ body{
 }
 .roomDetails__images{
   display: flex;
-
 }
 .roomDetails__images_left{
   width: 68%;
@@ -42,59 +41,176 @@ margin-top: -.7rem;
   width: 67%;
   margin: 7rem auto;
   display: flex;
-
 }
 .roomDetails__information{
   display: flex;
   justify-content: flex-start;
-
+ margin-bottom: 2.5rem;
 }
 .roomDetails__title{
   @include fontContent(1.9rem,2.1rem);
   font-weight: $bold-weight;
   margin-bottom: 2.3rem;
 }
-.roomDetails__reviews{
-  width: 87.5%;
-}
-.roomDetails__reviews>:nth-child(2){
-  margin-bottom: 2.2rem;
-}
-.roomDetails__reviews-title{
-  display: flex;
-  justify-content: space-between;
-  margin-top: -.3rem;
-}
-.roomDetails__reviews-count{
-  @include fontContent(1.4rem,1.4rem);
-  color: $half-dark;
-  text-align: right;
-  margin-top: .5rem;
-}
-.roomDetails__rules{
-  flex: 1 1 67%;
-  .roomDetails__title{
-margin-left: 1.7rem;
+.roomDetails__properties>:nth-child(7){
+      display: none;
+  }
+  .roomDetails__reviews{
+    width: 87.5%;
+  }
+  .roomDetails__reviews>:nth-child(2){
+    margin-bottom: 2.2rem;
+  }
+  .roomDetails__reviews-title{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -.3rem;
+  }
+  .roomDetails__reviews-count{
+    @include fontContent(1.4rem,1.4rem);
+    color: $half-dark;
+    text-align: right;
+    margin-top: .5rem;
+  }
+  .roomDetails__rules{
+    flex: 1 1 80%;
+    .roomDetails__title{
+      margin-left: 1.7rem;
+    }
+  }
+  .roomDetails__rulesInformation{
+    display: flex;
+    margin-top: 3.3rem;
+    .bulletList__li{
+      width: 100%;
+    }
+
+  }
+  .roomDetails__cancel{
+    flex: 1 1 auto;
+    .roomDetails__title{
+      margin-left: 10.6rem;
+    }
+  }
+  .roomDetails__cancel-information{
+    @include fontContent(1.4rem,2.4rem);
+    color: $lighter-dark;
+    width: 60%;
+    margin-left: 10.6rem;
+  }
+  .roomDetails__sidebar{
+    margin-top: 1.8rem;
+    display: flex;
+    min-width: 38rem;
+    flex: 1 1 auto;
+    padding: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+  }
+@media (max-width: 1500px) {
+  .roomDetails__contentWrapper{
+    width: 90%;
   }
 }
-.roomDetails__rulesInformation{
-  display: flex;
-  margin-top: 3.3rem;
-  .bulletList__li{
+@media (max-width: 1300px) {
+  .roomDetails__contentWrapper{
+    width: 95%;
+  }
+}
+@media (max-width: 1100px) {
+  .roomDetails__contentWrapper{
+    flex-wrap: wrap;
+  }
+  .roomDetails__content{
+    display: flex;
+    flex-direction: column;
+  }
+  .roomDetails__sidebar,
+  .roomDetails__content{
+
+    margin: 3rem auto 0;
+  }
+}
+@media (max-width: 800px) {
+  .roomDetails__information{
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+//for mobile version
+
+.touch{
+
+  .roomDetails__images{
+    display: block;
+  }
+  .roomDetails__images_left{
     width: 100%;
   }
+  .roomDetails__images_right{
+    width: 100%;
+  display: flex;
+  }
+  .roomDetails__images_right>:nth-child(2){
+    margin-top: 0;
+  }
+  .roomDetails__contentWrapper{
+    width: 98%;
+    margin: 2rem auto;
+    display: flex;
+  }
+  .roomDetails__information{
+    display: block;
+    margin-bottom: 2.5rem;
+  }
+  .roomDetails__diagram{
+    margin-left: 0;
+    margin-top: 3rem;
+    .roomDetails__title{
+      margin-bottom: .8rem;
+      margin-left: 0;
+    }
+    .diagram__number{
+      @include fontContent(.4em,2);}
+    .diagram__text {
+      @include fontContent(.2em,2);}}
+  .roomDetails__rulesInformation{
+    display: block;
+  }
+  .review__avatar{
+    width: 10rem;
+    margin-right: .5rem;
+    img{
+    width: 100%;}
 
-}
-.roomDetails__cancel{
-  flex: 1 1 auto;
+  }
+  .review__likeBtn{
+    margin-left: .6rem;
+  }
+  .roomDetails__cancel{
+    .roomDetails__cancel-information{
+      margin-left: 0;
+      width: 100%;
+    }
+    .roomDetails__title{
+      margin-left: 0;
+    }
+  }
 
-}
-.roomDetails__cancel-information{
-  @include fontContent(1.4rem,2.4rem);
-  color: $lighter-dark;
-  width: 60%;
-  margin-left: 11rem;
-}
-.roomDetails__sidebar{
-  margin-top: 1.8rem;
+  .roomDetails__reviews{
+    width: 100%;
+  }
+  .roomDetails__rules{
+    .roomDetails__title{
+      margin-left: 0;
+    }
+  }
+  .roomDetails__reviews-title{
+    display: block;
+    margin-bottom: 2rem;
+    .roomDetails__reviews-count{
+      text-align: left;
+      margin-top: 0;}
+  }
+
 }

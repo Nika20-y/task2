@@ -25,10 +25,19 @@ window.onload= function () {
                 a++;
             }
             dasharray[i-1]=dasharray[i-1]-(100-Number(sumDasharray));
-            reviews[i-1].style.strokeDasharray=dasharray[i-1]+' '+100
-
+            reviews[i-1].style.strokeDasharray=dasharray[i-1]+' '+(100-dasharray[i-1])
         }
-        reviews[i].style.strokeDasharray=dasharray[i]+' '+100
+        if(dasharray[dasharray.length-1]&&dasharray[dasharray.length-1]!==-0.2){
+            let sumDasharray=0;
+            let a=0;
+            while (a < dasharray.length){
+                sumDasharray=sumDasharray+dasharray[a];
+                a++;
+            }
+            dasharray[dasharray.length-1]=dasharray[dasharray.length-1]-(100-Number(sumDasharray));
+            reviews[dasharray.length-1].style.strokeDasharray=dasharray[dasharray.length-1]+' '+(100-dasharray[dasharray.length-1])
+        }
+        reviews[i].style.strokeDasharray=dasharray[i]+' '+(100-dasharray[i])
         if(i>='1'){
             dashoffset[i]=Number(dashoffset[i-1])-dasharray[i-1]-n*2;
             if (dashoffset[i]<=-100){

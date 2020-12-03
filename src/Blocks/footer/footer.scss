@@ -45,7 +45,7 @@ footer{
 }
 .footer__logo{
   display: flex;
-  image{
+  img{
     width: 4rem;
     height: 4rem;
   }
@@ -129,31 +129,31 @@ padding: 0 7rem 0 .5rem;
   content: "\f099";
   font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
   font-weight: 900;
-  width: 100px;
-  height: 100px;
+  width: 10rem;
+  height: 10rem;
   margin-right: 2rem;
 }
 .fa-facebook-square:before {
   content: "\f082";
   font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
   font-weight: 900;
-  width: 100px;
-  height: 100px;
+  width: 10rem;
+  height: 10rem;
   margin-right: 2rem;
 }
 .fa-instagram:before {
   content: "\f16d";
   font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
   font-weight: 900;
-  width: 100px;
-  height: 100px;
+  width: 10rem;
+  height: 10rem;
 }
 .fa {
   font-family: "Font Awesome 5 Free";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 23px;
+  font-size: 2.4rem;
+  line-height: 2.3rem;
   background: $gradient-purple;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -185,5 +185,19 @@ padding: 0 7rem 0 .5rem;
   }
   .footer__wrapper{
     display: none;
+  }
+}
+.touch{
+  .footerMobile__wrapper{
+    display: grid;
+  }
+  .footer__wrapper{
+    display: none;
+  }
+  .footer__logo {
+    img {
+      width: 4rem;
+      height: 4rem;
+    }
   }
 }

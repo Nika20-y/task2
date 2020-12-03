@@ -813,8 +813,8 @@ input.filterDate {
   display: block;
   top: 0.046rem;
   left: 0;
-  height: 18px;
-  width: 18px;
+  height: 1.8rem;
+  width: 1.8rem;
   border: 0.1rem solid rgba(31, 32, 65, 0.25);
   border-radius: 50%;
   cursor: pointer;
@@ -824,8 +824,8 @@ input.filterDate {
 .radioBtns__radio::before {
   content: "";
   position: absolute;
-  width: 12px;
-  height: 12px;
+  width: 1.2rem;
+  height: 1.2rem;
   border-radius: 10px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8ba4f9 100%);
   top: 50%;
@@ -1311,11 +1311,10 @@ input::-webkit-input-placeholder {
 }
 
 .properties__line {
-  background: rgba(31, 32, 65, 0.1);
-  height: 0.1rem;
+  border-top: solid 0.1rem rgba(31, 32, 65, 0.1);
   width: 100%;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.4rem;
 }
 
 .review__item {
@@ -1334,7 +1333,7 @@ input::-webkit-input-placeholder {
 }
 
 .review__likeBtn {
-  margin-left: -1rem;
+  margin-left: 0.2rem;
 }
 
 .review__username {
@@ -1990,7 +1989,7 @@ body {
 .header__logo {
   display: flex;
 }
-.header__logo image {
+.header__logo img {
   width: 4rem;
   height: 4rem;
 }
@@ -2144,6 +2143,37 @@ body {
     position: relative;
   }
 }
+.touch .header__button-registration,
+.touch .header__button-authorization,
+.touch .header__line,
+.touch .header__user-name {
+  display: none;
+}
+.touch .header__authorization-icon,
+.touch .header__user-icon {
+  display: block;
+}
+.touch .header__nav-title {
+  width: 22rem;
+  flex-direction: column;
+  margin-top: 5.5rem;
+  right: 0;
+  position: absolute;
+  background: #ffffff;
+  z-index: 100;
+  opacity: 0;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+.touch .header__navMobile {
+  display: block;
+  position: relative;
+}
+.touch .header__logo img {
+  width: 4rem;
+  height: 4rem;
+}
+
 body {
   margin: 0;
 }
@@ -2198,7 +2228,7 @@ footer {
   display: flex;
   margin-bottom: 1.6rem;
 }
-.footer__logo image {
+.footer__logo img {
   width: 4rem;
   height: 4rem;
 }
@@ -2301,8 +2331,8 @@ footer {
   content: "";
   font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-weight: 900;
-  width: 100px;
-  height: 100px;
+  width: 10rem;
+  height: 10rem;
   margin-right: 2rem;
 }
 
@@ -2310,8 +2340,8 @@ footer {
   content: "";
   font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-weight: 900;
-  width: 100px;
-  height: 100px;
+  width: 10rem;
+  height: 10rem;
   margin-right: 2rem;
 }
 
@@ -2319,16 +2349,16 @@ footer {
   content: "";
   font-family: "Font Awesome 5 Free", "Font Awesome 5 Brands";
   font-weight: 900;
-  width: 100px;
-  height: 100px;
+  width: 10rem;
+  height: 10rem;
 }
 
 .fa {
   font-family: "Font Awesome 5 Free";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 23px;
+  font-size: 2.4rem;
+  line-height: 2.3rem;
   background: linear-gradient(180deg, #BC9CFF 0%, #8ba4f9 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -2366,6 +2396,17 @@ footer {
     display: none;
   }
 }
+.touch .footerMobile__wrapper {
+  display: grid;
+}
+.touch .footer__wrapper {
+  display: none;
+}
+.touch .footer__logo img {
+  width: 4rem;
+  height: 4rem;
+}
+
 html {
   font-size: 10px;
 }

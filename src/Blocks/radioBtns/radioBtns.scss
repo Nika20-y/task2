@@ -32,8 +32,8 @@
   display: block;
   top: .046rem;
   left: 0;
-  height: 18px;
-  width: 18px;
+  height: 1.8rem;
+  width: 1.8rem;
   border: .1rem solid $light-dark;
   border-radius: 50%;
   cursor: pointer;
@@ -42,8 +42,8 @@
 .radioBtns__radio::before {
   content: "";
   position: absolute;
-  width: 12px;
-  height: 12px;
+  width: 1.2rem;
+  height: 1.2rem;
   border-radius: 10px;
   background: $gradient-purple;
   top: 50%;

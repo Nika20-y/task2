@@ -35,7 +35,6 @@ for (let i = 0; i < acc.length; i++){
     counter.push([counter1]);
 }
 
-
 for (let i = 0; i < acc.length; i++) {
     quantity = number[i].getElementsByClassName("dropdown__visitors");
     minus = number[i].getElementsByClassName("dropdown__minus");
