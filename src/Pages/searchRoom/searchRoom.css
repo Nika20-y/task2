@@ -897,6 +897,7 @@ input.filterDate {
   height: 0.6rem;
   border: 0.1rem solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
+  border-radius: 3px;
 }
 
 .rangeSlider__range {
@@ -1084,6 +1085,7 @@ input[type=range]::-webkit-slider-thumb {
 
 .richcheckboxList__text {
   margin-top: 0.6rem;
+  margin-right: 0;
 }
 
 .subTextfield {
@@ -1333,7 +1335,7 @@ input::-webkit-input-placeholder {
 }
 
 .review__likeBtn {
-  margin-left: 0.2rem;
+  margin-right: 1rem;
 }
 
 .review__username {
@@ -1666,7 +1668,7 @@ body {
 
 .cardRoom {
   width: 27rem;
-  height: 25.7rem;
+  height: 25.9rem;
   background: #fff;
   box-shadow: 0 1rem 2rem rgba(31, 32, 65, 0.05);
   border-radius: 4px;
@@ -1972,7 +1974,7 @@ body {
 }
 
 .header__wrapper {
-  padding: 1.5rem 2rem;
+  padding: 1.4rem 2rem;
   background: #ffffff;
   box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
 }
@@ -2001,6 +2003,9 @@ body {
 .header__logo-title {
   display: flex;
   align-content: center;
+}
+.header__logo-title img {
+  width: 5rem;
 }
 
 .header__rightside {
@@ -2220,8 +2225,8 @@ footer {
   min-width: 23rem;
 }
 .footer__column-subscribe .footer__column-title {
-  margin-bottom: 2.1rem;
-  margin-top: 0.9rem;
+  margin-bottom: 1.7rem;
+  margin-top: 0.5rem;
 }
 
 .footer__logo {
@@ -2240,6 +2245,9 @@ footer {
 .footer__logo-title {
   display: flex;
   align-content: center;
+}
+.footer__logo-title img {
+  width: 5rem;
 }
 
 .footer__sitedescription,
@@ -2274,7 +2282,6 @@ footer {
   text-transform: uppercase;
   color: #1f2041;
   font-weight: 700;
-  margin-bottom: 2.2rem;
 }
 
 .footer__link {
@@ -2306,7 +2313,8 @@ footer {
   margin-left: 2rem;
 }
 .footer__columns-widgets .footer__column-title {
-  margin-bottom: 2.8rem;
+  margin-bottom: 2rem;
+  margin-top: 0.9rem;
 }
 
 .footer__columns-widgets > :nth-child(2) {
@@ -2366,6 +2374,7 @@ footer {
 }
 
 .footerMobile__wrapper {
+  border-top: 1px solid rgba(31, 32, 65, 0.25);
   display: none;
   justify-content: center;
   text-align: center;
@@ -2419,7 +2428,7 @@ body {
 .searchRoom__content {
   display: flex;
   justify-content: flex-start;
-  max-width: 67.7%;
+  max-width: 67%;
   margin-top: 1rem;
   margin-right: auto;
   margin-left: auto;
@@ -2427,7 +2436,7 @@ body {
 
 .searchRoom__filter {
   flex-basis: 23.8%;
-  margin: 1rem 5rem 1rem 2.5rem;
+  margin: 1rem 3.7rem 1rem 2.5rem;
 }
 
 .searchRoom__block {
@@ -2487,12 +2496,13 @@ body {
 
 .searchRoom__cardRoom {
   padding: 0.6rem;
-  margin-bottom: 0.9rem;
+  margin-bottom: 0.7rem;
 }
 
 .searchRoom__pagination {
-  width: 25.5rem;
+  width: 24rem;
   margin: 2.6rem auto 7.1rem;
+  padding-right: 1.7rem;
 }
 
 .searchRoom__filter > :nth-child(3) {
@@ -2586,6 +2596,41 @@ body {
   .searchRoom__cardRoom .cardRoom {
     min-width: 35rem;
   }
+}
+.touch .searchRoom__content {
+  display: block;
+  max-width: 90%;
+  margin-top: 3rem;
+}
+.touch .searchRoom__filter {
+  margin-right: 0;
+  width: 100%;
+}
+.touch .searchRoom__filter-title,
+.touch .searchRoom__results-title {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-size: 0.6rem;
+  line-height: 1.5rem;
+}
+.touch .rangeSlider__header,
+.touch .checkboxList__name {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-size: 1.9rem;
+  line-height: 2.2rem;
+}
+.touch .searchRoom__prices-description {
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-size: 0.6rem;
+  line-height: 1.4rem;
+}
+.touch .rangeSlider__thumbLeft {
+  transform: translate(-15px, -8px);
+}
+.touch .rangeSlider__thumbRight {
+  transform: translate(15px, -8px);
 }
 
 /*# sourceMappingURL=searchRoom.css.map */

@@ -10,7 +10,7 @@ const PATHS ={
     dist: path.join(__dirname,'../dist'),
     assets: 'assets/'
 }
-const PAGES_DIR = `${PATHS.src}/Pages/`
+const PAGES_DIR = `${PATHS.src}/UI-kit/`
 // const PAGES_DIR2 = `${PATHS.src}/Pages/landingPage/`
 const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'))
 

@@ -1,9 +1,9 @@
 @import "../../style/mixins/mixin";
 @mixin rectangle($bgColor){
   border-radius: 6px;
-  width: 70px;
-  height: 70px;
-  margin-bottom: 20px;
+  width: 7rem;
+  height: 7rem;
+  margin-bottom: 2rem;
   background: $bgColor;
 }
 html{
@@ -14,10 +14,10 @@ body{
   background: #E5E5E5;
 }
 .logo__img{
-  width: 48px;
+  width: 4.8rem;
   padding: 1.55%;
 }
-.wrapper{
+.wrapper__typeColors{
   padding-top: 1.8%;
   display: grid;
   grid-template-columns: 35% 53.5%;
@@ -133,5 +133,32 @@ justify-self: end;
     flex-direction: column;
     grid-gap: 1rem;
 
+  }
+}
+.touch{
+  .wrapper__typeColors{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .typeColors__description{
+    @include fontHeadline(1rem,2rem);
+  }
+  .typeFonts{
+    justify-content: center;
+    padding-left: 2%;
+  }
+  .typeFonts__item{
+    h3{
+      @include fontContent(.3rem, 1.5rem);
+    }
+    p{
+      @include fontContent(.3rem, 2.4rem);
+    }
+  }
+  .logo__img{
+    padding-top: 10%;
+    padding-right: 5%;
+    width: 6rem;
   }
 }

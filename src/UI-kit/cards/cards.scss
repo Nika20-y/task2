@@ -31,6 +31,13 @@ body{
 .cards__calculationRoom,
 .cards__cardRoom{
 padding-bottom: 4.2rem;
+  .datepicker{
+    min-width: 32rem;
+    min-height: 36rem;
+  }
+  .datepicker--button{
+    margin-top: 2.5rem;
+  }
 }
 .cardRoom__icon_left, .cardRoom__icon_right{
   color: $white;
@@ -40,4 +47,7 @@ padding-bottom: 4.2rem;
   input.Text-field{
     min-width: 29rem;
   }
+}
+.cards__datepicker{
+  padding-bottom: 3.7rem;
 }

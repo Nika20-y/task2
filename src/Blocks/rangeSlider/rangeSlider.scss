@@ -35,11 +35,11 @@
   right: 0;
   top: 0;
   bottom: 0;
-
   background: $white;
   height: .6rem;
   border: .1rem solid $light-dark;
   box-sizing: border-box;
+  border-radius: 3px;
 }
 
 .rangeSlider__range{

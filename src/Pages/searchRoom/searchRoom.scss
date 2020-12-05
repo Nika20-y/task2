@@ -13,14 +13,14 @@ body{
 .searchRoom__content{
   display: flex;
   justify-content: flex-start;
-  max-width: 67.7%;
+  max-width: 67%;
   margin-top: 1rem;
   margin-right: auto;
   margin-left: auto;
 }
 .searchRoom__filter{
   flex-basis: 23.8%;
-  margin: 1rem 5rem 1rem 2.5rem;
+  margin: 1rem 3.7rem 1rem 2.5rem;
 }
 .searchRoom__block{
   margin: 1rem 1rem 2rem;
@@ -65,11 +65,12 @@ body{
 }
 .searchRoom__cardRoom{
   padding: .6rem;
-  margin-bottom: .9rem;
+  margin-bottom: .7rem;
 }
 .searchRoom__pagination{
-  width: 25.5rem;
+  width: 24rem;
   margin: 2.6rem auto 7.1rem;
+  padding-right: 1.7rem;
 }
 .searchRoom__filter>:nth-child(3){
   margin-top: 3rem;
@@ -162,5 +163,31 @@ body{
     .cardRoom{
       min-width: 35rem;
     }
+  }
+}
+.touch{
+  .searchRoom__content{
+    display: block;
+    max-width: 90%;
+    margin-top: 3rem;
+  }
+  .searchRoom__filter{
+    margin-right: 0;
+    width: 100%;
+  }
+  .searchRoom__filter-title,
+  .searchRoom__results-title{
+    @include fontContent(.6rem,1.5rem);}
+  .rangeSlider__header,
+  .checkboxList__name{
+    @include fontContent(1.9rem,2.2rem);
+  }
+  .searchRoom__prices-description{
+    @include fontContent(.6rem,1.4rem);}
+  .rangeSlider__thumbLeft{
+    transform: translate(-15px, -8px);
+  }
+  .rangeSlider__thumbRight{
+    transform: translate(15px, -8px);
   }
 }

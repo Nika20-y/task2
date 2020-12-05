@@ -1,6 +1,6 @@
 
 .header__wrapper{
-  padding: 1.5rem 2rem;
+  padding: 1.4rem 2rem;
   background: $white;
   box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
 
@@ -26,6 +26,9 @@
 .header__logo-title{
   display: flex;
   align-content: center;
+  img{
+    width: 5rem;
+  }
 }
 .header__rightside{
   display: flex;
