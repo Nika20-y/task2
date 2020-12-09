@@ -2,7 +2,7 @@ header
     .header__wrapper
         .header__section
             .header__logo
-                .header__logo-image
+                a(class='header__logo-image' href='landingPage.html')
                     img(src="assets/images/logo-color.png")
                 .header__logo-title
                     img(src="assets/images/nameCompany.svg")
@@ -12,7 +12,7 @@ header
                         i.material-icons menu
                     nav.header__nav-title
                         a.header__link О нас
-                        a(class='header__link header__link-icon')
+                        a(class='header__link header__link-icon' href='landingPage.html')
                             .header__link-text Услуги
                             i.material-icons expand_more
                         a.header__link Вакансии
@@ -20,9 +20,9 @@ header
                         a(class='header__link header__link-icon')
                             .header__link-text Соглашение
                             i.material-icons expand_more
-                .header__button-authorization
+                a(class='header__button-authorization' href='authorization.html')
                     +button('button__wrapper', 'войти')
-                .header__button-registration
+                a(class='header__button-registration' href='registrationPage.html')
                     +button('button', 'зарегистрироваться')
                 .header__authorization-icon
                     i.material-icons perm_identity

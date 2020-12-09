@@ -47,12 +47,15 @@
   cursor: pointer;
   .material-icons{
    font-size: 4rem;
+
   }
 }
 .header__link,
 .header__button-authorization{
   margin-right: 2.1rem;
   cursor: pointer;
+  text-decoration: none;
+  color: $lighter-dark;
 }
 .header__nav-title{
   display: flex;
@@ -69,6 +72,7 @@
 .header__link-icon{
   display: flex;
   line-height: 2.2rem;
+  text-decoration: none;
   .material-icons{
     font-size: 2.4rem;
     line-height: 2rem;
@@ -80,6 +84,7 @@
 .header__button-registration{
   display: flex;
   align-content: center;
+  text-decoration: none;
   .button{
     height: 3.4rem;
   }
@@ -87,6 +92,7 @@
 .header__button-authorization{
   display: flex;
   align-content: center;
+  text-decoration: none;
   .button__wrapper{
     height: 3.4rem;
   }

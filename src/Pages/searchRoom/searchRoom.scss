@@ -25,6 +25,10 @@ body{
 .searchRoom__block{
   margin: 1rem 1rem 2rem;
   max-width: 26.6rem;
+  .datepicker{
+  .active{
+    width: 26.6rem;
+  }}
   .dropdown__list{
     max-width: 26.6rem;
   }

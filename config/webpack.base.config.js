@@ -10,8 +10,7 @@ const PATHS ={
     dist: path.join(__dirname,'../dist'),
     assets: 'assets/'
 }
-const PAGES_DIR = `${PATHS.src}/UI-kit/`
-// const PAGES_DIR2 = `${PATHS.src}/Pages/landingPage/`
+const PAGES_DIR =`${PATHS.src}/Pages/`
 const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'))
 
 
@@ -22,7 +21,7 @@ module.exports={
     entry: {
         app: PATHS.src,
         datepicker: `${PATHS.src}/Blocks/DateDropdown/datepickerDropdown.js`,
-        uiKit: `${PATHS.src}/UI-kit/uiKit.js`,
+        uiKit: `${PATHS.src}/Pages/UI-kit/uiKit.js`,
         pages: `${PATHS.src}/Pages/Pages.js`,
     },
     output: {
@@ -108,13 +107,33 @@ module.exports={
         }),
         new CleanWebpackPlugin (),
         ...PAGES.map(page => new HtmlWebpackPlugin({
-            template: `${PAGES_DIR}/${page}`,
+            template:`${PAGES_DIR}/${page}`,
             filename: `./${page.replace(/\.pug/,'.html')}`
         })),
-        // ...PAGES.map(page => new HtmlWebpackPlugin({
-        //     template: `${PAGES_DIR2}/${page}`,
-        //     filename: `./${page.replace(/\.pug/,'.html')}`
-        // }))
+        new HtmlWebpackPlugin({
+            template:`${PAGES_DIR}/UI-kit/cards.pug`,
+            filename: `./UI-kit/${'cards.pug'.replace(/\.pug/,'.html')}`,
+            inject: true
+        }),
+        new HtmlWebpackPlugin({
+            template:`${PAGES_DIR}/UI-kit/colors.pug`,
+            filename: `./UI-kit/${'colors.pug'.replace(/\.pug/,'.html')}`,
+            inject: true
+        }),
+        new HtmlWebpackPlugin({
+            template:`${PAGES_DIR}/UI-kit/formElements.pug`,
+            filename: `./UI-kit/${'formElements.pug'.replace(/\.pug/,'.html')}`,
+            inject: true
+        }),
+        new HtmlWebpackPlugin({
+            template:`${PAGES_DIR}/UI-kit/headersFooters.pug`,
+            filename: `./UI-kit/${'headersFooters.pug'.replace(/\.pug/,'.html')}`,
+            inject: true
+        }),
+
+
+
+
     ]
 }
 

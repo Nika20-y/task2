@@ -45,6 +45,7 @@ body{
 }
 .calculationRoom__title-right{
   @include fontContent(1.4rem,1rem);
+  margin-top: 1rem;
   color: $half-dark;
 }
 .calculationRoom__dates{
