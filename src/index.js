@@ -7,9 +7,6 @@ import "./Blocks/rangeSlider/rangeSlider";
 import "./Blocks/textfield/inputMask";
 
 
-
-
-
 import "./Blocks/allBlocks.scss"
 import "./Blocks/Cards/allCards.scss"
 import "./Pages/UI-kit/cards/cards.scss";

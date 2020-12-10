@@ -132,35 +132,31 @@ padding: 0 7rem 0 .5rem;
   content: "\f099";
   font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
   font-weight: 900;
-  width: 10rem;
-  height: 10rem;
   margin-right: 2rem;
 }
 .fa-facebook-square:before {
   content: "\f082";
   font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
   font-weight: 900;
-  width: 10rem;
-  height: 10rem;
   margin-right: 2rem;
 }
 .fa-instagram:before {
   content: "\f16d";
   font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
   font-weight: 900;
-  width: 10rem;
-  height: 10rem;
 }
 .fa {
   font-family: "Font Awesome 5 Free";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 900;
   font-size: 2.4rem;
   line-height: 2.3rem;
   background: $gradient-purple;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: $purple;
+  width: 10rem;
+  height: 10rem;
 }
 .footerMobile__wrapper{
   border-top: 1px solid $light-dark;
@@ -204,4 +200,5 @@ padding: 0 7rem 0 .5rem;
       height: 4rem;
     }
   }
+  
 }

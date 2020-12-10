@@ -17,12 +17,15 @@ body{
 
 }
 .wrapper__authorizationCard{
-  display: grid;
+  display: flex;
   justify-content: center;
   padding-top: 16.3rem ;
   padding-bottom: 16.3rem ;
-  input.Text-field{
+  .authorization{
     width: 32rem;
+  }
+  input.Text-field{
+    width: 29rem;
   }
 }
 .touch{

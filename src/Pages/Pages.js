@@ -8,3 +8,4 @@ import "./registrationPage/registrationPage.scss"
 import "./signIn/authorization.scss"
 import "./room details/roomDetails.scss"
 import "./searchRoom/searchRoom.scss"
+
