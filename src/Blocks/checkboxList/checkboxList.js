@@ -4,12 +4,12 @@
     checkboxList[i].addEventListener("click", function () {
         this.classList.toggle("active");
         let checkbox = this.nextElementSibling;
-        let icon = document.getElementsByClassName("checkboxList__icon-item")[i];
+        let iconCheckbox = document.getElementsByClassName("checkboxList__icon-item")[i];
         if (checkbox.style.display === "block") {
             checkbox.style.display = "none";
-            icon.style.transform = "none";
+            iconCheckbox.style.transform = "none";
         } else {
             checkbox.style.display = "block";
-            icon.style.transform = "rotate(180deg)";
+            iconCheckbox.style.transform = "rotate(180deg)";
         }
     });}

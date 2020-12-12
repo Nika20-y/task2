@@ -1,4 +1,4 @@
-import "./mobileOrganize"
+
 import "../Blocks/diagram/diagram"
 import "../Blocks/header/headerDropdown"
 import "../Blocks/rateBtn/rateBtn"

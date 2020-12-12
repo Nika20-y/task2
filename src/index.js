@@ -1,4 +1,4 @@
-
+import"./Pages/mobileOrganize"
 import  "./Blocks/checkboxList/checkboxList";
 import "./Blocks/Dropdown/dropdown";
 import "./Blocks/dropdownFacilities/drpdownFacil";

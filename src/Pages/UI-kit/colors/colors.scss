@@ -147,6 +147,7 @@ justify-self: end;
   .typeFonts{
     justify-content: center;
     padding-left: 2%;
+    margin-left: 8rem;
   }
   .typeFonts__item{
     h3{
@@ -160,5 +161,20 @@ justify-self: end;
     padding-top: 10%;
     padding-right: 5%;
     width: 6rem;
+  }
+  h1{
+    @include fontHeadline(2rem, 3rem)
+  }
+  h2{
+    @include fontHeadline(1.5rem, 2.4rem)
+  }
+  .typeFonts__item{
+    justify-content: start;
+    grid-template-columns: 5.5% 90%;
+  }
+  .typeFonts__description{
+    margin-left: 1rem;}
+  .wrapper__typeColors{
+    display: block;
   }
 }

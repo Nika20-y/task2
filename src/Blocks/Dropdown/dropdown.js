@@ -1,79 +1,87 @@
-var acc = document.getElementsByClassName("dropdown");
+let dropdownVisitor = document.getElementsByClassName("dropdown");
 let allGuests= [];
 
-for (let i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
+function activateDropdown (){
+    for (let i = 0; i < dropdownVisitor.length; i++) {
+    dropdownVisitor[i].addEventListener("click", function () {
         this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
+        let dropdownVisitorList = this.nextElementSibling;
+        if (dropdownVisitorList.style.display === "block") {
+            dropdownVisitorList.style.display = "none";
         } else {
-            panel.style.display = "block";
+            dropdownVisitorList.style.display = "block";
         }
     })
-}
+}}
+
+activateDropdown();
+
 document.addEventListener('DOMContentLoaded', function(){
     setTitle();
 }, false);
 
-let quantity = []
-let minus = []
-let plus = []
-let number = document.getElementsByClassName('dropdown__list')
-let counter= [];
+let quantityVisitors = []
+let minusVisitor = []
+let plusVisitor = []
+let blockVisitors = document.getElementsByClassName('dropdown__list')
+let counterVisitors= [];
 
-for (let i = 0; i < acc.length; i++){
+for (let i = 0; i < dropdownVisitor.length; i++){
     allGuests[i]=0;
-    let counter1 = []
+    let counterVisitors1 = []
     let a = 0;
     while (a < 3){
         let number = document.getElementsByClassName('dropdown__list')
-        counter1.push(number[i].getElementsByClassName("dropdown__visitors")[a].value)
-        allGuests[i]=allGuests[i]+Number(counter1[a]);
+        counterVisitors1.push(number[i].getElementsByClassName("dropdown__visitors")[a].value)
+        allGuests[i]=allGuests[i]+Number(counterVisitors1[a]);
         a++;
     }
-    counter.push([counter1]);
+    counterVisitors.push([counterVisitors1]);
 }
 
-for (let i = 0; i < acc.length; i++) {
-    quantity = number[i].getElementsByClassName("dropdown__visitors");
-    minus = number[i].getElementsByClassName("dropdown__minus");
-    plus = number[i].getElementsByClassName("dropdown__plus");
-    for (let x = 0; x < 3; x++) {
-        counter[i][x]= quantity[x].value;
-        plus[x].onclick = function () {
-            if (counter[i][x] < 100) {
-                counter[i][x]++;
-                number[i].getElementsByClassName("dropdown__visitors")[x].value = counter[i][x];
-                allGuests[i] = allGuests[i]+1;}
-            setTitle();
-            number[i].getElementsByClassName("dropdown__minus")[x].style.opacity = '1';
-        };
-        minus[x].onclick = function () {
-            if (counter[i][x] > 0) {
-                counter[i][x]--;
-                number[i].getElementsByClassName("dropdown__visitors")[x].value = counter[i][x];
-                allGuests[i] = allGuests[i]-1;
+function countVisitors() {
+    for (let i = 0; i < dropdownVisitor.length; i++) {
+        quantityVisitors = blockVisitors[i].getElementsByClassName("dropdown__visitors");
+        minusVisitor = blockVisitors[i].getElementsByClassName("dropdown__minus");
+        plusVisitor = blockVisitors[i].getElementsByClassName("dropdown__plus");
+        for (let x = 0; x < 3; x++) {
+            counterVisitors[i][x] = quantityVisitors[x].value;
+            plusVisitor[x].onclick = function () {
+                if (counterVisitors[i][x] < 100) {
+                    counterVisitors[i][x]++;
+                    blockVisitors[i].getElementsByClassName("dropdown__visitors")[x].value = counterVisitors[i][x];
+                    allGuests[i] = allGuests[i] + 1;
+                }
+                setTitle();
+                blockVisitors[i].getElementsByClassName("dropdown__minus")[x].style.opacity = '1';
+            };
+            minusVisitor[x].onclick = function () {
+                if (counterVisitors[i][x] > 0) {
+                    counterVisitors[i][x]--;
+                    blockVisitors[i].getElementsByClassName("dropdown__visitors")[x].value = counterVisitors[i][x];
+                    allGuests[i] = allGuests[i] - 1;
+                }
+                if (counterVisitors[i][x] === 0) {
+                    blockVisitors[i].getElementsByClassName("dropdown__minus")[x].style.opacity = '0.5';
+                }
+                setTitle();
             }
-            if (counter[i][x]===0) {
-                number[i].getElementsByClassName("dropdown__minus")[x].style.opacity = '0.5';
+            if (quantityVisitors[x].value > 0) {
+                minusVisitor[x].style.opacity = '1';
+            } else {
+                minusVisitor[x].style.opacity = '0.5';
             }
-            setTitle();
-        }
-        if (quantity[x].value > 0) {
-            minus[x].style.opacity = '1';
-        } else {
-            minus[x].style.opacity = '0.5';
-        }
 
+        }
     }
 }
+countVisitors();
 
 let title = document.getElementsByClassName("dropdown__name");
 let btnClear = document.getElementsByClassName("dropdown__clear");
 
 function setTitle() {
-    for(let i=0; i<acc.length; i++){
+    for(let i=0; i<dropdownVisitor.length; i++){
 
         if (allGuests[i] > 0) {
             if (allGuests[i] === 1) {
@@ -92,20 +100,25 @@ function setTitle() {
     }
 }
 
-for(let i=0; i<acc.length; i++) {
-    let btnSubmit = document.getElementsByClassName('dropdown__submit')
-    btnClear[i].onclick = function () {
-        let a = 0;
-        while (a < 3){
-            number[i].getElementsByClassName("dropdown__visitors")[a].value = 0;
-            allGuests[i]=0;
-            counter[i][a]=0;
-            a++;}
-        title[i].innerHTML = 'Сколько гостей';
-        btnClear[i].style.visibility = "hidden";
-    }
-    btnSubmit[i].onclick = function () {
-        number[i].style.display = 'none';
+activateButtons();
+
+function activateButtons() {
+
+    for (let i = 0; i < dropdownVisitor.length; i++) {
+        let btnSubmit = document.getElementsByClassName('dropdown__submit')
+        btnClear[i].onclick = function () {
+            let a = 0;
+            while (a < 3) {
+                blockVisitors[i].getElementsByClassName("dropdown__visitors")[a].value = 0;
+                allGuests[i] = 0;
+                counterVisitors[i][a] = 0;
+                a++;
+            }
+            title[i].innerHTML = 'Сколько гостей';
+            btnClear[i].style.visibility = "hidden";
+        }
+        btnSubmit[i].onclick = function () {
+            blockVisitors[i].style.display = 'none';
+        }
     }
 }
-

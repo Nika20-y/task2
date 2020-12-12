@@ -1,10 +1,15 @@
 
-    let rateBtn = document.getElementsByClassName('rateBtn');
+let rateBtn = document.getElementsByClassName('rateBtn');
+
+countRateBtn();
+
+function countRateBtn() {
+
     for (let i = 0; i < rateBtn.length; i++) {
         let rateBtnIcon = rateBtn[i].getElementsByClassName('rateBtn__icon');
         for (let a = 0; a < 5; a++) {
             rateBtnIcon[a].onclick = function () {
-                let star =  rateBtnIcon[a].getElementsByClassName('rateBtn__icon-star')[0].innerHTML;
+                let star = rateBtnIcon[a].getElementsByClassName('rateBtn__icon-star')[0].innerHTML;
                 if (star === 'star_border') {
                     star = 'star';
                     for (let x = 0; x <= a; x++) {
@@ -20,3 +25,4 @@
         }
 
     }
+}

@@ -10,7 +10,7 @@ let body=document.querySelector('body');
 let html=document.querySelector('html');
 if(isMobile.any()){
     body.classList.add('touch');
-    html.style.fontSize = '20px';
+    html.style.fontSize = '22px';
 }
 else{
     body.classList.add('mouse');

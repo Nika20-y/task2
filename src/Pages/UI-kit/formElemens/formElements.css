@@ -588,6 +588,10 @@ input.filterDate {
   padding-right: 0;
 }
 
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .dropdownFacilities {
   width: 100%;
   position: relative;
@@ -990,6 +994,10 @@ input[type=range]::-webkit-slider-thumb {
   border-radius: 0;
   border: 0 none;
   -webkit-appearance: none;
+}
+
+input[type=range]::-moz-range-track {
+  background: transparent;
 }
 
 .rateBtn {
@@ -1767,6 +1775,10 @@ body {
   flex: 1 1 0;
   padding: 0.9rem 2rem 2rem 1.8rem;
   max-width: 71.2rem;
+}
+
+.touch .formElements__wrapper {
+  width: 90%;
 }
 
 /*# sourceMappingURL=formElements.css.map */
