@@ -1,7 +1,7 @@
 mixin pagination(...items)
     .pagination
         .pagination__items
-            a(href='#' class=' pagination__number-active ')
+            a(href='#' class='pagination__number pagination__number-active ')
                     span.pagination__page 1
             each item in items
                 a(href='#' class=' pagination__number ')

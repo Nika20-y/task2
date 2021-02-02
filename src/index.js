@@ -5,6 +5,7 @@ import "./Blocks/dropdownFacilities/drpdownFacil";
 import "./Blocks/likeBtn/likeBtn";
 import "./Blocks/rangeSlider/rangeSlider";
 import "./Blocks/textfield/inputMask";
+import "./Blocks/pagination/pagination"
 
 
 import "./Blocks/allBlocks.scss"

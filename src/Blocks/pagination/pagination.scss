@@ -2,6 +2,7 @@
 .pagination{
   margin-top: 1.7rem;
 }
+
 .pagination__items{
 display: flex;
   align-items: center;
@@ -15,15 +16,16 @@ display: flex;
     position: relative;
     padding: .65rem .8rem;
   }
+  .pagination__number-active{
+    background: $gradient-purple;
+    border-radius: 2.2rem;
+    color: $white;
+    padding: 1.25rem 1.77rem;
+    text-decoration: none;
+    font-weight: $bold-weight;
+  }
 }
-.pagination__number-active{
-  background: $gradient-purple;
-  border-radius: 2.2rem;
-  color: $white;
-  padding: 1.25rem 1.77rem;
-  text-decoration: none;
-  font-weight: $bold-weight;
-}
+
 .pagination__next{
   background: $gradient-green;
   border-radius: 2.2rem;
