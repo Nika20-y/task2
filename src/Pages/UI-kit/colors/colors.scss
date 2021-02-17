@@ -22,6 +22,7 @@ body{
   display: grid;
   grid-template-columns: 35% 53.5%;
   position: relative;
+
 }
 .typeColors{
 display: grid;
@@ -123,8 +124,9 @@ justify-self: end;
 }
 @media screen and (max-width: 1000px) {
 .wrapper{
-  display: grid;
-  grid-template-columns: 1fr;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
   .typeFonts{
     padding-top: 4rem;

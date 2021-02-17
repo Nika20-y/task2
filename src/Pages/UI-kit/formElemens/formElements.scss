@@ -230,5 +230,11 @@ justify-content: flex-start;
   }
 .touch{
   .formElements__wrapper{
-    width: 90%;}
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .formElements__row-second .formElements__row-third{
+    display: block;
+  }
 }
