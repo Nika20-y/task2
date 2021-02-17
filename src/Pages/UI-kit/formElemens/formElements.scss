@@ -234,7 +234,15 @@ justify-content: flex-start;
     margin-right: auto;
     margin-left: auto;
   }
-  .formElements__row-second .formElements__row-third{
+
+  .formElements__row-second>:nth-child(2),
+  .formElements__row-second>:nth-child(3){
+    flex: 1 0 0;
+  }
+  .formElements__row-third>:first-child,
+  .formElements__row-third>:nth-child(2)
+  {
     display: block;
+
   }
 }

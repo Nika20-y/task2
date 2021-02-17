@@ -123,11 +123,11 @@ justify-self: end;
   @include fontContent(1.4rem, 2.4rem)
 }
 @media screen and (max-width: 1000px) {
-.wrapper{
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
+  .wrapper__typeColors{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
   .typeFonts{
     padding-top: 4rem;
     padding-bottom: 4rem;

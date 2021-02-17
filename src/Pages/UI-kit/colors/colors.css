@@ -192,7 +192,7 @@ h2 {
 }
 
 @media screen and (max-width: 1000px) {
-  .wrapper {
+  .wrapper__typeColors {
     display: block;
     margin-right: auto;
     margin-left: auto;
