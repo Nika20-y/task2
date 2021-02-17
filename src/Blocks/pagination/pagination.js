@@ -3,6 +3,7 @@ let activeNum;
 let nextPage = document.getElementsByClassName('pagination__next')[0]
 let textPage = document.getElementsByClassName('pagination__text')[0]
 
+
 function toggleActiveNum(arr) {
     for(let i=0;i<arr.length;i++){
         arr[i].addEventListener("click", function () {
@@ -33,5 +34,6 @@ button.addEventListener("click", function () {
     }
 })
 }
+
 toggleActiveNum(numPage);
 toggleNextPage(nextPage);

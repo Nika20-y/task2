@@ -2,6 +2,7 @@
 import "../Blocks/diagram/diagram"
 import "../Blocks/header/headerDropdown"
 import "../Blocks/rateBtn/rateBtn"
+import "../Blocks/pagination/pagination"
 
 import "./landingPage/landingPage.scss"
 import "./registrationPage/registrationPage.scss"
